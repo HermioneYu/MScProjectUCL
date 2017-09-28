@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Beam Search</title>
+    <link rel="stylesheet" type="text/css" href="tree.css">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+  </head>
+  <body>
+    <script>
+      var treeData = {"name": "START", "id": [0, 0], "children": [{"name": "Long\t351", "score": "-0.00145651", "size": 100, "id": [1, 0], "children": [{"name": "Stream\t1249", "score": "-0.00230171", "size": 100, "id": [2, 0], "children": [{"name": "sequential\t4", "score": "-0.111759", "size": 100, "id": [3, 0], "children": [{"name": "(\t39573", "score": "-0.111764", "size": 100, "id": [4, 0], "children": [{"name": ")\t39573", "score": "-0.111776", "size": 100, "id": [5, 0], "children": [{"name": "SEQUENCE_END", "score": "-0.111797", "size": 100, "id": [6, 0]}]}]}]}, {"name": "distinct\t4", "score": "-3.2236", "size": 100, "id": [3, 1], "children": [{"name": "(\t39573", "score": "-3.22361", "size": 100, "id": [4, 1], "children": [{"name": ")\t39573", "score": "-3.22363", "size": 100, "id": [5, 1], "children": [{"name": "SEQUENCE_END", "score": "-3.22365", "size": 100, "id": [6, 1]}]}]}]}, {"name": "build\t10", "score": "-3.65661", "size": 100, "id": [3, 2], "children": [{"name": "(\t39573", "score": "-3.65661", "size": 100, "id": [4, 2], "children": [{"name": ")\t39573", "score": "-3.65664", "size": 100, "id": [5, 2], "children": [{"name": "SEQUENCE_END", "score": "-3.65666", "size": 100, "id": [6, 2]}]}]}]}, {"name": "Corrupted\t4", "score": "-6.14997", "size": 100, "id": [3, 3], "children": [{"name": "(\t39573", "score": "-6.14997", "size": 100, "id": [4, 3], "children": [{"name": ")\t39573", "score": "-6.14999", "size": 100, "id": [5, 3], "children": [{"name": "SEQUENCE_END", "score": "-6.15001", "size": 100, "id": [6, 3]}]}]}]}, {"name": "Unavailable\t34", "score": "-6.2279", "size": 100, "id": [3, 4], "children": [{"name": "(\t39573", "score": "-6.2279", "size": 100, "id": [4, 4], "children": [{"name": ")\t39573", "score": "-6.22793", "size": 100, "id": [5, 4], "children": [{"name": "SEQUENCE_END", "score": "-6.22795", "size": 100, "id": [6, 4]}]}]}]}]}, {"name": "ID\t194", "score": "-7.69593", "size": 100, "id": [2, 1]}, {"name": "Modification\t18", "score": "-9.7448", "size": 100, "id": [2, 4]}]}, {"name": "Lock\t80", "score": "-8.15151", "size": 100, "id": [1, 1], "children": [{"name": "Stream\t1249", "score": "-8.21575", "size": 100, "id": [2, 2]}]}, {"name": "Stamped\t2", "score": "-9.67199", "size": 100, "id": [1, 2], "children": [{"name": "Stream\t1249", "score": "-9.68943", "size": 100, "id": [2, 3]}]}, {"name": "Provider\t291", "score": "-9.96742", "size": 100, "id": [1, 3]}, {"name": "Int\t291", "score": "-9.97962", "size": 100, "id": [1, 4]}]}
+    </script>
+    <script src="tree.js"></script>
+  </body>
+</html>

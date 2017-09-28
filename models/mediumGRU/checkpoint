@@ -1,0 +1,6 @@
+model_checkpoint_path: "/Users/Hermione/nmt_data/model.ckpt-100000"
+all_model_checkpoint_paths: "/Users/Hermione/nmt_data/model.ckpt-98473"
+all_model_checkpoint_paths: "/Users/Hermione/nmt_data/model.ckpt-99000"
+all_model_checkpoint_paths: "/Users/Hermione/nmt_data/model.ckpt-99001"
+all_model_checkpoint_paths: "/Users/Hermione/nmt_data/model.ckpt-99474"
+all_model_checkpoint_paths: "/Users/Hermione/nmt_data/model.ckpt-100000"

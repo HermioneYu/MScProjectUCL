@@ -1,0 +1,20 @@
+tensorflow:loss = 9.1012, step = 1
+
+
+bleu = 0.0, global_step = 1000, log_perplexity = 5.40845, loss = 5.40974, rouge_1/f_score = 0.301583, rouge_1/p_score = 0.786452, rouge_1/r_score = 0.191125, rouge_2/f_score = 0.0, rouge_2/p_score = 0.0, rouge_2/r_score = 0.0, rouge_l/f_score = 0.161035
+
+bleu = 68.54, global_step = 100000, log_perplexity = 0.367318, loss = 0.368577, rouge_1/f_score = 0.894128, rouge_1/p_score = 0.965351, rouge_1/r_score = 0.850649, rouge_2/f_score = 0.851159, rouge_2/p_score = 0.934614, rouge_2/r_score = 0.805416, rouge_l/f_score = 0.861174
+
+
+beam = 5
+BLEU = 30.09, 37.0/32.3/28.2/24.4 (BP=1.000, ratio=2.347, hyp_len=110448, ref_len=47051)
+
+
+beam = 0
+BLEU = 27.22, 33.7/29.3/25.4/21.9 (BP=1.000, ratio=2.578, hyp_len=121279, ref_len=47051)
+
+beam = 2
+BLEU = 28.67, 35.3/30.8/26.8/23.2 (BP=1.000, ratio=2.455, hyp_len=115526, ref_len=47051)
+
+beam = 10
+BLEU = 30.88, 37.9/33.1/28.9/25.1 (BP=1.000, ratio=2.291, hyp_len=107808, ref_len=47051)

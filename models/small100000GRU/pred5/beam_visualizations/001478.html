@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Beam Search</title>
+    <link rel="stylesheet" type="text/css" href="tree.css">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+  </head>
+  <body>
+    <script>
+      var treeData = {"name": "START", "id": [0, 0], "children": [{"name": "String\t11101", "score": "-1.85965e-05", "size": 100, "id": [1, 0], "children": [{"name": "negate\t11", "score": "-1.96499", "size": 100, "id": [2, 0], "children": [{"name": "Signature\t72", "score": "-3.09996", "size": 100, "id": [3, 1], "children": [{"name": "(\t39573", "score": "-3.1", "size": 100, "id": [4, 1], "children": [{"name": ")\t39573", "score": "-3.1", "size": 100, "id": [5, 1], "children": [{"name": "SEQUENCE_END", "score": "-3.10003", "size": 100, "id": [6, 1]}]}]}]}, {"name": "Ctx\t16", "score": "-3.58625", "size": 100, "id": [3, 2], "children": [{"name": "(\t39573", "score": "-3.58674", "size": 100, "id": [4, 2], "children": [{"name": ")\t39573", "score": "-3.58675", "size": 100, "id": [5, 2], "children": [{"name": "SEQUENCE_END", "score": "-3.58679", "size": 100, "id": [6, 2]}]}]}]}]}, {"name": "summary\t3", "score": "-2.03323", "size": 100, "id": [2, 1], "children": [{"name": "Signature\t72", "score": "-3.02713", "size": 100, "id": [3, 0], "children": [{"name": "(\t39573", "score": "-3.02724", "size": 100, "id": [4, 0], "children": [{"name": ")\t39573", "score": "-3.02724", "size": 100, "id": [5, 0], "children": [{"name": "SEQUENCE_END", "score": "-3.02725", "size": 100, "id": [6, 0]}]}]}]}]}, {"name": "ceiling\t9", "score": "-2.54951", "size": 100, "id": [2, 2]}, {"name": "relativize\t2", "score": "-3.17495", "size": 100, "id": [2, 3], "children": [{"name": "Ctx\t16", "score": "-3.86063", "size": 100, "id": [3, 3], "children": [{"name": "(\t39573", "score": "-3.86195", "size": 100, "id": [4, 3], "children": [{"name": ")\t39573", "score": "-3.86196", "size": 100, "id": [5, 3], "children": [{"name": "SEQUENCE_END", "score": "-3.86199", "size": 100, "id": [6, 3]}]}]}]}]}, {"name": "Visitor8\t13", "score": "-3.20393", "size": 100, "id": [2, 4], "children": [{"name": "Ctx\t16", "score": "-4.34746", "size": 100, "id": [3, 4], "children": [{"name": "(\t39573", "score": "-4.34763", "size": 100, "id": [4, 4], "children": [{"name": ")\t39573", "score": "-4.34764", "size": 100, "id": [5, 4], "children": [{"name": "SEQUENCE_END", "score": "-4.34768", "size": 100, "id": [6, 4]}]}]}]}]}]}, {"name": "Resolve\t32", "score": "-12.6496", "size": 100, "id": [1, 1]}, {"name": "File\t784", "score": "-13.0929", "size": 100, "id": [1, 2]}, {"name": "SQLXML\t36", "score": "-13.2183", "size": 100, "id": [1, 3]}, {"name": "Base\t61", "score": "-13.4857", "size": 100, "id": [1, 4]}]}
+    </script>
+    <script src="tree.js"></script>
+  </body>
+</html>

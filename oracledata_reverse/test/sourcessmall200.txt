@@ -1,0 +1,40 @@
+Handles the componentShown event by invoking the componentShown methods on listener-a and listener-b.
+Handles the keyTyped event by invoking the keyTyped methods on listener-a and listener-b.
+Requests that the browser or applet viewer show the Web page indicated by the url argument. The browser or applet viewer determines which window or frame to display the Web page. This method may be ignored by applet contexts that are not browsers.
+AlphaComposite object that implements the opaque SRC_ATOP rule with an alpha of 1.0f.
+The event mask for selecting item events.
+Removes the old window-focus-listener from window-focus-listener-l and returns the resulting multicast listener.
+Retargets an event to a new source. This method is typically used to retarget an event to a lightweight child Component of the original heavyweight source. This method is intended to be used only by event targeting subsystems, such as client-defined KeyboardFocusManagers. It is not for general client use.
+Constructs a new Applet. Note: Many methods in java.applet.Applet may be invoked by the applet only after the applet is fully constructed; applet should avoid calling methods in java.applet.Applet in the constructor.
+Determines whether the specified object is equal to this AlphaComposite. The result is true if and only if the argument is not null and is an AlphaComposite object that has the same compositing rule and alpha value as this object.
+Creates an event multicaster instance which chains listener-a with listener-b. Input parameters a and b should not be null, though implementations may vary in choosing whether or not to throw NullPointerException in that case.
+Handles the inputMethodTextChanged event by invoking the inputMethodTextChanged methods on listener-a and listener-b.
+Handles the windowDeactivated event by invoking the windowDeactivated methods on listener-a and listener-b.
+AlphaComposite object that implements the opaque DST_OUT rule with an alpha of 1.0f.
+Returns an Image object that can then be painted on the screen. The url that is passed as an argument must specify an absolute URL. This method always returns immediately, whether or not the image exists. When this applet attempts to draw the image on the screen, the data will be loaded. The graphics primitives that draw the image will incrementally paint on the screen.
+Get an audio clip from the given URL.
+Handles the itemStateChanged event by invoking the itemStateChanged methods on listener-a and listener-b.
+Constructs an AWTEvent object with the specified source object and type.
+The event's id.
+Adds window-focus-listener-a with window-focus-listener-b and returns the resulting multicast listener.
+Plays the audio clip at the specified absolute URL. Nothing happens if the audio clip cannot be found.
+Adds mouse-wheel-listener-a with mouse-wheel-listener-b and returns the resulting multicast listener.
+The part of the source lying inside of the destination is composited onto the destination (Porter-Duff Source Atop Destination rule). Fs = Ad and Fd = (1-As), thus: Ar = As*Ad + Ad*(1-As) = Ad Cr = Cs*Ad + Cd*(1-As)
+Handles the windowActivated event by invoking the windowActivated methods on listener-a and listener-b.
+The event mask for selecting key events.
+Creates a context for the compositing operation. The context contains state that is used in performing the compositing operation.
+Handles the focusLost event by invoking the focusLost methods on listener-a and listener-b.
+The part of the source lying outside of the destination replaces the destination (Porter-Duff Source Held Out By Destination rule). Fs = (1-Ad) and Fd = 0, thus: Ar = As*(1-Ad) Cr = Cs*(1-Ad)
+Removes a listener from this multicaster. The returned multicaster contains all the listeners in this multicaster with the exception of all occurrences of oldl. If the resulting multicaster contains only one regular listener the regular listener may be returned. If the resulting multicaster is empty, then null may be returned instead. No exception is thrown if oldl is null.
+Adds key-listener-a with key-listener-b and returns the resulting multicast listener.
+The event mask for selecting input method events.
+The event mask for selecting mouse wheel events.
+Adds component-listener-a with component-listener-b and returns the resulting multicast listener.
+The event mask for selecting adjustment events.
+Finds and returns the applet in the document represented by this applet context with the given name. The name can be set in the HTML tag by setting the name attribute.
+The event mask for selecting invocation events.
+"Requests that the argument string be displayed in the ""status window"". Many browsers and applet viewers provide such a window, where the application can inform users of its current state."
+Removes the old action-listener from action-listener-l and returns the resulting multicast listener.
+AlphaComposite object that implements the opaque DST_OVER rule with an alpha of 1.0f.
+Handles the windowStateChanged event by invoking the windowStateChanged methods on listener-a and listener-b.
+"Requests that the argument string be displayed in the ""status window"". Many browsers and applet viewers provide such a window, where the application can inform users of its current state."

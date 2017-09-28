@@ -1,0 +1,400 @@
+protected AccessibleApplet()
+public AccessibleRole getAccessibleRole()
+public Applet() throws HeadlessException
+public final void setStub(AppletStub stub)
+public boolean isActive()
+public URL getDocumentBase()
+public URL getCodeBase()
+public String getParameter(String name)
+public AppletContext getAppletContext()
+public void resize(int width, int height)
+public void resize(Dimension d)
+public boolean isValidateRoot()
+public void showStatus(String msg)
+public Image getImage(URL url)
+public Image getImage(URL url, String name)
+public static final AudioClip newAudioClip(URL url)
+public AudioClip getAudioClip(URL url)
+public AudioClip getAudioClip(URL url, String name)
+public String getAppletInfo()
+public Locale getLocale()
+public String[][] getParameterInfo()
+public void play(URL url)
+public void play(URL url, String name)
+public void init()
+public void start()
+public void stop()
+public void destroy()
+public AccessibleContext getAccessibleContext()
+AudioClip getAudioClip(URL url)
+Image getImage(URL url)
+Applet getApplet(String name)
+Enumeration<Applet> getApplets()
+void showDocument(URL url)
+void showDocument(URL url, String target)
+void showStatus(String status)
+void setStream(String key, InputStream stream) throws IOException
+InputStream getStream(String key)
+Iterator<String> getStreamKeys()
+boolean isActive()
+URL getDocumentBase()
+URL getCodeBase()
+String getParameter(String name)
+AppletContext getAppletContext()
+void appletResize(int width, int height)
+void play()
+void loop()
+void stop()
+void dispatch()
+@Native static final int HORIZONTAL
+@Native static final int VERTICAL
+@Native static final int NO_ORIENTATION
+int getOrientation()
+void setMinimum(int min)
+int getMinimum()
+void setMaximum(int max)
+int getMaximum()
+void setUnitIncrement(int u)
+int getUnitIncrement()
+void setBlockIncrement(int b)
+int getBlockIncrement()
+void setVisibleAmount(int v)
+int getVisibleAmount()
+void setValue(int v)
+int getValue()
+void addAdjustmentListener(AdjustmentListener l)
+void removeAdjustmentListener(AdjustmentListener l)
+@Native public static final int CLEAR
+@Native public static final int SRC
+@Native public static final int DST
+@Native public static final int SRC_OVER
+@Native public static final int DST_OVER
+@Native public static final int SRC_IN
+@Native public static final int DST_IN
+@Native public static final int SRC_OUT
+@Native public static final int DST_OUT
+@Native public static final int SRC_ATOP
+@Native public static final int DST_ATOP
+@Native public static final int XOR
+public static final AlphaComposite Clear
+public static final AlphaComposite Src
+public static final AlphaComposite Dst
+public static final AlphaComposite SrcOver
+public static final AlphaComposite DstOver
+public static final AlphaComposite SrcIn
+public static final AlphaComposite DstIn
+public static final AlphaComposite SrcOut
+public static final AlphaComposite DstOut
+public static final AlphaComposite SrcAtop
+public static final AlphaComposite DstAtop
+public static final AlphaComposite Xor
+public static AlphaComposite getInstance(int rule)
+public static AlphaComposite getInstance(int rule, float alpha)
+public CompositeContext createContext(ColorModel srcColorModel, ColorModel dstColorModel, RenderingHints hints)
+public float getAlpha()
+public int getRule()
+public AlphaComposite derive(int rule)
+public AlphaComposite derive(float alpha)
+public int hashCode()
+public boolean equals(Object obj)
+public AWTError(String msg)
+protected int id
+protected boolean consumed
+public static final long COMPONENT_EVENT_MASK
+public static final long CONTAINER_EVENT_MASK
+public static final long FOCUS_EVENT_MASK
+public static final long KEY_EVENT_MASK
+public static final long MOUSE_EVENT_MASK
+public static final long MOUSE_MOTION_EVENT_MASK
+public static final long WINDOW_EVENT_MASK
+public static final long ACTION_EVENT_MASK
+public static final long ADJUSTMENT_EVENT_MASK
+public static final long ITEM_EVENT_MASK
+public static final long TEXT_EVENT_MASK
+public static final long INPUT_METHOD_EVENT_MASK
+public static final long PAINT_EVENT_MASK
+public static final long INVOCATION_EVENT_MASK
+public static final long HIERARCHY_EVENT_MASK
+public static final long HIERARCHY_BOUNDS_EVENT_MASK
+public static final long MOUSE_WHEEL_EVENT_MASK
+public static final long WINDOW_STATE_EVENT_MASK
+public static final long WINDOW_FOCUS_EVENT_MASK
+public static final int RESERVED_ID_MAX
+public AWTEvent(Event event)
+public AWTEvent(Object source, int id)
+public void setSource(Object newSource)
+public int getID()
+public String toString()
+public String paramString()
+protected void consume()
+protected boolean isConsumed()
+protected final EventListener a
+protected final EventListener b
+protected AWTEventMulticaster(EventListener a, EventListener b)
+protected EventListener remove(EventListener oldl)
+public void componentResized(ComponentEvent e)
+public void componentMoved(ComponentEvent e)
+public void componentShown(ComponentEvent e)
+public void componentHidden(ComponentEvent e)
+public void componentAdded(ContainerEvent e)
+public void componentRemoved(ContainerEvent e)
+public void focusGained(FocusEvent e)
+public void focusLost(FocusEvent e)
+public void keyTyped(KeyEvent e)
+public void keyPressed(KeyEvent e)
+public void keyReleased(KeyEvent e)
+public void mouseClicked(MouseEvent e)
+public void mousePressed(MouseEvent e)
+public void mouseReleased(MouseEvent e)
+public void mouseEntered(MouseEvent e)
+public void mouseExited(MouseEvent e)
+public void mouseDragged(MouseEvent e)
+public void mouseMoved(MouseEvent e)
+public void windowOpened(WindowEvent e)
+public void windowClosing(WindowEvent e)
+public void windowClosed(WindowEvent e)
+public void windowIconified(WindowEvent e)
+public void windowDeiconified(WindowEvent e)
+public void windowActivated(WindowEvent e)
+public void windowDeactivated(WindowEvent e)
+public void windowStateChanged(WindowEvent e)
+public void windowGainedFocus(WindowEvent e)
+public void windowLostFocus(WindowEvent e)
+public void actionPerformed(ActionEvent e)
+public void itemStateChanged(ItemEvent e)
+public void adjustmentValueChanged(AdjustmentEvent e)
+public void textValueChanged(TextEvent e)
+public void inputMethodTextChanged(InputMethodEvent e)
+public void caretPositionChanged(InputMethodEvent e)
+public void hierarchyChanged(HierarchyEvent e)
+public void ancestorMoved(HierarchyEvent e)
+public void ancestorResized(HierarchyEvent e)
+public void mouseWheelMoved(MouseWheelEvent e)
+public static ComponentListener add(ComponentListener a, ComponentListener b)
+public static ContainerListener add(ContainerListener a, ContainerListener b)
+public static FocusListener add(FocusListener a, FocusListener b)
+public static KeyListener add(KeyListener a, KeyListener b)
+public static MouseListener add(MouseListener a, MouseListener b)
+public static MouseMotionListener add(MouseMotionListener a, MouseMotionListener b)
+public static WindowListener add(WindowListener a, WindowListener b)
+public static WindowStateListener add(WindowStateListener a, WindowStateListener b)
+public static WindowFocusListener add(WindowFocusListener a, WindowFocusListener b)
+public static ActionListener add(ActionListener a, ActionListener b)
+public static ItemListener add(ItemListener a, ItemListener b)
+public static AdjustmentListener add(AdjustmentListener a, AdjustmentListener b)
+public static TextListener add(TextListener a, TextListener b)
+public static InputMethodListener add(InputMethodListener a, InputMethodListener b)
+public static HierarchyListener add(HierarchyListener a, HierarchyListener b)
+public static HierarchyBoundsListener add(HierarchyBoundsListener a, HierarchyBoundsListener b)
+public static MouseWheelListener add(MouseWheelListener a, MouseWheelListener b)
+public static ComponentListener remove(ComponentListener l, ComponentListener oldl)
+public static ContainerListener remove(ContainerListener l, ContainerListener oldl)
+public static FocusListener remove(FocusListener l, FocusListener oldl)
+public static KeyListener remove(KeyListener l, KeyListener oldl)
+public static MouseListener remove(MouseListener l, MouseListener oldl)
+public static MouseMotionListener remove(MouseMotionListener l, MouseMotionListener oldl)
+public static WindowListener remove(WindowListener l, WindowListener oldl)
+public static WindowStateListener remove(WindowStateListener l, WindowStateListener oldl)
+public static WindowFocusListener remove(WindowFocusListener l, WindowFocusListener oldl)
+public static ActionListener remove(ActionListener l, ActionListener oldl)
+public static ItemListener remove(ItemListener l, ItemListener oldl)
+public static AdjustmentListener remove(AdjustmentListener l, AdjustmentListener oldl)
+public static TextListener remove(TextListener l, TextListener oldl)
+public static InputMethodListener remove(InputMethodListener l, InputMethodListener oldl)
+public static HierarchyListener remove(HierarchyListener l, HierarchyListener oldl)
+public static HierarchyBoundsListener remove(HierarchyBoundsListener l, HierarchyBoundsListener oldl)
+public AWTException(String msg)
+protected AWTKeyStroke()
+protected AWTKeyStroke(char keyChar, int keyCode, int modifiers, boolean onKeyRelease)
+protected static void registerSubclass(Class<?> subclass)
+public static AWTKeyStroke getAWTKeyStroke(char keyChar)
+public static AWTKeyStroke getAWTKeyStroke(Character keyChar, int modifiers)
+public static AWTKeyStroke getAWTKeyStroke(int keyCode, int modifiers, boolean onKeyRelease)
+public static AWTKeyStroke getAWTKeyStroke(int keyCode, int modifiers)
+public static AWTKeyStroke getAWTKeyStrokeForEvent(KeyEvent anEvent)
+public static AWTKeyStroke getAWTKeyStroke(String s)
+public final char getKeyChar()
+public final int getKeyCode()
+public final int getModifiers()
+public final boolean isOnKeyRelease()
+public final int getKeyEventType()
+public int hashCode()
+public final boolean equals(Object anObject)
+public String toString()
+protected Object readResolve() throws ObjectStreamException
+public AWTPermission(String name)
+public AWTPermission(String name, String actions)
+@Native public static final int JOIN_MITER
+@Native public static final int JOIN_ROUND
+@Native public static final int JOIN_BEVEL
+@Native public static final int CAP_BUTT
+@Native public static final int CAP_ROUND
+@Native public static final int CAP_SQUARE
+"@ConstructorProperties(value={""lineWidth"",""endCap"",""lineJoin"",""miterLimit"",""dashArray"",""dashPhase""}) public BasicStroke(float width, int cap, int join, float miterlimit, float[] dash, float dash_phase)"
+public BasicStroke(float width, int cap, int join, float miterlimit)
+public BasicStroke(float width, int cap, int join)
+public BasicStroke(float width)
+public BasicStroke()
+public Shape createStrokedShape(Shape s)
+public float getLineWidth()
+public int getEndCap()
+public int getLineJoin()
+public float getMiterLimit()
+public float[] getDashArray()
+public float getDashPhase()
+public int hashCode()
+public boolean equals(Object obj)
+public static final String NORTH
+public static final String SOUTH
+public static final String EAST
+public static final String WEST
+public static final String CENTER
+public static final String BEFORE_FIRST_LINE
+public static final String AFTER_LAST_LINE
+public static final String BEFORE_LINE_BEGINS
+public static final String AFTER_LINE_ENDS
+public static final String PAGE_START
+public static final String PAGE_END
+public static final String LINE_START
+public static final String LINE_END
+public BorderLayout()
+public BorderLayout(int hgap, int vgap)
+public int getHgap()
+public void setHgap(int hgap)
+public int getVgap()
+public void setVgap(int vgap)
+public void addLayoutComponent(Component comp, Object constraints)
+@Deprecated public void addLayoutComponent(String name, Component comp)
+public void removeLayoutComponent(Component comp)
+public Component getLayoutComponent(Object constraints)
+public Component getLayoutComponent(Container target, Object constraints)
+public Object getConstraints(Component comp)
+public Dimension minimumLayoutSize(Container target)
+public Dimension preferredLayoutSize(Container target)
+public Dimension maximumLayoutSize(Container target)
+public float getLayoutAlignmentX(Container parent)
+public float getLayoutAlignmentY(Container parent)
+public void invalidateLayout(Container target)
+public void layoutContainer(Container target)
+public String toString()
+public static final BufferCapabilities.FlipContents UNDEFINED
+public static final BufferCapabilities.FlipContents BACKGROUND
+public static final BufferCapabilities.FlipContents PRIOR
+public static final BufferCapabilities.FlipContents COPIED
+public int hashCode()
+public String toString()
+public BufferCapabilities(ImageCapabilities frontCaps, ImageCapabilities backCaps, BufferCapabilities.FlipContents flipContents)
+public ImageCapabilities getFrontBufferCapabilities()
+protected AccessibleAWTButton()
+public String getAccessibleName()
+public AccessibleAction getAccessibleAction()
+public AccessibleValue getAccessibleValue()
+public int getAccessibleActionCount()
+public String getAccessibleActionDescription(int i)
+public boolean doAccessibleAction(int i)
+public Number getCurrentAccessibleValue()
+public boolean setCurrentAccessibleValue(Number n)
+public Number getMinimumAccessibleValue()
+public Number getMaximumAccessibleValue()
+public Button() throws HeadlessException
+public Button(String label) throws HeadlessException
+public void addNotify()
+public String getLabel()
+public void setLabel(String label)
+public void setActionCommand(String command)
+public String getActionCommand()
+public void addActionListener(ActionListener l)
+public void removeActionListener(ActionListener l)
+public ActionListener[] getActionListeners()
+public <T extends EventListener> T[] getListeners(Class<T> listenerType)
+protected void processEvent(AWTEvent e)
+protected void processActionEvent(ActionEvent e)
+protected String paramString()
+public AccessibleContext getAccessibleContext()
+protected AccessibleAWTCanvas()
+public Canvas()
+public Canvas(GraphicsConfiguration config)
+public void addNotify()
+public void paint(Graphics g)
+public void update(Graphics g)
+public void createBufferStrategy(int numBuffers)
+public void createBufferStrategy(int numBuffers, BufferCapabilities caps) throws AWTException
+public BufferStrategy getBufferStrategy()
+public AccessibleContext getAccessibleContext()
+public CardLayout()
+public CardLayout(int hgap, int vgap)
+public int getHgap()
+public void setHgap(int hgap)
+public int getVgap()
+public void setVgap(int vgap)
+public void addLayoutComponent(Component comp, Object constraints)
+@Deprecated public void addLayoutComponent(String name, Component comp)
+public void removeLayoutComponent(Component comp)
+public Dimension preferredLayoutSize(Container parent)
+public Dimension minimumLayoutSize(Container parent)
+public Dimension maximumLayoutSize(Container target)
+public float getLayoutAlignmentX(Container parent)
+public float getLayoutAlignmentY(Container parent)
+public void invalidateLayout(Container target)
+public void layoutContainer(Container parent)
+public void first(Container parent)
+public void next(Container parent)
+public void previous(Container parent)
+public void last(Container parent)
+public void show(Container parent, String name)
+public String toString()
+public AccessibleAWTCheckbox()
+public void itemStateChanged(ItemEvent e)
+public AccessibleAction getAccessibleAction()
+public AccessibleValue getAccessibleValue()
+public int getAccessibleActionCount()
+public String getAccessibleActionDescription(int i)
+public boolean doAccessibleAction(int i)
+public Number getCurrentAccessibleValue()
+public boolean setCurrentAccessibleValue(Number n)
+public Number getMinimumAccessibleValue()
+public Number getMaximumAccessibleValue()
+public AccessibleRole getAccessibleRole()
+public Checkbox() throws HeadlessException
+public Checkbox(String label) throws HeadlessException
+public Checkbox(String label, boolean state) throws HeadlessException
+public Checkbox(String label, boolean state, CheckboxGroup group) throws HeadlessException
+public Checkbox(String label, CheckboxGroup group, boolean state) throws HeadlessException
+public void addNotify()
+public String getLabel()
+public void setLabel(String label)
+public boolean getState()
+public void setState(boolean state)
+public Object[] getSelectedObjects()
+public CheckboxGroup getCheckboxGroup()
+public void setCheckboxGroup(CheckboxGroup g)
+public void addItemListener(ItemListener l)
+public void removeItemListener(ItemListener l)
+public ItemListener[] getItemListeners()
+public <T extends EventListener> T[] getListeners(Class<T> listenerType)
+protected void processEvent(AWTEvent e)
+protected void processItemEvent(ItemEvent e)
+protected String paramString()
+public AccessibleContext getAccessibleContext()
+public CheckboxGroup()
+public Checkbox getSelectedCheckbox()
+@Deprecated public Checkbox getCurrent()
+public void setSelectedCheckbox(Checkbox box)
+protected AccessibleAWTCheckboxMenuItem()
+public AccessibleAction getAccessibleAction()
+public AccessibleValue getAccessibleValue()
+public int getAccessibleActionCount()
+public String getAccessibleActionDescription(int i)
+public boolean doAccessibleAction(int i)
+public Number getCurrentAccessibleValue()
+public boolean setCurrentAccessibleValue(Number n)
+public Number getMinimumAccessibleValue()
+public Number getMaximumAccessibleValue()
+public CheckboxMenuItem() throws HeadlessException
+public CheckboxMenuItem(String label) throws HeadlessException
+public CheckboxMenuItem(String label, boolean state) throws HeadlessException
+public void addNotify()
+public boolean getState()
+public void setState(boolean b)
+public Object[] getSelectedObjects()
+public void addItemListener(ItemListener l)

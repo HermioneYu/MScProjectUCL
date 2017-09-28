@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Beam Search</title>
+    <link rel="stylesheet" type="text/css" href="tree.css">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+  </head>
+  <body>
+    <script>
+      var treeData = {"name": "START", "id": [0, 0], "children": [{"name": "Package\t43", "score": "-0.0862412", "size": 100, "id": [1, 0], "children": [{"name": "Doc\t245", "score": "-0.140876", "size": 100, "id": [2, 0], "children": [{"name": "week\t10", "score": "-3.19976", "size": 100, "id": [3, 0], "children": [{"name": "Package\t43", "score": "-3.40764", "size": 100, "id": [4, 0], "children": [{"name": "(\t39573", "score": "-3.40765", "size": 100, "id": [5, 0], "children": [{"name": ")\t39573", "score": "-3.40798", "size": 100, "id": [6, 0], "children": [{"name": "SEQUENCE_END", "score": "-3.40803", "size": 100, "id": [7, 0]}]}]}]}]}, {"name": "creation\t1", "score": "-3.39743", "size": 100, "id": [3, 1], "children": [{"name": "Package\t43", "score": "-3.52976", "size": 100, "id": [4, 1], "children": [{"name": "(\t39573", "score": "-3.52982", "size": 100, "id": [5, 1], "children": [{"name": ")\t39573", "score": "-3.53006", "size": 100, "id": [6, 1], "children": [{"name": "SEQUENCE_END", "score": "-3.5301", "size": 100, "id": [7, 1]}]}]}]}]}, {"name": "unboxed\t1", "score": "-3.58264", "size": 100, "id": [3, 2], "children": [{"name": "Package\t43", "score": "-3.67205", "size": 100, "id": [4, 2], "children": [{"name": "(\t39573", "score": "-3.67206", "size": 100, "id": [5, 2], "children": [{"name": ")\t39573", "score": "-3.67258", "size": 100, "id": [6, 2], "children": [{"name": "SEQUENCE_END", "score": "-3.67262", "size": 100, "id": [7, 2]}]}]}]}]}, {"name": "Symbols\t25", "score": "-3.59677", "size": 100, "id": [3, 3], "children": [{"name": "Package\t43", "score": "-4.00575", "size": 100, "id": [4, 4], "children": [{"name": "(\t39573", "score": "-4.00594", "size": 100, "id": [5, 4], "children": [{"name": ")\t39573", "score": "-4.00606", "size": 100, "id": [6, 4], "children": [{"name": "SEQUENCE_END", "score": "-4.00609", "size": 100, "id": [7, 4]}]}]}]}]}, {"name": "fetch\t3", "score": "-3.74761", "size": 100, "id": [3, 4], "children": [{"name": "Package\t43", "score": "-3.85776", "size": 100, "id": [4, 3], "children": [{"name": "(\t39573", "score": "-3.85777", "size": 100, "id": [5, 3], "children": [{"name": ")\t39573", "score": "-3.8605", "size": 100, "id": [6, 3], "children": [{"name": "SEQUENCE_END", "score": "-3.86055", "size": 100, "id": [7, 3]}]}]}]}]}]}, {"name": "Id\t451", "score": "-3.95798", "size": 100, "id": [2, 1]}]}, {"name": "Feature\t43", "score": "-4.57783", "size": 100, "id": [1, 1], "children": [{"name": "Doc\t245", "score": "-4.59015", "size": 100, "id": [2, 2]}]}, {"name": "Wildcard\t8", "score": "-4.74921", "size": 100, "id": [1, 2], "children": [{"name": "Doc\t245", "score": "-4.75739", "size": 100, "id": [2, 3]}]}, {"name": "V\t583", "score": "-5.14593", "size": 100, "id": [1, 3]}, {"name": "Constant\t14", "score": "-5.31252", "size": 100, "id": [1, 4], "children": [{"name": "Doc\t245", "score": "-5.31827", "size": 100, "id": [2, 4]}]}]}
+    </script>
+    <script src="tree.js"></script>
+  </body>
+</html>

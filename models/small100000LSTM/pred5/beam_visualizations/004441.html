@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Beam Search</title>
+    <link rel="stylesheet" type="text/css" href="tree.css">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+  </head>
+  <body>
+    <script>
+      var treeData = {"name": "START", "id": [0, 0], "children": [{"name": "public\t34102", "score": "-2.02656e-06", "size": 100, "id": [1, 0], "children": [{"name": "int\t14861", "score": "-4.29153e-06", "size": 100, "id": [2, 0], "children": [{"name": "ulp\t5", "score": "-2.15159", "size": 100, "id": [3, 0], "children": [{"name": "(\t39573", "score": "-2.15161", "size": 100, "id": [4, 0], "children": [{"name": ")\t39573", "score": "-2.15161", "size": 100, "id": [5, 0], "children": [{"name": "SEQUENCE_END", "score": "-2.15164", "size": 100, "id": [6, 0]}]}]}]}, {"name": "grow\t9", "score": "-2.76366", "size": 100, "id": [3, 1], "children": [{"name": "(\t39573", "score": "-2.7637", "size": 100, "id": [4, 1], "children": [{"name": ")\t39573", "score": "-2.7637", "size": 100, "id": [5, 1], "children": [{"name": "SEQUENCE_END", "score": "-2.76372", "size": 100, "id": [6, 1]}]}]}]}, {"name": "shrink\t8", "score": "-2.98751", "size": 100, "id": [3, 2], "children": [{"name": "(\t39573", "score": "-2.98754", "size": 100, "id": [4, 2], "children": [{"name": ")\t39573", "score": "-2.98754", "size": 100, "id": [5, 2], "children": [{"name": "SEQUENCE_END", "score": "-2.98757", "size": 100, "id": [6, 2]}]}]}]}, {"name": "NEGATIVE\t4", "score": "-3.63388", "size": 100, "id": [3, 3], "children": [{"name": "(\t39573", "score": "-3.63391", "size": 100, "id": [4, 3], "children": [{"name": ")\t39573", "score": "-3.63391", "size": 100, "id": [5, 3], "children": [{"name": "SEQUENCE_END", "score": "-3.63394", "size": 100, "id": [6, 3]}]}]}]}, {"name": "hgap\t8", "score": "-3.81972", "size": 100, "id": [3, 4], "children": [{"name": "(\t39573", "score": "-3.81977", "size": 100, "id": [4, 4], "children": [{"name": ")\t39573", "score": "-3.81977", "size": 100, "id": [5, 4], "children": [{"name": "SEQUENCE_END", "score": "-3.81979", "size": 100, "id": [6, 4]}]}]}]}]}, {"name": "Insets\t124", "score": "-14.6339", "size": 100, "id": [2, 2]}, {"name": "Table\t303", "score": "-15.0859", "size": 100, "id": [2, 4]}]}, {"name": "int\t14861", "score": "-14.2687", "size": 100, "id": [1, 1], "children": [{"name": "int\t14861", "score": "-14.269", "size": 100, "id": [2, 1]}]}, {"name": "Composite\t72", "score": "-15.0531", "size": 100, "id": [1, 2], "children": [{"name": "int\t14861", "score": "-15.0531", "size": 100, "id": [2, 3]}]}, {"name": "short\t530", "score": "-15.2239", "size": 100, "id": [1, 3]}, {"name": "float\t1070", "score": "-15.2692", "size": 100, "id": [1, 4]}]}
+    </script>
+    <script src="tree.js"></script>
+  </body>
+</html>

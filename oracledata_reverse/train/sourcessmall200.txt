@@ -1,0 +1,200 @@
+Get the role of this object.
+Get the state of this object.
+Constructs a new Applet. Note: Many methods in java.applet.Applet may be invoked by the applet only after the applet is fully constructed; applet should avoid calling methods in java.applet.Applet in the constructor.
+"Sets this applet's stub. This is done automatically by the system. If there is a security manager, its checkPermission method is called with the AWTPermission(""setAppletStub"") permission if a stub has already been set."
+Determines if this applet is active. An applet is marked active just before its start method is called. It becomes inactive just before its stop method is called.
+Gets the URL of the document in which this applet is embedded. For example, suppose an applet is contained within the document: http://www.oracle.com/technetwork/java/index.html The document base is: http://www.oracle.com/technetwork/java/index.html
+Gets the base URL. This is the URL of the directory which contains this applet.
+"Returns the value of the named parameter in the HTML tag. For example, if this applet is specified as <applet code=""Clock"" width=50 height=50> <param name=Color value=""blue""> </applet> then a call to getParameter(""Color"") returns the value ""blue"". The name argument is case insensitive."
+Determines this applet's context, which allows the applet to query and affect the environment in which it runs. This environment of an applet represents the document that contains the applet.
+Requests that this applet be resized.
+Requests that this applet be resized.
+Indicates if this container is a validate root. Applet objects are the validate roots, and, therefore, they override this method to return true.
+"Requests that the argument string be displayed in the ""status window"". Many browsers and applet viewers provide such a window, where the application can inform users of its current state."
+Returns an Image object that can then be painted on the screen. The url that is passed as an argument must specify an absolute URL. This method always returns immediately, whether or not the image exists. When this applet attempts to draw the image on the screen, the data will be loaded. The graphics primitives that draw the image will incrementally paint on the screen.
+Returns an Image object that can then be painted on the screen. The url argument must specify an absolute URL. The name argument is a specifier that is relative to the url argument. This method always returns immediately, whether or not the image exists. When this applet attempts to draw the image on the screen, the data will be loaded. The graphics primitives that draw the image will incrementally paint on the screen.
+Get an audio clip from the given URL.
+Returns the AudioClip object specified by the URL argument. This method always returns immediately, whether or not the audio clip exists. When this applet attempts to play the audio clip, the data will be loaded.
+Returns the AudioClip object specified by the URL and name arguments. This method always returns immediately, whether or not the audio clip exists. When this applet attempts to play the audio clip, the data will be loaded.
+Returns information about this applet. An applet should override this method to return a String containing information about the author, version, and copyright of the applet. The implementation of this method provided by the Applet class returns null.
+Gets the locale of the applet. It allows the applet to maintain its own locale separated from the locale of the browser or appletviewer.
+"Returns information about the parameters that are understood by this applet. An applet should override this method to return an array of Strings describing these parameters. Each element of the array should be a set of three Strings containing the name, the type, and a description. For example: String pinfo[][] = { {""fps"", ""1-10"", ""frames per second""}, {""repeat"", ""boolean"", ""repeat image loop""}, {""imgs"", ""url"", ""images directory""} }; The implementation of this method provided by the Applet class returns null."
+Plays the audio clip at the specified absolute URL. Nothing happens if the audio clip cannot be found.
+Plays the audio clip given the URL and a specifier that is relative to it. Nothing happens if the audio clip cannot be found.
+Called by the browser or applet viewer to inform this applet that it has been loaded into the system. It is always called before the first time that the start method is called. A subclass of Applet should override this method if it has initialization to perform. For example, an applet with threads would use the init method to create the threads and the destroy method to kill them. The implementation of this method provided by the Applet class does nothing.
+Called by the browser or applet viewer to inform this applet that it should start its execution. It is called after the init method and each time the applet is revisited in a Web page. A subclass of Applet should override this method if it has any operation that it wants to perform each time the Web page containing it is visited. For example, an applet with animation might want to use the start method to resume animation, and the stop method to suspend the animation. Note: some methods, such as getLocationOnScreen, can only provide meaningful results if the applet is showing. Because isShowing returns false when the applet's start is first called, methods requiring isShowing to return true should be called from a ComponentListener. The implementation of this method provided by the Applet class does nothing.
+Called by the browser or applet viewer to inform this applet that it should stop its execution. It is called when the Web page that contains this applet has been replaced by another page, and also just before the applet is to be destroyed. A subclass of Applet should override this method if it has any operation that it wants to perform each time the Web page containing it is no longer visible. For example, an applet with animation might want to use the start method to resume animation, and the stop method to suspend the animation. The implementation of this method provided by the Applet class does nothing.
+Called by the browser or applet viewer to inform this applet that it is being reclaimed and that it should destroy any resources that it has allocated. The stop method will always be called before destroy. A subclass of Applet should override this method if it has any operation that it wants to perform before it is destroyed. For example, an applet with threads would use the init method to create the threads and the destroy method to kill them. The implementation of this method provided by the Applet class does nothing.
+Gets the AccessibleContext associated with this Applet. For applets, the AccessibleContext takes the form of an AccessibleApplet. A new AccessibleApplet instance is created if necessary.
+Creates an audio clip.
+Returns an Image object that can then be painted on the screen. The url argument that is passed as an argument must specify an absolute URL. This method always returns immediately, whether or not the image exists. When the applet attempts to draw the image on the screen, the data will be loaded. The graphics primitives that draw the image will incrementally paint on the screen.
+Finds and returns the applet in the document represented by this applet context with the given name. The name can be set in the HTML tag by setting the name attribute.
+Finds all the applets in the document represented by this applet context.
+Requests that the browser or applet viewer show the Web page indicated by the url argument. The browser or applet viewer determines which window or frame to display the Web page. This method may be ignored by applet contexts that are not browsers.
+"Requests that the browser or applet viewer show the Web page indicated by the url argument. The target argument indicates in which HTML frame the document is to be displayed. The target argument is interpreted as follows: Target ArgumentDescription ""_self"" Show in the window and frame that contain the applet. ""_parent""Show in the applet's parent frame. If the applet's frame has no parent frame, acts the same as ""_self"". ""_top"" Show in the top-level frame of the applet's window. If the applet's frame is the top-level frame, acts the same as ""_self"". ""_blank"" Show in a new, unnamed top-level window. nameShow in the frame or window named name. If a target named name does not already exist, a new top-level window with the specified name is created, and the document is shown there. An applet viewer or browser is free to ignore showDocument."
+"Requests that the argument string be displayed in the ""status window"". Many browsers and applet viewers provide such a window, where the application can inform users of its current state."
+Associates the specified stream with the specified key in this applet context. If the applet context previously contained a mapping for this key, the old value is replaced. For security reasons, mapping of streams and keys exists for each codebase. In other words, applet from one codebase cannot access the streams created by an applet from a different codebase
+Returns the stream to which specified key is associated within this applet context. Returns null if the applet context contains no stream for this key. For security reasons, mapping of streams and keys exists for each codebase. In other words, applet from one codebase cannot access the streams created by an applet from a different codebase
+Finds all the keys of the streams in this applet context. For security reasons, mapping of streams and keys exists for each codebase. In other words, applet from one codebase cannot access the streams created by an applet from a different codebase
+Determines if the applet is active. An applet is active just before its start method is called. It becomes inactive just before its stop method is called.
+Gets the URL of the document in which the applet is embedded. For example, suppose an applet is contained within the document: http://www.oracle.com/technetwork/java/index.html The document base is: http://www.oracle.com/technetwork/java/index.html
+Gets the base URL. This is the URL of the directory which contains the applet.
+"Returns the value of the named parameter in the HTML tag. For example, if an applet is specified as <applet code=""Clock"" width=50 height=50> <param name=Color value=""blue""> </applet> then a call to getParameter(""Color"") returns the value ""blue""."
+Returns the applet's context.
+Called when the applet wants to be resized.
+Starts playing this audio clip. Each time this method is called, the clip is restarted from the beginning.
+Starts playing this audio clip in a loop.
+Stops playing this audio clip.
+Dispatch the event to its target, listeners of the events source, or do whatever it is this event is supposed to do.
+Indicates that the Adjustable has horizontal orientation.
+Indicates that the Adjustable has vertical orientation.
+Indicates that the Adjustable has no orientation.
+Gets the orientation of the adjustable object.
+Sets the minimum value of the adjustable object.
+Gets the minimum value of the adjustable object.
+Sets the maximum value of the adjustable object.
+Gets the maximum value of the adjustable object.
+Sets the unit value increment for the adjustable object.
+Gets the unit value increment for the adjustable object.
+Sets the block value increment for the adjustable object.
+Gets the block value increment for the adjustable object.
+Sets the length of the proportional indicator of the adjustable object.
+Gets the length of the proportional indicator.
+Sets the current value of the adjustable object. If the value supplied is less than minimum or greater than maximum - visibleAmount, then one of those values is substituted, as appropriate. Calling this method does not fire an AdjustmentEvent.
+Gets the current value of the adjustable object.
+Adds a listener to receive adjustment events when the value of the adjustable object changes.
+Removes an adjustment listener.
+Both the color and the alpha of the destination are cleared (Porter-Duff Clear rule). Neither the source nor the destination is used as input. Fs = 0 and Fd = 0, thus: Ar = 0 Cr = 0
+The source is copied to the destination (Porter-Duff Source rule). The destination is not used as input. Fs = 1 and Fd = 0, thus: Ar = As Cr = Cs
+The destination is left untouched (Porter-Duff Destination rule). Fs = 0 and Fd = 1, thus: Ar = Ad Cr = Cd
+The source is composited over the destination (Porter-Duff Source Over Destination rule). Fs = 1 and Fd = (1-As), thus: Ar = As + Ad*(1-As) Cr = Cs + Cd*(1-As)
+The destination is composited over the source and the result replaces the destination (Porter-Duff Destination Over Source rule). Fs = (1-Ad) and Fd = 1, thus: Ar = As*(1-Ad) + Ad Cr = Cs*(1-Ad) + Cd
+The part of the source lying inside of the destination replaces the destination (Porter-Duff Source In Destination rule). Fs = Ad and Fd = 0, thus: Ar = As*Ad Cr = Cs*Ad
+The part of the destination lying inside of the source replaces the destination (Porter-Duff Destination In Source rule). Fs = 0 and Fd = As, thus: Ar = Ad*As Cr = Cd*As
+The part of the source lying outside of the destination replaces the destination (Porter-Duff Source Held Out By Destination rule). Fs = (1-Ad) and Fd = 0, thus: Ar = As*(1-Ad) Cr = Cs*(1-Ad)
+The part of the destination lying outside of the source replaces the destination (Porter-Duff Destination Held Out By Source rule). Fs = 0 and Fd = (1-As), thus: Ar = Ad*(1-As) Cr = Cd*(1-As)
+The part of the source lying inside of the destination is composited onto the destination (Porter-Duff Source Atop Destination rule). Fs = Ad and Fd = (1-As), thus: Ar = As*Ad + Ad*(1-As) = Ad Cr = Cs*Ad + Cd*(1-As)
+The part of the destination lying inside of the source is composited over the source and replaces the destination (Porter-Duff Destination Atop Source rule). Fs = (1-Ad) and Fd = As, thus: Ar = As*(1-Ad) + Ad*As = As Cr = Cs*(1-Ad) + Cd*As
+The part of the source that lies outside of the destination is combined with the part of the destination that lies outside of the source (Porter-Duff Source Xor Destination rule). Fs = (1-Ad) and Fd = (1-As), thus: Ar = As*(1-Ad) + Ad*(1-As) Cr = Cs*(1-Ad) + Cd*(1-As)
+AlphaComposite object that implements the opaque CLEAR rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque SRC rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque DST rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque SRC_OVER rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque DST_OVER rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque SRC_IN rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque DST_IN rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque SRC_OUT rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque DST_OUT rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque SRC_ATOP rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque DST_ATOP rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque XOR rule with an alpha of 1.0f.
+Creates an AlphaComposite object with the specified rule.
+Creates an AlphaComposite object with the specified rule and the constant alpha to multiply with the alpha of the source. The source is multiplied with the specified alpha before being composited with the destination.
+Creates a context for the compositing operation. The context contains state that is used in performing the compositing operation.
+Returns the alpha value of this AlphaComposite. If this AlphaComposite does not have an alpha value, 1.0 is returned.
+Returns the compositing rule of this AlphaComposite.
+Returns a similar AlphaComposite object that uses the specified compositing rule. If this object already uses the specified compositing rule, this object is returned.
+Returns a similar AlphaComposite object that uses the specified alpha value. If this object already has the specified alpha value, this object is returned.
+Returns the hashcode for this composite.
+Determines whether the specified object is equal to this AlphaComposite. The result is true if and only if the argument is not null and is an AlphaComposite object that has the same compositing rule and alpha value as this object.
+Constructs an instance of AWTError with the specified detail message.
+The event's id.
+Controls whether or not the event is sent back down to the peer once the source has processed it - false means it's sent to the peer; true means it's not. Semantic events always have a 'true' value since they were generated by the peer in response to a low-level event.
+The event mask for selecting component events.
+The event mask for selecting container events.
+The event mask for selecting focus events.
+The event mask for selecting key events.
+The event mask for selecting mouse events.
+The event mask for selecting mouse motion events.
+The event mask for selecting window events.
+The event mask for selecting action events.
+The event mask for selecting adjustment events.
+The event mask for selecting item events.
+The event mask for selecting text events.
+The event mask for selecting input method events.
+The event mask for selecting paint events.
+The event mask for selecting invocation events.
+The event mask for selecting hierarchy events.
+The event mask for selecting hierarchy bounds events.
+The event mask for selecting mouse wheel events.
+The event mask for selecting window state events.
+The event mask for selecting window focus events.
+The maximum value for reserved AWT event IDs. Programs defining their own event IDs should use IDs greater than this value.
+Constructs an AWTEvent object from the parameters of a 1.0-style event.
+Constructs an AWTEvent object with the specified source object and type.
+Retargets an event to a new source. This method is typically used to retarget an event to a lightweight child Component of the original heavyweight source. This method is intended to be used only by event targeting subsystems, such as client-defined KeyboardFocusManagers. It is not for general client use.
+Returns the event type.
+Returns a String representation of this object.
+Returns a string representing the state of this Event. This method is intended to be used only for debugging purposes, and the content and format of the returned string may vary between implementations. The returned string may be empty but may not be null.
+Consumes this event, if this event can be consumed. Only low-level, system events can be consumed
+Returns whether this event has been consumed.
+Creates an event multicaster instance which chains listener-a with listener-b. Input parameters a and b should not be null, though implementations may vary in choosing whether or not to throw NullPointerException in that case.
+Removes a listener from this multicaster. The returned multicaster contains all the listeners in this multicaster with the exception of all occurrences of oldl. If the resulting multicaster contains only one regular listener the regular listener may be returned. If the resulting multicaster is empty, then null may be returned instead. No exception is thrown if oldl is null.
+Handles the componentResized event by invoking the componentResized methods on listener-a and listener-b.
+Handles the componentMoved event by invoking the componentMoved methods on listener-a and listener-b.
+Handles the componentShown event by invoking the componentShown methods on listener-a and listener-b.
+Handles the componentHidden event by invoking the componentHidden methods on listener-a and listener-b.
+Handles the componentAdded container event by invoking the componentAdded methods on listener-a and listener-b.
+Handles the componentRemoved container event by invoking the componentRemoved methods on listener-a and listener-b.
+Handles the focusGained event by invoking the focusGained methods on listener-a and listener-b.
+Handles the focusLost event by invoking the focusLost methods on listener-a and listener-b.
+Handles the keyTyped event by invoking the keyTyped methods on listener-a and listener-b.
+Handles the keyPressed event by invoking the keyPressed methods on listener-a and listener-b.
+Handles the keyReleased event by invoking the keyReleased methods on listener-a and listener-b.
+Handles the mouseClicked event by invoking the mouseClicked methods on listener-a and listener-b.
+Handles the mousePressed event by invoking the mousePressed methods on listener-a and listener-b.
+Handles the mouseReleased event by invoking the mouseReleased methods on listener-a and listener-b.
+Handles the mouseEntered event by invoking the mouseEntered methods on listener-a and listener-b.
+Handles the mouseExited event by invoking the mouseExited methods on listener-a and listener-b.
+Handles the mouseDragged event by invoking the mouseDragged methods on listener-a and listener-b.
+Handles the mouseMoved event by invoking the mouseMoved methods on listener-a and listener-b.
+Handles the windowOpened event by invoking the windowOpened methods on listener-a and listener-b.
+Handles the windowClosing event by invoking the windowClosing methods on listener-a and listener-b.
+Handles the windowClosed event by invoking the windowClosed methods on listener-a and listener-b.
+Handles the windowIconified event by invoking the windowIconified methods on listener-a and listener-b.
+Handles the windowDeiconfied event by invoking the windowDeiconified methods on listener-a and listener-b.
+Handles the windowActivated event by invoking the windowActivated methods on listener-a and listener-b.
+Handles the windowDeactivated event by invoking the windowDeactivated methods on listener-a and listener-b.
+Handles the windowStateChanged event by invoking the windowStateChanged methods on listener-a and listener-b.
+Handles the windowGainedFocus event by invoking the windowGainedFocus methods on listener-a and listener-b.
+Handles the windowLostFocus event by invoking the windowLostFocus methods on listener-a and listener-b.
+Handles the actionPerformed event by invoking the actionPerformed methods on listener-a and listener-b.
+Handles the itemStateChanged event by invoking the itemStateChanged methods on listener-a and listener-b.
+Handles the adjustmentValueChanged event by invoking the adjustmentValueChanged methods on listener-a and listener-b.
+Invoked when the value of the text has changed. The code written for this method performs the operations that need to occur when text changes.
+Handles the inputMethodTextChanged event by invoking the inputMethodTextChanged methods on listener-a and listener-b.
+Handles the caretPositionChanged event by invoking the caretPositionChanged methods on listener-a and listener-b.
+Handles the hierarchyChanged event by invoking the hierarchyChanged methods on listener-a and listener-b.
+Handles the ancestorMoved event by invoking the ancestorMoved methods on listener-a and listener-b.
+Handles the ancestorResized event by invoking the ancestorResized methods on listener-a and listener-b.
+Handles the mouseWheelMoved event by invoking the mouseWheelMoved methods on listener-a and listener-b.
+Adds component-listener-a with component-listener-b and returns the resulting multicast listener.
+Adds container-listener-a with container-listener-b and returns the resulting multicast listener.
+Adds focus-listener-a with focus-listener-b and returns the resulting multicast listener.
+Adds key-listener-a with key-listener-b and returns the resulting multicast listener.
+Adds mouse-listener-a with mouse-listener-b and returns the resulting multicast listener.
+Adds mouse-motion-listener-a with mouse-motion-listener-b and returns the resulting multicast listener.
+Adds window-listener-a with window-listener-b and returns the resulting multicast listener.
+Adds window-state-listener-a with window-state-listener-b and returns the resulting multicast listener.
+Adds window-focus-listener-a with window-focus-listener-b and returns the resulting multicast listener.
+Adds action-listener-a with action-listener-b and returns the resulting multicast listener.
+Adds item-listener-a with item-listener-b and returns the resulting multicast listener.
+Adds adjustment-listener-a with adjustment-listener-b and returns the resulting multicast listener.
+Adds input-method-listener-a with input-method-listener-b and returns the resulting multicast listener.
+Adds hierarchy-listener-a with hierarchy-listener-b and returns the resulting multicast listener.
+Adds hierarchy-bounds-listener-a with hierarchy-bounds-listener-b and returns the resulting multicast listener.
+Adds mouse-wheel-listener-a with mouse-wheel-listener-b and returns the resulting multicast listener.
+Removes the old component-listener from component-listener-l and returns the resulting multicast listener.
+Removes the old container-listener from container-listener-l and returns the resulting multicast listener.
+Removes the old focus-listener from focus-listener-l and returns the resulting multicast listener.
+Removes the old key-listener from key-listener-l and returns the resulting multicast listener.
+Removes the old mouse-listener from mouse-listener-l and returns the resulting multicast listener.
+Removes the old mouse-motion-listener from mouse-motion-listener-l and returns the resulting multicast listener.
+Removes the old window-listener from window-listener-l and returns the resulting multicast listener.
+Removes the old window-state-listener from window-state-listener-l and returns the resulting multicast listener.
+Removes the old window-focus-listener from window-focus-listener-l and returns the resulting multicast listener.
+Removes the old action-listener from action-listener-l and returns the resulting multicast listener.
+Removes the old item-listener from item-listener-l and returns the resulting multicast listener.
+Removes the old adjustment-listener from adjustment-listener-l and returns the resulting multicast listener.
+Removes the old input-method-listener from input-method-listener-l and returns the resulting multicast listener.
+Removes the old hierarchy-listener from hierarchy-listener-l and returns the resulting multicast listener.

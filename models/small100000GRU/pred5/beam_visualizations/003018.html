@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Beam Search</title>
+    <link rel="stylesheet" type="text/css" href="tree.css">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+  </head>
+  <body>
+    <script>
+      var treeData = {"name": "START", "id": [0, 0], "children": [{"name": "String\t11101", "score": "-3.76694e-05", "size": 100, "id": [1, 0], "children": [{"name": "resolved\t3", "score": "-1.86499", "size": 100, "id": [2, 0], "children": [{"name": "(\t39573", "score": "-1.86515", "size": 100, "id": [3, 0], "children": [{"name": ")\t39573", "score": "-1.86515", "size": 100, "id": [4, 0], "children": [{"name": "SEQUENCE_END", "score": "-1.86516", "size": 100, "id": [5, 0]}]}]}]}, {"name": "header\t16", "score": "-2.60505", "size": 100, "id": [2, 1], "children": [{"name": "(\t39573", "score": "-2.60512", "size": 100, "id": [3, 1], "children": [{"name": ")\t39573", "score": "-2.60512", "size": 100, "id": [4, 1], "children": [{"name": "SEQUENCE_END", "score": "-2.60514", "size": 100, "id": [5, 1]}]}]}]}, {"name": "Tokenizer\t5", "score": "-3.12711", "size": 100, "id": [2, 2], "children": [{"name": "(\t39573", "score": "-3.12721", "size": 100, "id": [3, 2], "children": [{"name": ")\t39573", "score": "-3.12721", "size": 100, "id": [4, 2], "children": [{"name": "SEQUENCE_END", "score": "-3.12724", "size": 100, "id": [5, 2]}]}]}]}, {"name": "alt\t10", "score": "-3.3672", "size": 100, "id": [2, 3], "children": [{"name": "(\t39573", "score": "-3.36721", "size": 100, "id": [3, 3], "children": [{"name": ")\t39573", "score": "-3.36721", "size": 100, "id": [4, 3], "children": [{"name": "SEQUENCE_END", "score": "-3.36724", "size": 100, "id": [5, 3]}]}]}]}, {"name": "variant\t4", "score": "-3.52188", "size": 100, "id": [2, 4], "children": [{"name": "(\t39573", "score": "-3.52195", "size": 100, "id": [3, 4], "children": [{"name": ")\t39573", "score": "-3.52195", "size": 100, "id": [4, 4], "children": [{"name": "SEQUENCE_END", "score": "-3.52198", "size": 100, "id": [5, 4]}]}]}]}]}, {"name": "Base\t61", "score": "-12.246", "size": 100, "id": [1, 1]}, {"name": "Resolve\t32", "score": "-12.3516", "size": 100, "id": [1, 2]}, {"name": "INPUT\t33", "score": "-12.3626", "size": 100, "id": [1, 3]}, {"name": "Clone\t19", "score": "-12.9305", "size": 100, "id": [1, 4]}]}
+    </script>
+    <script src="tree.js"></script>
+  </body>
+</html>

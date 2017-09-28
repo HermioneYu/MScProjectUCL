@@ -1,0 +1,40 @@
+public void component Resized  (  Component Event e ) 
+public void focus Gained  (  Focus Event e ) 
+void show Document  (  URL url ) 
+public static final  Alpha Composite  Src Atop
+public static final long  ITEM_ EVENT_ MASK
+public static  Mouse Motion Listener remove  (  Mouse Motion Listener l ,   Mouse Motion Listener oldl ) 
+public void set Source  (  Object new Source ) 
+public  Applet ( )  throws  Headless Exception
+public boolean equals  (  Object obj ) 
+protected final  Event Listener a
+public void adjustment Value Changed  (  Adjustment Event e ) 
+public void window Deiconified  (  Window Event e ) 
+public static final  Alpha Composite  Dst Out
+public  Image get Image  (  URL url ) 
+public static final  Audio Clip new Audio Clip  (  URL url ) 
+public void window Lost Focus  (  Window Event e ) 
+public  AWTEvent  (  Object source ,  int id ) 
+protected int id
+public static  Window Listener add  (  Window Listener a ,   Window Listener b ) 
+public void play  (  URL url ) 
+public static  Input Method Listener add  (  Input Method Listener a ,   Input Method Listener b ) 
+@ Native public static final int  SRC_ ATOP
+public void window Iconified  (  Window Event e ) 
+public static final long  KEY_ EVENT_ MASK
+public  Composite Context create Context  (  Color Model src Color Model ,   Color Model dst Color Model ,   Rendering Hints hints ) 
+public void component Removed  (  Container Event e ) 
+@ Native public static final int  SRC_ OUT
+protected final  Event Listener b
+public static  Container Listener add  (  Container Listener a ,   Container Listener b ) 
+public static final long  INPUT_ METHOD_ EVENT_ MASK
+public static final long  MOUSE_ WHEEL_ EVENT_ MASK
+public void ancestor Resized  (  Hierarchy Event e ) 
+public static final long  ADJUSTMENT_ EVENT_ MASK
+Applet get Applet  (  String name ) 
+public static final long  INVOCATION_ EVENT_ MASK
+public void show Status  (  String msg ) 
+public static  Window Listener remove  (  Window Listener l ,   Window Listener oldl ) 
+public static final  Alpha Composite  Dst Over
+public void window Activated  (  Window Event e ) 
+void show Status  (  String status ) 

@@ -1,0 +1,400 @@
+Get the role of this object.
+Get the state of this object.
+Constructs a new Applet. Note: Many methods in java.applet.Applet may be invoked by the applet only after the applet is fully constructed; applet should avoid calling methods in java.applet.Applet in the constructor.
+"Sets this applet's stub. This is done automatically by the system. If there is a security manager, its checkPermission method is called with the AWTPermission(""setAppletStub"") permission if a stub has already been set."
+Determines if this applet is active. An applet is marked active just before its start method is called. It becomes inactive just before its stop method is called.
+Gets the URL of the document in which this applet is embedded. For example, suppose an applet is contained within the document: http://www.oracle.com/technetwork/java/index.html The document base is: http://www.oracle.com/technetwork/java/index.html
+Gets the base URL. This is the URL of the directory which contains this applet.
+"Returns the value of the named parameter in the HTML tag. For example, if this applet is specified as <applet code=""Clock"" width=50 height=50> <param name=Color value=""blue""> </applet> then a call to getParameter(""Color"") returns the value ""blue"". The name argument is case insensitive."
+Determines this applet's context, which allows the applet to query and affect the environment in which it runs. This environment of an applet represents the document that contains the applet.
+Requests that this applet be resized.
+Requests that this applet be resized.
+Indicates if this container is a validate root. Applet objects are the validate roots, and, therefore, they override this method to return true.
+"Requests that the argument string be displayed in the ""status window"". Many browsers and applet viewers provide such a window, where the application can inform users of its current state."
+Returns an Image object that can then be painted on the screen. The url that is passed as an argument must specify an absolute URL. This method always returns immediately, whether or not the image exists. When this applet attempts to draw the image on the screen, the data will be loaded. The graphics primitives that draw the image will incrementally paint on the screen.
+Returns an Image object that can then be painted on the screen. The url argument must specify an absolute URL. The name argument is a specifier that is relative to the url argument. This method always returns immediately, whether or not the image exists. When this applet attempts to draw the image on the screen, the data will be loaded. The graphics primitives that draw the image will incrementally paint on the screen.
+Get an audio clip from the given URL.
+Returns the AudioClip object specified by the URL argument. This method always returns immediately, whether or not the audio clip exists. When this applet attempts to play the audio clip, the data will be loaded.
+Returns the AudioClip object specified by the URL and name arguments. This method always returns immediately, whether or not the audio clip exists. When this applet attempts to play the audio clip, the data will be loaded.
+Returns information about this applet. An applet should override this method to return a String containing information about the author, version, and copyright of the applet. The implementation of this method provided by the Applet class returns null.
+Gets the locale of the applet. It allows the applet to maintain its own locale separated from the locale of the browser or appletviewer.
+"Returns information about the parameters that are understood by this applet. An applet should override this method to return an array of Strings describing these parameters. Each element of the array should be a set of three Strings containing the name, the type, and a description. For example: String pinfo[][] = { {""fps"", ""1-10"", ""frames per second""}, {""repeat"", ""boolean"", ""repeat image loop""}, {""imgs"", ""url"", ""images directory""} }; The implementation of this method provided by the Applet class returns null."
+Plays the audio clip at the specified absolute URL. Nothing happens if the audio clip cannot be found.
+Plays the audio clip given the URL and a specifier that is relative to it. Nothing happens if the audio clip cannot be found.
+Called by the browser or applet viewer to inform this applet that it has been loaded into the system. It is always called before the first time that the start method is called. A subclass of Applet should override this method if it has initialization to perform. For example, an applet with threads would use the init method to create the threads and the destroy method to kill them. The implementation of this method provided by the Applet class does nothing.
+Called by the browser or applet viewer to inform this applet that it should start its execution. It is called after the init method and each time the applet is revisited in a Web page. A subclass of Applet should override this method if it has any operation that it wants to perform each time the Web page containing it is visited. For example, an applet with animation might want to use the start method to resume animation, and the stop method to suspend the animation. Note: some methods, such as getLocationOnScreen, can only provide meaningful results if the applet is showing. Because isShowing returns false when the applet's start is first called, methods requiring isShowing to return true should be called from a ComponentListener. The implementation of this method provided by the Applet class does nothing.
+Called by the browser or applet viewer to inform this applet that it should stop its execution. It is called when the Web page that contains this applet has been replaced by another page, and also just before the applet is to be destroyed. A subclass of Applet should override this method if it has any operation that it wants to perform each time the Web page containing it is no longer visible. For example, an applet with animation might want to use the start method to resume animation, and the stop method to suspend the animation. The implementation of this method provided by the Applet class does nothing.
+Called by the browser or applet viewer to inform this applet that it is being reclaimed and that it should destroy any resources that it has allocated. The stop method will always be called before destroy. A subclass of Applet should override this method if it has any operation that it wants to perform before it is destroyed. For example, an applet with threads would use the init method to create the threads and the destroy method to kill them. The implementation of this method provided by the Applet class does nothing.
+Gets the AccessibleContext associated with this Applet. For applets, the AccessibleContext takes the form of an AccessibleApplet. A new AccessibleApplet instance is created if necessary.
+Creates an audio clip.
+Returns an Image object that can then be painted on the screen. The url argument that is passed as an argument must specify an absolute URL. This method always returns immediately, whether or not the image exists. When the applet attempts to draw the image on the screen, the data will be loaded. The graphics primitives that draw the image will incrementally paint on the screen.
+Finds and returns the applet in the document represented by this applet context with the given name. The name can be set in the HTML tag by setting the name attribute.
+Finds all the applets in the document represented by this applet context.
+Requests that the browser or applet viewer show the Web page indicated by the url argument. The browser or applet viewer determines which window or frame to display the Web page. This method may be ignored by applet contexts that are not browsers.
+"Requests that the browser or applet viewer show the Web page indicated by the url argument. The target argument indicates in which HTML frame the document is to be displayed. The target argument is interpreted as follows: Target ArgumentDescription ""_self"" Show in the window and frame that contain the applet. ""_parent""Show in the applet's parent frame. If the applet's frame has no parent frame, acts the same as ""_self"". ""_top"" Show in the top-level frame of the applet's window. If the applet's frame is the top-level frame, acts the same as ""_self"". ""_blank"" Show in a new, unnamed top-level window. nameShow in the frame or window named name. If a target named name does not already exist, a new top-level window with the specified name is created, and the document is shown there. An applet viewer or browser is free to ignore showDocument."
+"Requests that the argument string be displayed in the ""status window"". Many browsers and applet viewers provide such a window, where the application can inform users of its current state."
+Associates the specified stream with the specified key in this applet context. If the applet context previously contained a mapping for this key, the old value is replaced. For security reasons, mapping of streams and keys exists for each codebase. In other words, applet from one codebase cannot access the streams created by an applet from a different codebase
+Returns the stream to which specified key is associated within this applet context. Returns null if the applet context contains no stream for this key. For security reasons, mapping of streams and keys exists for each codebase. In other words, applet from one codebase cannot access the streams created by an applet from a different codebase
+Finds all the keys of the streams in this applet context. For security reasons, mapping of streams and keys exists for each codebase. In other words, applet from one codebase cannot access the streams created by an applet from a different codebase
+Determines if the applet is active. An applet is active just before its start method is called. It becomes inactive just before its stop method is called.
+Gets the URL of the document in which the applet is embedded. For example, suppose an applet is contained within the document: http://www.oracle.com/technetwork/java/index.html The document base is: http://www.oracle.com/technetwork/java/index.html
+Gets the base URL. This is the URL of the directory which contains the applet.
+"Returns the value of the named parameter in the HTML tag. For example, if an applet is specified as <applet code=""Clock"" width=50 height=50> <param name=Color value=""blue""> </applet> then a call to getParameter(""Color"") returns the value ""blue""."
+Returns the applet's context.
+Called when the applet wants to be resized.
+Starts playing this audio clip. Each time this method is called, the clip is restarted from the beginning.
+Starts playing this audio clip in a loop.
+Stops playing this audio clip.
+Dispatch the event to its target, listeners of the events source, or do whatever it is this event is supposed to do.
+Indicates that the Adjustable has horizontal orientation.
+Indicates that the Adjustable has vertical orientation.
+Indicates that the Adjustable has no orientation.
+Gets the orientation of the adjustable object.
+Sets the minimum value of the adjustable object.
+Gets the minimum value of the adjustable object.
+Sets the maximum value of the adjustable object.
+Gets the maximum value of the adjustable object.
+Sets the unit value increment for the adjustable object.
+Gets the unit value increment for the adjustable object.
+Sets the block value increment for the adjustable object.
+Gets the block value increment for the adjustable object.
+Sets the length of the proportional indicator of the adjustable object.
+Gets the length of the proportional indicator.
+Sets the current value of the adjustable object. If the value supplied is less than minimum or greater than maximum - visibleAmount, then one of those values is substituted, as appropriate. Calling this method does not fire an AdjustmentEvent.
+Gets the current value of the adjustable object.
+Adds a listener to receive adjustment events when the value of the adjustable object changes.
+Removes an adjustment listener.
+Both the color and the alpha of the destination are cleared (Porter-Duff Clear rule). Neither the source nor the destination is used as input. Fs = 0 and Fd = 0, thus: Ar = 0 Cr = 0
+The source is copied to the destination (Porter-Duff Source rule). The destination is not used as input. Fs = 1 and Fd = 0, thus: Ar = As Cr = Cs
+The destination is left untouched (Porter-Duff Destination rule). Fs = 0 and Fd = 1, thus: Ar = Ad Cr = Cd
+The source is composited over the destination (Porter-Duff Source Over Destination rule). Fs = 1 and Fd = (1-As), thus: Ar = As + Ad*(1-As) Cr = Cs + Cd*(1-As)
+The destination is composited over the source and the result replaces the destination (Porter-Duff Destination Over Source rule). Fs = (1-Ad) and Fd = 1, thus: Ar = As*(1-Ad) + Ad Cr = Cs*(1-Ad) + Cd
+The part of the source lying inside of the destination replaces the destination (Porter-Duff Source In Destination rule). Fs = Ad and Fd = 0, thus: Ar = As*Ad Cr = Cs*Ad
+The part of the destination lying inside of the source replaces the destination (Porter-Duff Destination In Source rule). Fs = 0 and Fd = As, thus: Ar = Ad*As Cr = Cd*As
+The part of the source lying outside of the destination replaces the destination (Porter-Duff Source Held Out By Destination rule). Fs = (1-Ad) and Fd = 0, thus: Ar = As*(1-Ad) Cr = Cs*(1-Ad)
+The part of the destination lying outside of the source replaces the destination (Porter-Duff Destination Held Out By Source rule). Fs = 0 and Fd = (1-As), thus: Ar = Ad*(1-As) Cr = Cd*(1-As)
+The part of the source lying inside of the destination is composited onto the destination (Porter-Duff Source Atop Destination rule). Fs = Ad and Fd = (1-As), thus: Ar = As*Ad + Ad*(1-As) = Ad Cr = Cs*Ad + Cd*(1-As)
+The part of the destination lying inside of the source is composited over the source and replaces the destination (Porter-Duff Destination Atop Source rule). Fs = (1-Ad) and Fd = As, thus: Ar = As*(1-Ad) + Ad*As = As Cr = Cs*(1-Ad) + Cd*As
+The part of the source that lies outside of the destination is combined with the part of the destination that lies outside of the source (Porter-Duff Source Xor Destination rule). Fs = (1-Ad) and Fd = (1-As), thus: Ar = As*(1-Ad) + Ad*(1-As) Cr = Cs*(1-Ad) + Cd*(1-As)
+AlphaComposite object that implements the opaque CLEAR rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque SRC rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque DST rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque SRC_OVER rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque DST_OVER rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque SRC_IN rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque DST_IN rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque SRC_OUT rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque DST_OUT rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque SRC_ATOP rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque DST_ATOP rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque XOR rule with an alpha of 1.0f.
+Creates an AlphaComposite object with the specified rule.
+Creates an AlphaComposite object with the specified rule and the constant alpha to multiply with the alpha of the source. The source is multiplied with the specified alpha before being composited with the destination.
+Creates a context for the compositing operation. The context contains state that is used in performing the compositing operation.
+Returns the alpha value of this AlphaComposite. If this AlphaComposite does not have an alpha value, 1.0 is returned.
+Returns the compositing rule of this AlphaComposite.
+Returns a similar AlphaComposite object that uses the specified compositing rule. If this object already uses the specified compositing rule, this object is returned.
+Returns a similar AlphaComposite object that uses the specified alpha value. If this object already has the specified alpha value, this object is returned.
+Returns the hashcode for this composite.
+Determines whether the specified object is equal to this AlphaComposite. The result is true if and only if the argument is not null and is an AlphaComposite object that has the same compositing rule and alpha value as this object.
+Constructs an instance of AWTError with the specified detail message.
+The event's id.
+Controls whether or not the event is sent back down to the peer once the source has processed it - false means it's sent to the peer; true means it's not. Semantic events always have a 'true' value since they were generated by the peer in response to a low-level event.
+The event mask for selecting component events.
+The event mask for selecting container events.
+The event mask for selecting focus events.
+The event mask for selecting key events.
+The event mask for selecting mouse events.
+The event mask for selecting mouse motion events.
+The event mask for selecting window events.
+The event mask for selecting action events.
+The event mask for selecting adjustment events.
+The event mask for selecting item events.
+The event mask for selecting text events.
+The event mask for selecting input method events.
+The event mask for selecting paint events.
+The event mask for selecting invocation events.
+The event mask for selecting hierarchy events.
+The event mask for selecting hierarchy bounds events.
+The event mask for selecting mouse wheel events.
+The event mask for selecting window state events.
+The event mask for selecting window focus events.
+The maximum value for reserved AWT event IDs. Programs defining their own event IDs should use IDs greater than this value.
+Constructs an AWTEvent object from the parameters of a 1.0-style event.
+Constructs an AWTEvent object with the specified source object and type.
+Retargets an event to a new source. This method is typically used to retarget an event to a lightweight child Component of the original heavyweight source. This method is intended to be used only by event targeting subsystems, such as client-defined KeyboardFocusManagers. It is not for general client use.
+Returns the event type.
+Returns a String representation of this object.
+Returns a string representing the state of this Event. This method is intended to be used only for debugging purposes, and the content and format of the returned string may vary between implementations. The returned string may be empty but may not be null.
+Consumes this event, if this event can be consumed. Only low-level, system events can be consumed
+Returns whether this event has been consumed.
+Creates an event multicaster instance which chains listener-a with listener-b. Input parameters a and b should not be null, though implementations may vary in choosing whether or not to throw NullPointerException in that case.
+Removes a listener from this multicaster. The returned multicaster contains all the listeners in this multicaster with the exception of all occurrences of oldl. If the resulting multicaster contains only one regular listener the regular listener may be returned. If the resulting multicaster is empty, then null may be returned instead. No exception is thrown if oldl is null.
+Handles the componentResized event by invoking the componentResized methods on listener-a and listener-b.
+Handles the componentMoved event by invoking the componentMoved methods on listener-a and listener-b.
+Handles the componentShown event by invoking the componentShown methods on listener-a and listener-b.
+Handles the componentHidden event by invoking the componentHidden methods on listener-a and listener-b.
+Handles the componentAdded container event by invoking the componentAdded methods on listener-a and listener-b.
+Handles the componentRemoved container event by invoking the componentRemoved methods on listener-a and listener-b.
+Handles the focusGained event by invoking the focusGained methods on listener-a and listener-b.
+Handles the focusLost event by invoking the focusLost methods on listener-a and listener-b.
+Handles the keyTyped event by invoking the keyTyped methods on listener-a and listener-b.
+Handles the keyPressed event by invoking the keyPressed methods on listener-a and listener-b.
+Handles the keyReleased event by invoking the keyReleased methods on listener-a and listener-b.
+Handles the mouseClicked event by invoking the mouseClicked methods on listener-a and listener-b.
+Handles the mousePressed event by invoking the mousePressed methods on listener-a and listener-b.
+Handles the mouseReleased event by invoking the mouseReleased methods on listener-a and listener-b.
+Handles the mouseEntered event by invoking the mouseEntered methods on listener-a and listener-b.
+Handles the mouseExited event by invoking the mouseExited methods on listener-a and listener-b.
+Handles the mouseDragged event by invoking the mouseDragged methods on listener-a and listener-b.
+Handles the mouseMoved event by invoking the mouseMoved methods on listener-a and listener-b.
+Handles the windowOpened event by invoking the windowOpened methods on listener-a and listener-b.
+Handles the windowClosing event by invoking the windowClosing methods on listener-a and listener-b.
+Handles the windowClosed event by invoking the windowClosed methods on listener-a and listener-b.
+Handles the windowIconified event by invoking the windowIconified methods on listener-a and listener-b.
+Handles the windowDeiconfied event by invoking the windowDeiconified methods on listener-a and listener-b.
+Handles the windowActivated event by invoking the windowActivated methods on listener-a and listener-b.
+Handles the windowDeactivated event by invoking the windowDeactivated methods on listener-a and listener-b.
+Handles the windowStateChanged event by invoking the windowStateChanged methods on listener-a and listener-b.
+Handles the windowGainedFocus event by invoking the windowGainedFocus methods on listener-a and listener-b.
+Handles the windowLostFocus event by invoking the windowLostFocus methods on listener-a and listener-b.
+Handles the actionPerformed event by invoking the actionPerformed methods on listener-a and listener-b.
+Handles the itemStateChanged event by invoking the itemStateChanged methods on listener-a and listener-b.
+Handles the adjustmentValueChanged event by invoking the adjustmentValueChanged methods on listener-a and listener-b.
+Invoked when the value of the text has changed. The code written for this method performs the operations that need to occur when text changes.
+Handles the inputMethodTextChanged event by invoking the inputMethodTextChanged methods on listener-a and listener-b.
+Handles the caretPositionChanged event by invoking the caretPositionChanged methods on listener-a and listener-b.
+Handles the hierarchyChanged event by invoking the hierarchyChanged methods on listener-a and listener-b.
+Handles the ancestorMoved event by invoking the ancestorMoved methods on listener-a and listener-b.
+Handles the ancestorResized event by invoking the ancestorResized methods on listener-a and listener-b.
+Handles the mouseWheelMoved event by invoking the mouseWheelMoved methods on listener-a and listener-b.
+Adds component-listener-a with component-listener-b and returns the resulting multicast listener.
+Adds container-listener-a with container-listener-b and returns the resulting multicast listener.
+Adds focus-listener-a with focus-listener-b and returns the resulting multicast listener.
+Adds key-listener-a with key-listener-b and returns the resulting multicast listener.
+Adds mouse-listener-a with mouse-listener-b and returns the resulting multicast listener.
+Adds mouse-motion-listener-a with mouse-motion-listener-b and returns the resulting multicast listener.
+Adds window-listener-a with window-listener-b and returns the resulting multicast listener.
+Adds window-state-listener-a with window-state-listener-b and returns the resulting multicast listener.
+Adds window-focus-listener-a with window-focus-listener-b and returns the resulting multicast listener.
+Adds action-listener-a with action-listener-b and returns the resulting multicast listener.
+Adds item-listener-a with item-listener-b and returns the resulting multicast listener.
+Adds adjustment-listener-a with adjustment-listener-b and returns the resulting multicast listener.
+Adds input-method-listener-a with input-method-listener-b and returns the resulting multicast listener.
+Adds hierarchy-listener-a with hierarchy-listener-b and returns the resulting multicast listener.
+Adds hierarchy-bounds-listener-a with hierarchy-bounds-listener-b and returns the resulting multicast listener.
+Adds mouse-wheel-listener-a with mouse-wheel-listener-b and returns the resulting multicast listener.
+Removes the old component-listener from component-listener-l and returns the resulting multicast listener.
+Removes the old container-listener from container-listener-l and returns the resulting multicast listener.
+Removes the old focus-listener from focus-listener-l and returns the resulting multicast listener.
+Removes the old key-listener from key-listener-l and returns the resulting multicast listener.
+Removes the old mouse-listener from mouse-listener-l and returns the resulting multicast listener.
+Removes the old mouse-motion-listener from mouse-motion-listener-l and returns the resulting multicast listener.
+Removes the old window-listener from window-listener-l and returns the resulting multicast listener.
+Removes the old window-state-listener from window-state-listener-l and returns the resulting multicast listener.
+Removes the old window-focus-listener from window-focus-listener-l and returns the resulting multicast listener.
+Removes the old action-listener from action-listener-l and returns the resulting multicast listener.
+Removes the old item-listener from item-listener-l and returns the resulting multicast listener.
+Removes the old adjustment-listener from adjustment-listener-l and returns the resulting multicast listener.
+Removes the old input-method-listener from input-method-listener-l and returns the resulting multicast listener.
+Removes the old hierarchy-listener from hierarchy-listener-l and returns the resulting multicast listener.
+Removes the old hierarchy-bounds-listener from hierarchy-bounds-listener-l and returns the resulting multicast listener.
+Removes the old mouse-wheel-listener from mouse-wheel-listener-l and returns the resulting multicast listener.
+Returns the resulting multicast listener from adding listener-a and listener-b together. If listener-a is null, it returns listener-b; If listener-b is null, it returns listener-a If neither are null, then it creates and returns a new AWTEventMulticaster instance which chains a with b.
+Returns the resulting multicast listener after removing the old listener from listener-l. If listener-l equals the old listener OR listener-l is null, returns null. Else if listener-l is an instance of AWTEventMulticaster, then it removes the old listener from it. Else, returns listener l.
+Returns an array of all the objects chained as FooListeners by the specified java.util.EventListener. FooListeners are chained by the AWTEventMulticaster using the addFooListener method. If a null listener is specified, this method returns an empty array. If the specified listener is not an instance of AWTEventMulticaster, this method returns an array which contains only the specified listener. If no such listeners are chained, this method returns an empty array.
+Constructs an instance of AWTException with the specified detail message. A detail message is an instance of String that describes this particular exception.
+Constructs an AWTKeyStroke with default values. The default values used are: PropertyDefault Value Key Char KeyEvent.CHAR_UNDEFINED Key Code KeyEvent.VK_UNDEFINED Modifiers none On key release? false AWTKeyStrokes should not be constructed by client code. Use a variant of getAWTKeyStroke instead.
+Constructs an AWTKeyStroke with the specified values. AWTKeyStrokes should not be constructed by client code. Use a variant of getAWTKeyStroke instead.
+Registers a new class which the factory methods in AWTKeyStroke will use when generating new instances of AWTKeyStrokes. After invoking this method, the factory methods will return instances of the specified Class. The specified Class must be either AWTKeyStroke or derived from AWTKeyStroke, and it must have a no-arg constructor. The constructor can be of any accessibility, including private. This operation flushes the current AWTKeyStroke cache.
+Returns a shared instance of an AWTKeyStroke that represents a KEY_TYPED event for the specified character.
+Returns a shared instance of an AWTKeyStroke that represents a KEY_TYPED event for the specified Character object and a set of modifiers. Note that the first parameter is of type Character rather than char. This is to avoid inadvertent clashes with calls to getAWTKeyStroke(int keyCode, int modifiers). The modifiers consist of any combination of following: java.awt.event.InputEvent.SHIFT_DOWN_MASK java.awt.event.InputEvent.CTRL_DOWN_MASK java.awt.event.InputEvent.META_DOWN_MASK java.awt.event.InputEvent.ALT_DOWN_MASK java.awt.event.InputEvent.ALT_GRAPH_DOWN_MASK The old modifiers listed below also can be used, but they are mapped to _DOWN_ modifiers. java.awt.event.InputEvent.SHIFT_MASK java.awt.event.InputEvent.CTRL_MASK java.awt.event.InputEvent.META_MASK java.awt.event.InputEvent.ALT_MASK java.awt.event.InputEvent.ALT_GRAPH_MASK also can be used, but they are mapped to _DOWN_ modifiers. Since these numbers are all different powers of two, any combination of them is an integer in which each bit represents a different modifier key. Use 0 to specify no modifiers.
+"Returns a shared instance of an AWTKeyStroke, given a numeric key code and a set of modifiers, specifying whether the key is activated when it is pressed or released. The ""virtual key"" constants defined in java.awt.event.KeyEvent can be used to specify the key code. For example: java.awt.event.KeyEvent.VK_ENTER java.awt.event.KeyEvent.VK_TAB java.awt.event.KeyEvent.VK_SPACE Alternatively, the key code may be obtained by calling java.awt.event.KeyEvent.getExtendedKeyCodeForChar. The modifiers consist of any combination of: java.awt.event.InputEvent.SHIFT_DOWN_MASK java.awt.event.InputEvent.CTRL_DOWN_MASK java.awt.event.InputEvent.META_DOWN_MASK java.awt.event.InputEvent.ALT_DOWN_MASK java.awt.event.InputEvent.ALT_GRAPH_DOWN_MASK The old modifiers java.awt.event.InputEvent.SHIFT_MASK java.awt.event.InputEvent.CTRL_MASK java.awt.event.InputEvent.META_MASK java.awt.event.InputEvent.ALT_MASK java.awt.event.InputEvent.ALT_GRAPH_MASK also can be used, but they are mapped to _DOWN_ modifiers. Since these numbers are all different powers of two, any combination of them is an integer in which each bit represents a different modifier key. Use 0 to specify no modifiers."
+"Returns a shared instance of an AWTKeyStroke, given a numeric key code and a set of modifiers. The returned AWTKeyStroke will correspond to a key press. The ""virtual key"" constants defined in java.awt.event.KeyEvent can be used to specify the key code. For example: java.awt.event.KeyEvent.VK_ENTER java.awt.event.KeyEvent.VK_TAB java.awt.event.KeyEvent.VK_SPACE The modifiers consist of any combination of: java.awt.event.InputEvent.SHIFT_DOWN_MASK java.awt.event.InputEvent.CTRL_DOWN_MASK java.awt.event.InputEvent.META_DOWN_MASK java.awt.event.InputEvent.ALT_DOWN_MASK java.awt.event.InputEvent.ALT_GRAPH_DOWN_MASK The old modifiers java.awt.event.InputEvent.SHIFT_MASK java.awt.event.InputEvent.CTRL_MASK java.awt.event.InputEvent.META_MASK java.awt.event.InputEvent.ALT_MASK java.awt.event.InputEvent.ALT_GRAPH_MASK also can be used, but they are mapped to _DOWN_ modifiers. Since these numbers are all different powers of two, any combination of them is an integer in which each bit represents a different modifier key. Use 0 to specify no modifiers."
+Returns an AWTKeyStroke which represents the stroke which generated a given KeyEvent. This method obtains the keyChar from a KeyTyped event, and the keyCode from a KeyPressed or KeyReleased event. The KeyEvent modifiers are obtained for all three types of KeyEvent.
+"Parses a string and returns an AWTKeyStroke. The string must have the following syntax: <modifiers>* (<typedID> | <pressedReleasedID>) modifiers := shift | control | ctrl | meta | alt | altGraph typedID := typed <typedKey> typedKey := string of length 1 giving Unicode character. pressedReleasedID := (pressed | released) key key := KeyEvent key code name, i.e. the name following ""VK_"". If typed, pressed or released is not specified, pressed is assumed. Here are some examples: ""INSERT"" => getAWTKeyStroke(KeyEvent.VK_INSERT, 0); ""control DELETE"" => getAWTKeyStroke(KeyEvent.VK_DELETE, InputEvent.CTRL_MASK); ""alt shift X"" => getAWTKeyStroke(KeyEvent.VK_X, InputEvent.ALT_MASK | InputEvent.SHIFT_MASK); ""alt shift released X"" => getAWTKeyStroke(KeyEvent.VK_X, InputEvent.ALT_MASK | InputEvent.SHIFT_MASK, true); ""typed a"" => getAWTKeyStroke('a');"
+Returns the character for this AWTKeyStroke.
+Returns the numeric key code for this AWTKeyStroke.
+Returns the modifier keys for this AWTKeyStroke.
+Returns whether this AWTKeyStroke represents a key release.
+Returns the type of KeyEvent which corresponds to this AWTKeyStroke.
+Returns a numeric value for this object that is likely to be unique, making it a good choice as the index value in a hash table.
+Returns true if this object is identical to the specified object.
+Returns a string that displays and identifies this object's properties. The String returned by this method can be passed as a parameter to getAWTKeyStroke(String) to produce a key stroke equal to this key stroke.
+Returns a cached instance of AWTKeyStroke (or a subclass of AWTKeyStroke) which is equal to this instance.
+"Creates a new AWTPermission with the specified name. The name is the symbolic name of the AWTPermission, such as ""topLevelWindow"", ""systemClipboard"", etc. An asterisk may be used to indicate all AWT permissions."
+Creates a new AWTPermission object with the specified name. The name is the symbolic name of the AWTPermission, and the actions string is currently unused and should be null.
+Joins path segments by extending their outside edges until they meet.
+Joins path segments by rounding off the corner at a radius of half the line width.
+Joins path segments by connecting the outer corners of their wide outlines with a straight segment.
+Ends unclosed subpaths and dash segments with no added decoration.
+Ends unclosed subpaths and dash segments with a round decoration that has a radius equal to half of the width of the pen.
+Ends unclosed subpaths and dash segments with a square projection that extends beyond the end of the segment to a distance equal to half of the line width.
+Constructs a new BasicStroke with the specified attributes.
+Constructs a solid BasicStroke with the specified attributes.
+Constructs a solid BasicStroke with the specified attributes. The miterlimit parameter is unnecessary in cases where the default is allowable or the line joins are not specified as JOIN_MITER.
+Constructs a solid BasicStroke with the specified line width and with default values for the cap and join styles.
+Constructs a new BasicStroke with defaults for all attributes. The default attributes are a solid line of width 1.0, CAP_SQUARE, JOIN_MITER, a miter limit of 10.0.
+Returns a Shape whose interior defines the stroked outline of a specified Shape.
+Returns the line width. Line width is represented in user space, which is the default-coordinate space used by Java 2D. See the Graphics2D class comments for more information on the user space coordinate system.
+Returns the end cap style.
+Returns the line join style.
+Returns the limit of miter joins.
+Returns the array representing the lengths of the dash segments. Alternate entries in the array represent the user space lengths of the opaque and transparent segments of the dashes. As the pen moves along the outline of the Shape to be stroked, the user space distance that the pen travels is accumulated. The distance value is used to index into the dash array. The pen is opaque when its current cumulative distance maps to an even element of the dash array and transparent otherwise.
+Returns the current dash phase. The dash phase is a distance specified in user coordinates that represents an offset into the dashing pattern. In other words, the dash phase defines the point in the dashing pattern that will correspond to the beginning of the stroke.
+Returns the hashcode for this stroke.
+Tests if a specified object is equal to this BasicStroke by first testing if it is a BasicStroke and then comparing its width, join, cap, miter limit, dash, and dash phase attributes with those of this BasicStroke.
+The north layout constraint (top of container).
+The south layout constraint (bottom of container).
+The east layout constraint (right side of container).
+The west layout constraint (left side of container).
+The center layout constraint (middle of container).
+Synonym for PAGE_START. Exists for compatibility with previous versions. PAGE_START is preferred.
+Synonym for PAGE_END. Exists for compatibility with previous versions. PAGE_END is preferred.
+Synonym for LINE_START. Exists for compatibility with previous versions. LINE_START is preferred.
+Synonym for LINE_END. Exists for compatibility with previous versions. LINE_END is preferred.
+The component comes before the first line of the layout's content. For Western, left-to-right and top-to-bottom orientations, this is equivalent to NORTH.
+The component comes after the last line of the layout's content. For Western, left-to-right and top-to-bottom orientations, this is equivalent to SOUTH.
+The component goes at the beginning of the line direction for the layout. For Western, left-to-right and top-to-bottom orientations, this is equivalent to WEST.
+The component goes at the end of the line direction for the layout. For Western, left-to-right and top-to-bottom orientations, this is equivalent to EAST.
+Constructs a new border layout with no gaps between components.
+Constructs a border layout with the specified gaps between components. The horizontal gap is specified by hgap and the vertical gap is specified by vgap.
+Returns the horizontal gap between components.
+Sets the horizontal gap between components.
+Returns the vertical gap between components.
+Sets the vertical gap between components.
+Adds the specified component to the layout, using the specified constraint object. For border layouts, the constraint must be one of the following constants: NORTH, SOUTH, EAST, WEST, or CENTER. Most applications do not call this method directly. This method is called when a component is added to a container using the Container.add method with the same argument types.
+If the layout manager uses a per-component string, adds the component comp to the layout, associating it with the string specified by name.
+Removes the specified component from this border layout. This method is called when a container calls its remove or removeAll methods. Most applications do not call this method directly.
+Gets the component that was added using the given constraint
+Returns the component that corresponds to the given constraint location based on the target Container's component orientation. Components added with the relative constraints PAGE_START, PAGE_END, LINE_START, and LINE_END take precedence over components added with the explicit constraints NORTH, SOUTH, WEST, and EAST. The Container's component orientation is used to determine the location of components added with LINE_START and LINE_END.
+Gets the constraints for the specified component
+Determines the minimum size of the target container using this layout manager. This method is called when a container calls its getMinimumSize method. Most applications do not call this method directly.
+Determines the preferred size of the target container using this layout manager, based on the components in the container. Most applications do not call this method directly. This method is called when a container calls its getPreferredSize method.
+Returns the maximum dimensions for this layout given the components in the specified target container.
+Returns the alignment along the x axis. This specifies how the component would like to be aligned relative to other components. The value should be a number between 0 and 1 where 0 represents alignment along the origin, 1 is aligned the furthest away from the origin, 0.5 is centered, etc.
+Returns the alignment along the y axis. This specifies how the component would like to be aligned relative to other components. The value should be a number between 0 and 1 where 0 represents alignment along the origin, 1 is aligned the furthest away from the origin, 0.5 is centered, etc.
+Invalidates the layout, indicating that if the layout manager has cached information it should be discarded.
+Lays out the container argument using this border layout. This method actually reshapes the components in the specified container in order to satisfy the constraints of this BorderLayout object. The NORTH and SOUTH components, if any, are placed at the top and bottom of the container, respectively. The WEST and EAST components are then placed on the left and right, respectively. Finally, the CENTER object is placed in any remaining space in the middle. Most applications do not call this method directly. This method is called when a container calls its doLayout method.
+Returns a string representation of the state of this border layout.
+When flip contents are UNDEFINED, the contents of the back buffer are undefined after flipping.
+When flip contents are BACKGROUND, the contents of the back buffer are cleared with the background color after flipping.
+When flip contents are PRIOR, the contents of the back buffer are the prior contents of the front buffer (a true page flip).
+When flip contents are COPIED, the contents of the back buffer are copied to the front buffer when flipping.
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by HashMap. The general contract of hashCode is: Whenever it is invoked on the same object more than once during an execution of a Java application, the hashCode method must consistently return the same integer, provided no information used in equals comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application. If two objects are equal according to the equals(Object) method, then calling the hashCode method on each of the two objects must produce the same integer result. It is not required that if two objects are unequal according to the Object.equals(java.lang.Object) method, then calling the hashCode method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables. As much as is reasonably practical, the hashCode method defined by class Object does return distinct integers for distinct objects. (This is typically implemented by converting the internal address of the object into an integer, but this implementation technique is not required by the Java™ programming language.)
+"Returns a string representation of the object. In general, the toString method returns a string that ""textually represents"" this object. The result should be a concise but informative representation that is easy for a person to read. It is recommended that all subclasses override this method. The toString method for class Object returns a string consisting of the name of the class of which the object is an instance, the at-sign character `@', and the unsigned hexadecimal representation of the hash code of the object. In other words, this method returns a string equal to the value of: getClass().getName() + '@' + Integer.toHexString(hashCode())"
+Creates a new object for specifying buffering capabilities
+"Creates and returns a copy of this object. The precise meaning of ""copy"" may depend on the class of the object. The general intent is that, for any object x, the expression: x.clone() != x will be true, and that the expression: x.clone().getClass() == x.getClass() will be true, but these are not absolute requirements. While it is typically the case that: x.clone().equals(x) will be true, this is not an absolute requirement. By convention, the returned object should be obtained by calling super.clone. If a class and all of its superclasses (except Object) obey this convention, it will be the case that x.clone().getClass() == x.getClass(). By convention, the object returned by this method should be independent of this object (which is being cloned). To achieve this independence, it may be necessary to modify one or more fields of the object returned by super.clone before returning it. Typically, this means copying any mutable objects that comprise the internal ""deep structure"" of the object being cloned and replacing the references to these objects with references to the copies. If a class contains only primitive fields or references to immutable objects, then it is usually the case that no fields in the object returned by super.clone need to be modified. The method clone for class Object performs a specific cloning operation. First, if the class of this object does not implement the interface Cloneable, then a CloneNotSupportedException is thrown. Note that all arrays are considered to implement the interface Cloneable and that the return type of the clone method of an array type T[] is T[] where T is any reference or primitive type. Otherwise, this method creates a new instance of the class of this object and initializes all its fields with exactly the contents of the corresponding fields of this object, as if by assignment; the contents of the fields are not themselves cloned. Thus, this method performs a ""shallow copy"" of this object, not a ""deep copy"" operation. The class Object does not itself implement the interface Cloneable, so calling the clone method on an object whose class is Object will result in throwing an exception at run time."
+Get the accessible name of this object.
+Get the AccessibleAction associated with this object. In the implementation of the Java Accessibility API for this class, return this object, which is responsible for implementing the AccessibleAction interface on behalf of itself.
+Get the AccessibleValue associated with this object. In the implementation of the Java Accessibility API for this class, return this object, which is responsible for implementing the AccessibleValue interface on behalf of itself.
+Returns the number of Actions available in this object. The default behavior of a button is to have one action - toggle the button.
+Return a description of the specified action of the object.
+Perform the specified Action on the object
+Get the value of this object as a Number.
+Set the value of this object as a Number.
+Get the minimum value of this object as a Number.
+Get the maximum value of this object as a Number.
+Get the role of this object.
+Constructs a button with an empty string for its label.
+Constructs a button with the specified label.
+Creates the peer of the button. The button's peer allows the application to change the look of the button without changing its functionality.
+Gets the label of this button.
+Sets the button's label to be the specified string.
+Sets the command name for the action event fired by this button. By default this action command is set to match the label of the button.
+Returns the command name of the action event fired by this button. If the command name is null (default) then this method returns the label of the button.
+Adds the specified action listener to receive action events from this button. Action events occur when a user presses or releases the mouse over this button. If l is null, no exception is thrown and no action is performed. Refer to AWT Threading Issues for details on AWT's threading model.
+Removes the specified action listener so that it no longer receives action events from this button. Action events occur when a user presses or releases the mouse over this button. If l is null, no exception is thrown and no action is performed. Refer to AWT Threading Issues for details on AWT's threading model.
+Returns an array of all the action listeners registered on this button.
+Returns an array of all the objects currently registered as FooListeners upon this Button. FooListeners are registered using the addFooListener method. You can specify the listenerType argument with a class literal, such as FooListener.class. For example, you can query a Button b for its action listeners with the following code: ActionListener[] als = (ActionListener[])(b.getListeners(ActionListener.class)); If no such listeners exist, this method returns an empty array.
+Processes events on this button. If an event is an instance of ActionEvent, this method invokes the processActionEvent method. Otherwise, it invokes processEvent on the superclass. Note that if the event parameter is null the behavior is unspecified and may result in an exception.
+Processes action events occurring on this button by dispatching them to any registered ActionListener objects. This method is not called unless action events are enabled for this button. Action events are enabled when one of the following occurs: An ActionListener object is registered via addActionListener. Action events are enabled via enableEvents. Note that if the event parameter is null the behavior is unspecified and may result in an exception.
+Returns a string representing the state of this Button. This method is intended to be used only for debugging purposes, and the content and format of the returned string may vary between implementations. The returned string may be empty but may not be null.
+Gets the AccessibleContext associated with this Button. For buttons, the AccessibleContext takes the form of an AccessibleAWTButton. A new AccessibleAWTButton instance is created if necessary.
+Get the role of this object.
+Constructs a new Canvas.
+Constructs a new Canvas given a GraphicsConfiguration object.
+Creates the peer of the canvas. This peer allows you to change the user interface of the canvas without changing its functionality.
+Paints this canvas. Most applications that subclass Canvas should override this method in order to perform some useful operation (typically, custom painting of the canvas). The default operation is simply to clear the canvas. Applications that override this method need not call super.paint(g).
+Updates this canvas. This method is called in response to a call to repaint. The canvas is first cleared by filling it with the background color, and then completely redrawn by calling this canvas's paint method. Note: applications that override this method should either call super.update(g) or incorporate the functionality described above into their own code.
+Creates a new strategy for multi-buffering on this component. Multi-buffering is useful for rendering performance. This method attempts to create the best strategy available with the number of buffers supplied. It will always create a BufferStrategy with that number of buffers. A page-flipping strategy is attempted first, then a blitting strategy using accelerated buffers. Finally, an unaccelerated blitting strategy is used. Each time this method is called, the existing buffer strategy for this component is discarded.
+Creates a new strategy for multi-buffering on this component with the required buffer capabilities. This is useful, for example, if only accelerated memory or page flipping is desired (as specified by the buffer capabilities). Each time this method is called, the existing buffer strategy for this component is discarded.
+Returns the BufferStrategy used by this component. This method will return null if a BufferStrategy has not yet been created or has been disposed.
+Gets the AccessibleContext associated with this Canvas. For canvases, the AccessibleContext takes the form of an AccessibleAWTCanvas. A new AccessibleAWTCanvas instance is created if necessary.
+Creates a new card layout with gaps of size zero.
+Creates a new card layout with the specified horizontal and vertical gaps. The horizontal gaps are placed at the left and right edges. The vertical gaps are placed at the top and bottom edges.
+Gets the horizontal gap between components.
+Sets the horizontal gap between components.
+Gets the vertical gap between components.
+Sets the vertical gap between components.
+Adds the specified component to this card layout's internal table of names. The object specified by constraints must be a string. The card layout stores this string as a key-value pair that can be used for random access to a particular card. By calling the show method, an application can display the component with the specified name.
+If the layout manager uses a per-component string, adds the component comp to the layout, associating it with the string specified by name.
+Removes the specified component from the layout. If the card was visible on top, the next card underneath it is shown.
+Determines the preferred size of the container argument using this card layout.
+Calculates the minimum size for the specified panel.
+Returns the maximum dimensions for this layout given the components in the specified target container.
+Returns the alignment along the x axis. This specifies how the component would like to be aligned relative to other components. The value should be a number between 0 and 1 where 0 represents alignment along the origin, 1 is aligned the furthest away from the origin, 0.5 is centered, etc.
+Returns the alignment along the y axis. This specifies how the component would like to be aligned relative to other components. The value should be a number between 0 and 1 where 0 represents alignment along the origin, 1 is aligned the furthest away from the origin, 0.5 is centered, etc.
+Invalidates the layout, indicating that if the layout manager has cached information it should be discarded.
+Lays out the specified container using this card layout. Each component in the parent container is reshaped to be the size of the container, minus space for surrounding insets, horizontal gaps, and vertical gaps.
+Flips to the first card of the container.
+Flips to the next card of the specified container. If the currently visible card is the last one, this method flips to the first card in the layout.
+Flips to the previous card of the specified container. If the currently visible card is the first one, this method flips to the last card in the layout.
+Flips to the last card of the container.
+Flips to the component that was added to this layout with the specified name, using addLayoutComponent. If no such component exists, then nothing happens.
+Returns a string representation of the state of this card layout.
+Fire accessible property change events when the state of the toggle button changes.
+Get the AccessibleAction associated with this object. In the implementation of the Java Accessibility API for this class, return this object, which is responsible for implementing the AccessibleAction interface on behalf of itself.
+Get the AccessibleValue associated with this object. In the implementation of the Java Accessibility API for this class, return this object, which is responsible for implementing the AccessibleValue interface on behalf of itself.
+"Returns the number of Actions available in this object. If there is more than one, the first one is the ""default"" action."
+Return a description of the specified action of the object.
+Perform the specified Action on the object
+Get the value of this object as a Number. If the value has not been set, the return value will be null.
+Set the value of this object as a Number.
+Get the minimum value of this object as a Number.
+Get the maximum value of this object as a Number.
+Get the role of this object.
+Get the state set of this object.
+"Creates a check box with an empty string for its label. The state of this check box is set to ""off,"" and it is not part of any check box group."
+"Creates a check box with the specified label. The state of this check box is set to ""off,"" and it is not part of any check box group."
+Creates a check box with the specified label and sets the specified state. This check box is not part of any check box group.
+Constructs a Checkbox with the specified label, set to the specified state, and in the specified check box group.
+Creates a check box with the specified label, in the specified check box group, and set to the specified state.
+Creates the peer of the Checkbox. The peer allows you to change the look of the Checkbox without changing its functionality.
+Gets the label of this check box.
+Sets this check box's label to be the string argument.
+"Determines whether this check box is in the ""on"" or ""off"" state. The boolean value true indicates the ""on"" state, and false indicates the ""off"" state."
+"Sets the state of this check box to the specified state. The boolean value true indicates the ""on"" state, and false indicates the ""off"" state. Note that this method should be primarily used to initialize the state of the checkbox. Programmatically setting the state of the checkbox will not trigger an ItemEvent. The only way to trigger an ItemEvent is by user interaction."
+Returns an array (length 1) containing the checkbox label or null if the checkbox is not selected.
+Determines this check box's group.
+Sets this check box's group to the specified check box group. If this check box is already in a different check box group, it is first taken out of that group. If the state of this check box is true and the new group already has a check box selected, this check box's state is changed to false. If the state of this check box is true and the new group has no check box selected, this check box becomes the selected checkbox for the new group and its state is true.
+Adds the specified item listener to receive item events from this check box. Item events are sent to listeners in response to user input, but not in response to calls to setState(). If l is null, no exception is thrown and no action is performed. Refer to AWT Threading Issues for details on AWT's threading model.
+Removes the specified item listener so that the item listener no longer receives item events from this check box. If l is null, no exception is thrown and no action is performed. Refer to AWT Threading Issues for details on AWT's threading model.
+Returns an array of all the item listeners registered on this checkbox.
+Returns an array of all the objects currently registered as FooListeners upon this Checkbox. FooListeners are registered using the addFooListener method. You can specify the listenerType argument with a class literal, such as FooListener.class. For example, you can query a Checkbox c for its item listeners with the following code: ItemListener[] ils = (ItemListener[])(c.getListeners(ItemListener.class)); If no such listeners exist, this method returns an empty array.
+Processes events on this check box. If the event is an instance of ItemEvent, this method invokes the processItemEvent method. Otherwise, it calls its superclass's processEvent method. Note that if the event parameter is null the behavior is unspecified and may result in an exception.
+Processes item events occurring on this check box by dispatching them to any registered ItemListener objects. This method is not called unless item events are enabled for this component. Item events are enabled when one of the following occurs: An ItemListener object is registered via addItemListener. Item events are enabled via enableEvents. Note that if the event parameter is null the behavior is unspecified and may result in an exception.
+Returns a string representing the state of this Checkbox. This method is intended to be used only for debugging purposes, and the content and format of the returned string may vary between implementations. The returned string may be empty but may not be null.
+Gets the AccessibleContext associated with this Checkbox. For checkboxes, the AccessibleContext takes the form of an AccessibleAWTCheckbox. A new AccessibleAWTCheckbox is created if necessary.
+Creates a new instance of CheckboxGroup.
+"Gets the current choice from this check box group. The current choice is the check box in this group that is currently in the ""on"" state, or null if all check boxes in the group are off."
+"Sets the currently selected check box in this group to be the specified check box. This method sets the state of that check box to ""on"" and sets all other check boxes in the group to be off. If the check box argument is null, all check boxes in this check box group are deselected. If the check box argument belongs to a different check box group, this method does nothing."
+Returns a string representation of this check box group, including the value of its current selection.
+Get the AccessibleAction associated with this object. In the implementation of the Java Accessibility API for this class, return this object, which is responsible for implementing the AccessibleAction interface on behalf of itself.
+Get the AccessibleValue associated with this object. In the implementation of the Java Accessibility API for this class, return this object, which is responsible for implementing the AccessibleValue interface on behalf of itself.
+"Returns the number of Actions available in this object. If there is more than one, the first one is the ""default"" action."
+Return a description of the specified action of the object.
+Perform the specified Action on the object
+Get the value of this object as a Number. If the value has not been set, the return value will be null.
+Set the value of this object as a Number.
+Get the minimum value of this object as a Number.
+Get the maximum value of this object as a Number.
+Get the role of this object.
+"Create a check box menu item with an empty label. The item's state is initially set to ""off."""
+"Create a check box menu item with the specified label. The item's state is initially set to ""off."""
+Create a check box menu item with the specified label and state.
+Creates the peer of the checkbox item. This peer allows us to change the look of the checkbox item without changing its functionality. Most applications do not call this method directly.
+"Determines whether the state of this check box menu item is ""on"" or ""off."""
+"Sets this check box menu item to the specified state. The boolean value true indicates ""on"" while false indicates ""off."" Note that this method should be primarily used to initialize the state of the check box menu item. Programmatically setting the state of the check box menu item will not trigger an ItemEvent. The only way to trigger an ItemEvent is by user interaction."
+Returns the an array (length 1) containing the checkbox menu item label or null if the checkbox is not selected.
+Adds the specified item listener to receive item events from this check box menu item. Item events are sent in response to user actions, but not in response to calls to setState(). If l is null, no exception is thrown and no action is performed. Refer to AWT Threading Issues for details on AWT's threading model.

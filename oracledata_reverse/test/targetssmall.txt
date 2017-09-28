@@ -1,0 +1,40 @@
+public Shape createStrokedShape(Shape s)
+public BufferCapabilities(ImageCapabilities frontCaps, ImageCapabilities backCaps, BufferCapabilities.FlipContents flipContents)
+public static AlphaComposite getInstance(int rule)
+void setVisibleAmount(int v)
+public final int getKeyEventType()
+public static HierarchyBoundsListener remove(HierarchyBoundsListener l, HierarchyBoundsListener oldl)
+public void setState(boolean b)
+@Native public static final int CAP_ROUND
+public void play(URL url, String name)
+public static final AlphaComposite Clear
+public static final AlphaComposite DstAtop
+public CompositeContext createContext(ColorModel srcColorModel, ColorModel dstColorModel, RenderingHints hints)
+public AccessibleAction getAccessibleAction()
+public AWTPermission(String name, String actions)
+public static AWTKeyStroke getAWTKeyStroke(int keyCode, int modifiers, boolean onKeyRelease)
+public void setHgap(int hgap)
+void setMinimum(int min)
+public void mouseWheelMoved(MouseWheelEvent e)
+public int hashCode()
+public String toString()
+public static final long WINDOW_EVENT_MASK
+public BorderLayout()
+@Native static final int NO_ORIENTATION
+protected final EventListener b
+public final int getModifiers()
+@Native public static final int DST
+public static final long WINDOW_FOCUS_EVENT_MASK
+public float getLayoutAlignmentY(Container parent)
+public void setVgap(int vgap)
+public float getMiterLimit()
+public Number getMinimumAccessibleValue()
+public String toString()
+public Checkbox(String label) throws HeadlessException
+public Checkbox(String label, boolean state, CheckboxGroup group) throws HeadlessException
+void appletResize(int width, int height)
+public void addNotify()
+public Canvas(GraphicsConfiguration config)
+public CardLayout(int hgap, int vgap)
+public void windowOpened(WindowEvent e)
+public int getVgap()

@@ -1,0 +1,200 @@
+protected  Accessible Applet ( ) 
+public  Accessible Role get Accessible Role ( ) 
+public  Applet ( )  throws  Headless Exception
+public final void set Stub  (  Applet Stub stub ) 
+public boolean is Active ( ) 
+public  URL get Document Base ( ) 
+public  URL get Code Base ( ) 
+public  String get Parameter  (  String name ) 
+public  Applet Context get Applet Context ( ) 
+public void resize  ( int width ,  int height ) 
+public void resize  (  Dimension d ) 
+public boolean is Validate Root ( ) 
+public void show Status  (  String msg ) 
+public  Image get Image  (  URL url ) 
+public  Image get Image  (  URL url ,   String name ) 
+public static final  Audio Clip new Audio Clip  (  URL url ) 
+public  Audio Clip get Audio Clip  (  URL url ) 
+public  Audio Clip get Audio Clip  (  URL url ,   String name ) 
+public  String get Applet Info ( ) 
+public  Locale get Locale ( ) 
+public  String [] [] get Parameter Info ( ) 
+public void play  (  URL url ) 
+public void play  (  URL url ,   String name ) 
+public void init ( ) 
+public void start ( ) 
+public void stop ( ) 
+public void destroy ( ) 
+public  Accessible Context get Accessible Context ( ) 
+Audio Clip get Audio Clip  (  URL url ) 
+Image get Image  (  URL url ) 
+Applet get Applet  (  String name ) 
+Enumeration< Applet> get Applets ( ) 
+void show Document  (  URL url ) 
+void show Document  (  URL url ,   String target ) 
+void show Status  (  String status ) 
+void set Stream  (  String key ,   Input Stream stream )  throws  IOException
+Input Stream get Stream  (  String key ) 
+Iterator< String> get Stream Keys ( ) 
+boolean is Active ( ) 
+URL get Document Base ( ) 
+URL get Code Base ( ) 
+String get Parameter  (  String name ) 
+Applet Context get Applet Context ( ) 
+void applet Resize  ( int width ,  int height ) 
+void play ( ) 
+void loop ( ) 
+void stop ( ) 
+void dispatch ( ) 
+@ Native static final int  HORIZONTAL
+@ Native static final int  VERTICAL
+@ Native static final int  NO_ ORIENTATION
+int get Orientation ( ) 
+void set Minimum  ( int min ) 
+int get Minimum ( ) 
+void set Maximum  ( int max ) 
+int get Maximum ( ) 
+void set Unit Increment  ( int u ) 
+int get Unit Increment ( ) 
+void set Block Increment  ( int b ) 
+int get Block Increment ( ) 
+void set Visible Amount  ( int v ) 
+int get Visible Amount ( ) 
+void set Value  ( int v ) 
+int get Value ( ) 
+void add Adjustment Listener  (  Adjustment Listener l ) 
+void remove Adjustment Listener  (  Adjustment Listener l ) 
+@ Native public static final int  CLEAR
+@ Native public static final int  SRC
+@ Native public static final int  DST
+@ Native public static final int  SRC_ OVER
+@ Native public static final int  DST_ OVER
+@ Native public static final int  SRC_ IN
+@ Native public static final int  DST_ IN
+@ Native public static final int  SRC_ OUT
+@ Native public static final int  DST_ OUT
+@ Native public static final int  SRC_ ATOP
+@ Native public static final int  DST_ ATOP
+@ Native public static final int  XOR
+public static final  Alpha Composite  Clear
+public static final  Alpha Composite  Src
+public static final  Alpha Composite  Dst
+public static final  Alpha Composite  Src Over
+public static final  Alpha Composite  Dst Over
+public static final  Alpha Composite  Src In
+public static final  Alpha Composite  Dst In
+public static final  Alpha Composite  Src Out
+public static final  Alpha Composite  Dst Out
+public static final  Alpha Composite  Src Atop
+public static final  Alpha Composite  Dst Atop
+public static final  Alpha Composite  Xor
+public static  Alpha Composite get Instance  ( int rule ) 
+public static  Alpha Composite get Instance  ( int rule ,  float alpha ) 
+public  Composite Context create Context  (  Color Model src Color Model ,   Color Model dst Color Model ,   Rendering Hints hints ) 
+public float get Alpha ( ) 
+public int get Rule ( ) 
+public  Alpha Composite derive  ( int rule ) 
+public  Alpha Composite derive  ( float alpha ) 
+public int hash Code ( ) 
+public boolean equals  (  Object obj ) 
+public  AWTError  (  String msg ) 
+protected int id
+protected boolean consumed
+public static final long  COMPONENT_ EVENT_ MASK
+public static final long  CONTAINER_ EVENT_ MASK
+public static final long  FOCUS_ EVENT_ MASK
+public static final long  KEY_ EVENT_ MASK
+public static final long  MOUSE_ EVENT_ MASK
+public static final long  MOUSE_ MOTION_ EVENT_ MASK
+public static final long  WINDOW_ EVENT_ MASK
+public static final long  ACTION_ EVENT_ MASK
+public static final long  ADJUSTMENT_ EVENT_ MASK
+public static final long  ITEM_ EVENT_ MASK
+public static final long  TEXT_ EVENT_ MASK
+public static final long  INPUT_ METHOD_ EVENT_ MASK
+public static final long  PAINT_ EVENT_ MASK
+public static final long  INVOCATION_ EVENT_ MASK
+public static final long  HIERARCHY_ EVENT_ MASK
+public static final long  HIERARCHY_ BOUNDS_ EVENT_ MASK
+public static final long  MOUSE_ WHEEL_ EVENT_ MASK
+public static final long  WINDOW_ STATE_ EVENT_ MASK
+public static final long  WINDOW_ FOCUS_ EVENT_ MASK
+public static final int  RESERVED_ ID_ MAX
+public  AWTEvent  (  Event event ) 
+public  AWTEvent  (  Object source ,  int id ) 
+public void set Source  (  Object new Source ) 
+public int get ID ( ) 
+public  String to String ( ) 
+public  String param String ( ) 
+protected void consume ( ) 
+protected boolean is Consumed ( ) 
+protected final  Event Listener a
+protected final  Event Listener b
+protected  AWTEvent Multicaster  (  Event Listener a ,   Event Listener b ) 
+protected  Event Listener remove  (  Event Listener oldl ) 
+public void component Resized  (  Component Event e ) 
+public void component Moved  (  Component Event e ) 
+public void component Shown  (  Component Event e ) 
+public void component Hidden  (  Component Event e ) 
+public void component Added  (  Container Event e ) 
+public void component Removed  (  Container Event e ) 
+public void focus Gained  (  Focus Event e ) 
+public void focus Lost  (  Focus Event e ) 
+public void key Typed  (  Key Event e ) 
+public void key Pressed  (  Key Event e ) 
+public void key Released  (  Key Event e ) 
+public void mouse Clicked  (  Mouse Event e ) 
+public void mouse Pressed  (  Mouse Event e ) 
+public void mouse Released  (  Mouse Event e ) 
+public void mouse Entered  (  Mouse Event e ) 
+public void mouse Exited  (  Mouse Event e ) 
+public void mouse Dragged  (  Mouse Event e ) 
+public void mouse Moved  (  Mouse Event e ) 
+public void window Opened  (  Window Event e ) 
+public void window Closing  (  Window Event e ) 
+public void window Closed  (  Window Event e ) 
+public void window Iconified  (  Window Event e ) 
+public void window Deiconified  (  Window Event e ) 
+public void window Activated  (  Window Event e ) 
+public void window Deactivated  (  Window Event e ) 
+public void window State Changed  (  Window Event e ) 
+public void window Gained Focus  (  Window Event e ) 
+public void window Lost Focus  (  Window Event e ) 
+public void action Performed  (  Action Event e ) 
+public void item State Changed  (  Item Event e ) 
+public void adjustment Value Changed  (  Adjustment Event e ) 
+public void text Value Changed  (  Text Event e ) 
+public void input Method Text Changed  (  Input Method Event e ) 
+public void caret Position Changed  (  Input Method Event e ) 
+public void hierarchy Changed  (  Hierarchy Event e ) 
+public void ancestor Moved  (  Hierarchy Event e ) 
+public void ancestor Resized  (  Hierarchy Event e ) 
+public void mouse Wheel Moved  (  Mouse Wheel Event e ) 
+public static  Component Listener add  (  Component Listener a ,   Component Listener b ) 
+public static  Container Listener add  (  Container Listener a ,   Container Listener b ) 
+public static  Focus Listener add  (  Focus Listener a ,   Focus Listener b ) 
+public static  Key Listener add  (  Key Listener a ,   Key Listener b ) 
+public static  Mouse Listener add  (  Mouse Listener a ,   Mouse Listener b ) 
+public static  Mouse Motion Listener add  (  Mouse Motion Listener a ,   Mouse Motion Listener b ) 
+public static  Window Listener add  (  Window Listener a ,   Window Listener b ) 
+public static  Window State Listener add  (  Window State Listener a ,   Window State Listener b ) 
+public static  Window Focus Listener add  (  Window Focus Listener a ,   Window Focus Listener b ) 
+public static  Action Listener add  (  Action Listener a ,   Action Listener b ) 
+public static  Item Listener add  (  Item Listener a ,   Item Listener b ) 
+public static  Adjustment Listener add  (  Adjustment Listener a ,   Adjustment Listener b ) 
+public static  Text Listener add  (  Text Listener a ,   Text Listener b ) 
+public static  Input Method Listener add  (  Input Method Listener a ,   Input Method Listener b ) 
+public static  Hierarchy Listener add  (  Hierarchy Listener a ,   Hierarchy Listener b ) 
+public static  Hierarchy Bounds Listener add  (  Hierarchy Bounds Listener a ,   Hierarchy Bounds Listener b ) 
+public static  Mouse Wheel Listener add  (  Mouse Wheel Listener a ,   Mouse Wheel Listener b ) 
+public static  Component Listener remove  (  Component Listener l ,   Component Listener oldl ) 
+public static  Container Listener remove  (  Container Listener l ,   Container Listener oldl ) 
+public static  Focus Listener remove  (  Focus Listener l ,   Focus Listener oldl ) 
+public static  Key Listener remove  (  Key Listener l ,   Key Listener oldl ) 
+public static  Mouse Listener remove  (  Mouse Listener l ,   Mouse Listener oldl ) 
+public static  Mouse Motion Listener remove  (  Mouse Motion Listener l ,   Mouse Motion Listener oldl ) 
+public static  Window Listener remove  (  Window Listener l ,   Window Listener oldl ) 
+public static  Window State Listener remove  (  Window State Listener l ,   Window State Listener oldl ) 
+public static  Window Focus Listener remove  (  Window Focus Listener l ,   Window Focus Listener oldl ) 
+public static  Action Listener remove  (  Action Listener l ,   Action Listener oldl ) 
+public static  Item Listener remove  (  Item Listener l ,   Item Listener oldl ) 

@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Beam Search</title>
+    <link rel="stylesheet" type="text/css" href="tree.css">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+  </head>
+  <body>
+    <script>
+      var treeData = {"name": "START", "id": [0, 0], "children": [{"name": "public\t34102", "score": "-4.76837e-07", "size": 100, "id": [1, 0], "children": [{"name": "abstract\t2281", "score": "-1.22785e-05", "size": 100, "id": [2, 0], "children": [{"name": "String\t11101", "score": "-1.93118e-05", "size": 100, "id": [3, 0], "children": [{"name": "default\t357", "score": "-0.00134726", "size": 100, "id": [4, 0], "children": [{"name": "Value\t1728", "score": "-0.00221151", "size": 100, "id": [5, 0], "children": [{"name": "SEQUENCE_END", "score": "-0.00241653", "size": 100, "id": [6, 0], "children": [{"name": "SEQUENCE_END", "score": "-0.00241653", "size": 100, "id": [7, 0]}]}, {"name": "(\t39573", "score": "-8.96987", "size": 100, "id": [6, 3], "children": [{"name": "SEQUENCE_END", "score": "-9.27594", "size": 100, "id": [7, 3]}]}]}, {"name": "New\t25", "score": "-9.40496", "size": 100, "id": [5, 3], "children": [{"name": "SEQUENCE_END", "score": "-9.40555", "size": 100, "id": [6, 4], "children": [{"name": "SEQUENCE_END", "score": "-9.40555", "size": 100, "id": [7, 4]}]}]}]}, {"name": "count\t79", "score": "-8.77995", "size": 100, "id": [4, 1], "children": [{"name": "Value\t1728", "score": "-8.78024", "size": 100, "id": [5, 1], "children": [{"name": "SEQUENCE_END", "score": "-8.78035", "size": 100, "id": [6, 1], "children": [{"name": "SEQUENCE_END", "score": "-8.78035", "size": 100, "id": [7, 1]}]}]}]}, {"name": "range\t39", "score": "-8.96585", "size": 100, "id": [4, 2], "children": [{"name": "Value\t1728", "score": "-8.96605", "size": 100, "id": [5, 2], "children": [{"name": "SEQUENCE_END", "score": "-8.96617", "size": 100, "id": [6, 2], "children": [{"name": "SEQUENCE_END", "score": "-8.96617", "size": 100, "id": [7, 2]}]}]}]}, {"name": "VK\t100", "score": "-9.45481", "size": 100, "id": [4, 3], "children": [{"name": "Value\t1728", "score": "-9.45498", "size": 100, "id": [5, 4]}]}, {"name": "end\t211", "score": "-9.73226", "size": 100, "id": [4, 4]}]}, {"name": "get\t11200", "score": "-12.5702", "size": 100, "id": [3, 2]}]}, {"name": "protected\t3736", "score": "-12.3379", "size": 100, "id": [2, 1], "children": [{"name": "String\t11101", "score": "-12.3379", "size": 100, "id": [3, 1]}]}, {"name": "Boolean\t125", "score": "-13.4871", "size": 100, "id": [2, 2], "children": [{"name": "get\t11200", "score": "-13.5365", "size": 100, "id": [3, 3]}]}, {"name": "public\t34102", "score": "-13.657", "size": 100, "id": [2, 3], "children": [{"name": "String\t11101", "score": "-13.6572", "size": 100, "id": [3, 4]}]}, {"name": "Serial\t74", "score": "-14.1342", "size": 100, "id": [2, 4]}]}, {"name": "Composite\t72", "score": "-16.237", "size": 100, "id": [1, 1]}, {"name": "protected\t3736", "score": "-16.8217", "size": 100, "id": [1, 2]}, {"name": "Appendable\t7", "score": "-16.8606", "size": 100, "id": [1, 3]}, {"name": "int\t14861", "score": "-16.9341", "size": 100, "id": [1, 4]}]}
+    </script>
+    <script src="tree.js"></script>
+  </body>
+</html>

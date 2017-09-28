@@ -1,0 +1,1000 @@
+public static final int MOUSE_CLICKED
+public AnnotatedType getAnnotatedType()
+public float floatValue()
+public float[] getSamples(int x, int y, int w, int h, int b, float[] fArray)
+protected Rectangle2D makeBounds(double x, double y, double w, double h)
+public static final int ROUND_FLOOR
+public NumberFormatException(String s)
+public static final PageAttributes.MediaType C7
+public int getVersion()
+public static final PageAttributes.MediaType ISO_C6
+public final char readChar() throws IOException
+public static final PageAttributes.MediaType ENV_10
+public final void quadTo(float x1, float y1, float x2, float y2)
+public static double sqrt(double a)
+public static final BufferCapabilities.FlipContents COPIED
+public Double()
+public MethodHandle findStaticGetter(Class<?> refc, String name, Class<?> type) throws NoSuchFieldException, IllegalAccessException
+public abstract void focusPreviousComponent(Component aComponent)
+public final boolean hasAlpha()
+public void setToRotation(double vecx, double vecy, double anchorx, double anchory)
+void focusGained(FocusEvent e)
+public int outcode(double x, double y)
+public Component getPermanentFocusOwner()
+public static final int EAST
+public static final String PAGE_START
+@Deprecated public void move(int x, int y)
+public abstract void put(String name, short val)
+public StackTraceElement[] getStackTrace()
+protected transient TextListener textListener
+public BeanContextServices getSourceAsBeanContextServices()
+public abstract String[] value
+public static String toHexString(double d)
+public Thread(ThreadGroup group, Runnable target, String name, long stackSize)
+public static float min(float a, float b)
+public abstract void processKeyEvent(Component focusedComponent, KeyEvent e)
+public int hashCode()
+public final void writeInt(int v) throws IOException
+public void setLocation(Point p)
+protected EventListener remove(EventListener oldl)
+public static final ComponentOrientation UNKNOWN
+public void abortGrabbing()
+protected void consume()
+boolean enter()
+public Throwable getUndeclaredThrowable()
+PathIterator getPathIterator(AffineTransform at, double flatness)
+public String getTypeName()
+public static PointerInfo getPointerInfo() throws HeadlessException
+public double getHeight()
+public AreaAveragingScaleFilter(int width, int height)
+public static final Character.UnicodeBlock LAO
+public final float[] getScaleFactors(float[] scaleFactors)
+public float getElemFloat(int bank, int i)
+String getName()
+public double nval
+public void setFilenameFilter(FilenameFilter filter)
+protected transient int serializable
+public void setPixels(int x, int y, int w, int h, ColorModel model, int[] pixels, int off, int scansize)
+protected void processInputMethodEvent(InputMethodEvent e)
+public PathIterator getPathIterator(AffineTransform at, double flatness)
+BeanContext getBeanContext()
+public double getFlatness()
+public final float growLeftLimit
+protected void writeObjectOverride(Object obj) throws IOException
+public void requestFocus()
+public BasicStroke(float width, int cap, int join)
+public Annotation[] getDeclaredAnnotations()
+public void windowLostFocus(WindowEvent e)
+public Dialog(Frame owner, boolean modal)
+protected Package definePackage(String name, String specTitle, String specVersion, String specVendor, String implTitle, String implVersion, String implVendor, URL sealBase) throws IllegalArgumentException
+public short shortValue()
+public void setMultipleDocumentHandling(JobAttributes.MultipleDocumentHandlingType multipleDocumentHandling)
+Vector<RenderableImage> getSources()
+public static ICC_Profile getInstance(InputStream s) throws IOException
+public WritableRaster copyData(WritableRaster outRaster)
+public static final InputMethodHighlight SELECTED_RAW_TEXT_HIGHLIGHT
+protected String paramString()
+public static boolean isJavaIdentifierPart(char ch)
+public void select(int selectionStart, int selectionEnd)
+public double getElemDouble(int i)
+public int getPosition()
+public final void upFocusCycle()
+public WeakReference(T referent, ReferenceQueue<? super T> q)
+public GridLayout()
+public static Object instantiate(ClassLoader cls, String beanName, BeanContext beanContext) throws IOException, ClassNotFoundException
+public int[] getPixel(int x, int y, int[] iArray, DataBuffer data)
+public void setCopiesToDefault()
+@Deprecated public void hide()
+public ColorModel getColorModel()
+public void edit(File file) throws IOException
+public Throwable getCause()
+public double getMaxX()
+public int getNumYTiles()
+public ReferenceQueue()
+public static final SystemColor textInactiveText
+@Native public static final int WINDOW_TEXT
+public static final RoundingMode HALF_UP
+public static final char MAX_HIGH_SURROGATE
+public ObjectOutputStream.PutField putFields() throws IOException
+public Exception()
+public DragGestureEvent(DragGestureRecognizer dgr, int act, Point ori, List<? extends InputEvent> evs)
+public static final int CLASS_ABSTRACT
+public static final byte DIRECTIONALITY_OTHER_NEUTRALS
+public static final PageAttributes.MediaType ISO_B0
+public static double abs(double a)
+public final WritableRaster filter(Raster src, WritableRaster dst)
+public final void writeChar(int v) throws IOException
+public Component getChanged()
+public void setImageURL(URL imageURL) throws NullPointerException, IOException, IllegalStateException
+public Float()
+public abstract boolean isCompatibleValue(Object val)
+static final int TAG_HDMX
+public static final SystemColor textHighlight
+@Deprecated public static boolean isJavaLetter(char ch)
+public BigDecimal pow(int n, MathContext mc)
+public static final int icSigSpace2CLR
+public float[] getDashArray()
+public StringBuilder delete(int start, int end)
+protected java.awt.peer.LightweightPeer createComponent(Component target)
+public static final Character.UnicodeBlock KHAROSHTHI
+public Dimension minimumLayoutSize(Container target)
+public Rectangle2D getBounds2D()
+static final int TAG_JUST
+public WrongMethodTypeException()
+void writeShort(int v) throws IOException
+public static final int VK_4
+protected int numDataElements
+public void setHelpMenu(Menu m)
+void write(int b) throws IOException
+@Native public static final int REVERSE_LANDSCAPE
+public void setRect(float x, float y, float w, float h)
+public boolean isNaN()
+public ParameterBlock add(float f)
+public Dimension getSize()
+public static final long ITEM_EVENT_MASK
+Point2D getPoint2D(Point2D srcPt, Point2D dstPt)
+public boolean isWhitespace()
+@Deprecated public final void stop()
+public static final int HTTP_PRECON_FAILED
+public static int toTitleCase(int codePoint)
+public void createBufferStrategy(int numBuffers)
+public abstract double getCtrlX2()
+public String(StringBuffer buffer)
+public float floatValue()
+public static boolean isFinal(int mod)
+protected DropTarget.DropTargetAutoScroller createDropTargetAutoScroller(Component c, Point p)
+public double ptSegDistSq(Point2D pt)
+public void setFrame(Rectangle2D r)
+@Deprecated public boolean handleEvent(Event evt)
+public int getComponentCount()
+public static int round(float a)
+public final FileChannel getChannel()
+public void addActionListener(ActionListener listener)
+public static final Character.UnicodeBlock BALINESE
+public static String getProperty(String key)
+public float[] getPixels(int x, int y, int w, int h, float[] fArray)
+public static final PageAttributes.MediaType ISO_A8
+static final int REF_invokeInterface
+public static final SystemColor activeCaptionBorder
+public double getWidth()
+public boolean isAntiAliased()
+public PaintEvent(Component source, int id, Rectangle updateRect)
+public Shape getOutline(AffineTransform tx)
+public void waitForIdle()
+public void setElemDouble(int bank, int i, double val)
+public void connect(PipedWriter src) throws IOException
+public void addActionListener(ActionListener l)
+public NoninvertibleTransformException(String s)
+public double getWidth()
+public void dropActionChanged(DropTargetDragEvent dtde)
+public void toBack()
+public XMLEncoder(OutputStream out, String charset, boolean declaration, int indentation)
+public static ItemListener add(ItemListener a, ItemListener b)
+public LineMetrics getLineMetrics(String str, Graphics context)
+public int getElem(int bank, int i)
+public void textValueChanged(TextEvent e)
+protected void initialize()
+public final int readUnsignedShort() throws IOException
+public Shape getBlackBoxBounds(int firstEndpoint, int secondEndpoint)
+public static final int KEY_ACTION
+String getJavaInitializationString()
+public int read() throws IOException
+"@ConstructorProperties(value={""startPoint"",""endPoint"",""fractions"",""colors"",""cycleMethod"",""colorSpace"",""transform""}) public LinearGradientPaint(Point2D start, Point2D end, float[] fractions, Color[] colors, MultipleGradientPaint.CycleMethod cycleMethod, MultipleGradientPaint.ColorSpaceType colorSpace, AffineTransform gradientTransform)"
+public MethodHandle findStatic(Class<?> refc, String name, MethodType type) throws NoSuchMethodException, IllegalAccessException
+public static final int PRINT_SCREEN
+public void setPixels(int x, int y, int w, int h, int[] iArray, DataBuffer data)
+public double getElemDouble(int bank, int i)
+public int hashCode()
+public static final Dialog.ModalExclusionType APPLICATION_EXCLUDE
+public long longValue()
+public int getMode()
+public static final RoundingMode DOWN
+protected String findLibrary(String libname)
+public static final long MOUSE_EVENT_MASK
+public static String toOctalString(long i)
+public static final int IMAGE_RESTORED
+static final int PROTOCOL_VERSION_2
+public double getX2()
+public PrintWriter(File file) throws FileNotFoundException
+public int hashCode()
+public void doLayout()
+public int getBitOffset(int x)
+public String getFileName()
+public BigDecimal divideToIntegralValue(BigDecimal divisor, MathContext mc)
+protected ImageConsumer consumer
+public int getOrientation()
+public static final PageAttributes.MediaType ISO_B4_ENVELOPE
+protected void updateCurrentCursor(int sourceAct, int targetAct, int status)
+public void mark(int readlimit)
+protected Object readObjectOverride() throws IOException, ClassNotFoundException
+public MenuShortcut(int key, boolean useShiftModifier)
+public boolean isConnected()
+public Shape getOutline(AffineTransform tx)
+public int relativeCCW(Point2D p)
+public BigInteger(String val)
+public final RenderingHints getRenderingHints()
+void loop()
+public void componentShown(ComponentEvent e)
+@Native public static final int WINDOW_DEACTIVATED
+public int hashCode()
+public final Class<?> getDefaultRepresentationClass()
+public static final int VK_M
+public RenderContext(AffineTransform usr2dev)
+public void setElemDouble(int i, double val)
+public void removeWindowStateListener(WindowStateListener l)
+public double getHeight()
+public int getLineNumber()
+public Iterator<InputEvent> iterator()
+public void addNotify()
+public int getRGB(Object inData)
+public void mark(int readlimit)
+public void setUncaughtExceptionHandler(Thread.UncaughtExceptionHandler eh)
+public BufferedReader(Reader in)
+public LockInfo getLockInfo()
+List<String> getNativesForFlavor(DataFlavor flav)
+public void addNotify()
+public DatagramPacket(byte[] buf, int offset, int length, InetAddress address, int port)
+public static final Character.UnicodeBlock EGYPTIAN_HIEROGLYPHS
+public int[] getSelectedIndexes()
+public static final Object VALUE_INTERPOLATION_BILINEAR
+public static final Character.UnicodeScript BAMUM
+public void createBufferStrategy(int numBuffers, BufferCapabilities caps) throws AWTException
+public SampleModel(int dataType, int w, int h, int numBands)
+public static final RoundingMode UP
+void resetPeakUsage()
+public void okToUseGui()
+protected String paramString()
+public static final int MOUSE_UP
+public static final int VK_SHIFT
+public void setElem(int i, int val)
+public static final TrayIcon.MessageType NONE
+void imageComplete(int status)
+public IllegalStateException(String s)
+public abstract Image createImage(ImageProducer producer)
+static final int TAG_LTSH
+public boolean equalsIgnoreCase(String anotherString)
+protected Image getBackBuffer()
+public void consume()
+public static final Character.UnicodeBlock KAYAH_LI
+public String toString()
+public String getImplMethodSignature()
+public void endComposition()
+public GlyphMetrics(float advance, Rectangle2D bounds, byte glyphType)
+public long getId()
+public int size()
+Iterator getCurrentServiceClasses()
+public ConnectException()
+public Throwable()
+public void writeObject(Object o)
+public double getWidth()
+public StringBuffer()
+public static final int KHMER
+public static final int ESCAPE
+CharSequence subSequence(int start, int end)
+public boolean isInDefaultEventSet()
+public static final Object VALUE_ANTIALIAS_OFF
+public boolean contains(double x, double y)
+public void print(char c)
+public StringBufferInputStream(String s)
+public void setCurve(double x1, double y1, double ctrlx1, double ctrly1, double ctrlx2, double ctrly2, double x2, double y2)
+public static final TextAttribute TRANSFORM
+public void close()
+public void setPixel(int x, int y, float[] fArray)
+public FileDialog(Dialog parent)
+public static final PageAttributes.MediaType ISO_C8
+public boolean getInstanceFollowRedirects()
+public static final Integer LIGATURES_ON
+public final void writeByte(int v) throws IOException
+public void removeAll()
+public KeyAdapter()
+public final boolean contains(double x, double y)
+public PrintWriter append(CharSequence csq)
+public int read(byte[] b) throws IOException
+public static final int OUT_RIGHT
+public Rectangle2D getBounds()
+public Book()
+public static final RenderingHints.Key KEY_TEXT_ANTIALIASING
+public int getScrollType()
+public abstract Color getColor()
+public byte[] getBytes(Charset charset)
+public void setFocusableWindowState(boolean focusableWindowState)
+public float getAdvance()
+public static final int W_RESIZE_CURSOR
+void addVetoableChangeListener(String name, VetoableChangeListener vcl)
+public void addPropertyChangeListener(String name, PropertyChangeListener pcl)
+public Rectangle getBounds()
+public void setDataElements(int x, int y, Object obj, DataBuffer data)
+static final byte TC_REFERENCE
+public static float getFloat(Object array, int index) throws IllegalArgumentException, ArrayIndexOutOfBoundsException
+public Type[] getGenericParameterTypes()
+public static final Float WEIGHT_REGULAR
+public boolean isErrorID(int id)
+public static final int MYANMAR
+public static final PageAttributes.MediaType E
+static final int TAG_MAXP
+public static boolean isNaN(double v)
+public String paramString()
+public void insertSeparator(int index)
+public int getSample(int x, int y, int b, DataBuffer data)
+public PrintStream append(char c)
+void initialize(Applet newAppletBean, BeanContext bCtxt)
+public abstract GlyphMetrics getGlyphMetrics(int glyphIndex)
+public boolean isDelegated()
+public int codePointAt(int index)
+static final String PROPERTYNAME
+public void componentMoved(ComponentEvent e)
+public static final int TYPE_USHORT_GRAY
+public String toString()
+public void println(Object x)
+public Object getDataElements(int[] components, int offset, Object obj)
+public void checkSetFactory()
+public static float ulp(float f)
+public static MultipleGradientPaint.CycleMethod valueOf(String name)
+protected void processMouseWheelEvent(MouseWheelEvent e)
+public static final SystemColor controlHighlight
+int getFontTableSize(int sfntTag)
+public Object getDataElements(int x, int y, int w, int h, Object obj, DataBuffer data)
+public static final int F8
+@Native static final int BITMASK
+public long longValue()
+public void setName(String name)
+public static final long WINDOW_FOCUS_EVENT_MASK
+public void setPixels(int x, int y, int w, int h, int[] iArray, DataBuffer data)
+protected FontRenderContext()
+public static double cbrt(double a)
+public void readExternal(ObjectInput is) throws IOException, ClassNotFoundException
+public static final int ALL_RANGES
+public void setLine(float x1, float y1, float x2, float y2)
+public AlphaComposite derive(int rule)
+public double getImageableWidth()
+public static final int SIZE
+public ParameterBlock set(long l, int index)
+public void dragEnter(DropTargetDragEvent dtde)
+public static final DataFlavor selectBestTextFlavor(DataFlavor[] availableFlavors)
+public void insert(MenuItem menuitem, int index)
+int getNumXTiles()
+protected VetoableChangeSupport vcSupport
+public void println(char x)
+public Shape getLogicalHighlightShape(int firstEndpoint, int secondEndpoint, Rectangle2D bounds)
+@Native public static final int CONTROL_HIGHLIGHT
+public int getElem(int bank, int i)
+@Deprecated public boolean lostFocus(Event evt, Object what)
+void ancestorResized(HierarchyEvent e)
+public void mouseDragged(MouseEvent e)
+public Class<?> getDeclaringClass()
+public void setPrinterResolution(int printerResolution)
+public static final int icSigAbstractClass
+@Deprecated public void enable()
+void writeDouble(double v) throws IOException
+public float x1
+public abstract float getAscent()
+public IOException()
+@Deprecated public static void runFinalizersOnExit(boolean value)
+public String getItem(int index)
+public void rejectDrop()
+public String getImplementationTitle()
+public DataFlavor(Class<?> representationClass, String humanPresentableName)
+public static final PageAttributes.MediaType B5
+public static void syncAll(MutableCallSite[] sites)
+@Deprecated public boolean keyUp(Event evt, int key)
+public Component getComponent()
+public static final Integer KERNING_ON
+public Point2D getP2()
+public String(byte[] bytes, Charset charset)
+public static final int icSigSpace8CLR
+public void setProperties(Hashtable<?,?> props)
+public double getHeight()
+public BigInteger pow(int exponent)
+public String(int[] codePoints, int offset, int count)
+public void addAccessibleSelection(int i)
+public boolean isFocusTraversable()
+public static boolean isSpaceChar(char ch)
+protected boolean isConsumed()
+public GeneralPath(Shape s)
+public double height
+public MimeTypeParseException(String s)
+public void addPropertyChangeListener(PropertyChangeListener listener)
+public void setDefaultSelection(JobAttributes.DefaultSelectionType defaultSelection)
+public MenuItem getShortcutMenuItem(MenuShortcut s)
+public boolean contains(double x, double y)
+public int read() throws IOException
+public boolean contains(double x, double y, double w, double h)
+public static final PageAttributes.MediaType ENV_10X14
+public static final int WAIT_CURSOR
+public MenuContainer getParent()
+public void addAccessibleSelection(int i)
+public abstract void dispose()
+public int getY()
+public CharArrayWriter append(char c)
+public int getUnitIncrement()
+@Deprecated public final void stop()
+public double getWidth()
+public <T extends Annotation> T[] getAnnotationsByType(Class<T> annotationClass)
+@Deprecated public boolean inside(int x, int y)
+protected int minX
+public Constructor<?> getEnclosingConstructor() throws SecurityException
+public double getImageableHeight()
+public static final PageAttributes.MediaType ISO_A1
+public String getSimpleName()
+public static void setBoolean(Object array, int index, boolean z) throws IllegalArgumentException, ArrayIndexOutOfBoundsException
+public static final int LOAD
+public float getElemFloat(int i)
+public static final Class<Float> TYPE
+@Deprecated public static final int CROSSHAIR_CURSOR
+public boolean equals(Object obj)
+public MethodHandle findSpecial(Class<?> refc, String name, MethodType type, Class<?> specialCaller) throws NoSuchMethodException, IllegalAccessException
+public void setImplicitDownCycleTraversal(boolean implicitDownCycleTraversal)
+public int[] getPrinterResolution()
+protected int numBands
+public static final int icSigDeviceMfgDescTag
+@Deprecated public static final int DEFAULT_CURSOR
+public double getElemDouble(int bank, int i)
+public boolean mkdir()
+public BigInteger toBigIntegerExact()
+public float floatValue()
+public UndeclaredThrowableException(Throwable undeclaredThrowable, String s)
+public void keyRelease(int keycode)
+public double getShearY()
+public InputStream()
+@Deprecated public void hide()
+public String toString()
+public boolean ready() throws IOException
+public BasicStroke(float width)
+protected URL findResource(String name)
+@Native public static final int TYPE_NEAREST_NEIGHBOR
+public void pushBack()
+public ConvolveOp(Kernel kernel, int edgeCondition, RenderingHints hints)
+public static final PageAttributes.MediaType A4
+public void finalize()
+public void lowerCaseMode(boolean fl)
+public Enumeration<MenuShortcut> shortcuts()
+public boolean contentsLost()
+public long getBlockedTime()
+public static double distanceSq(double x1, double y1, double x2, double y2)
+public long freeMemory()
+public final Rectangle2D getBounds2D(BufferedImage src)
+public boolean isMCNodeLocal()
+public NotActiveException()
+public static String toUnsignedString(long i)
+public Dialog(Dialog owner, String title)
+public void fill3DRect(int x, int y, int width, int height, boolean raised)
+@Native public static final int ACTION_PERFORMED
+public BeanContext getBeanContextPeer()
+public final int getHeight()
+public void dontUseGui()
+void setPixels(int x, int y, int w, int h, ColorModel model, int[] pixels, int off, int scansize)
+public int getLowestSetBit()
+public AccessibleValue getAccessibleValue()
+public static final int LEFT
+public Raster getData()
+public ShortLookupTable(int offset, short[][] data)
+public boolean createNewFile() throws IOException
+public boolean isMetaDown()
+public void repaint()
+public static final Character.UnicodeBlock SUPPLEMENTAL_PUNCTUATION
+public boolean isAutoWaitForIdle()
+public BigInteger modPow(BigInteger exponent, BigInteger m)
+public MouseListener[] getMouseListeners()
+public DatagramPacket(byte[] buf, int length, SocketAddress address)
+public String getName()
+public AffineTransform(double m00, double m10, double m01, double m11, double m02, double m12)
+public static char highSurrogate(int codePoint)
+public Point2D getP2()
+public static <T> T create(Class<T> listenerInterface, Object target, String action, String eventPropertyName, String listenerMethodName)
+void windowClosed(WindowEvent e)
+public static final RenderingHints.Key KEY_ANTIALIASING
+public Point2D getCenterPoint()
+public final boolean parentOf(ThreadGroup g)
+public Rectangle2D getBounds2D()
+public String getImplementationVendor()
+public static final PageAttributes.MediaType C5
+public Point location(int x, int y)
+public static final Character.UnicodeBlock TAI_THAM
+public Throwable getCause()
+static final int ALLBITS
+public abstract double getX1()
+public long getSerialVersionUID()
+public static MBeanServer getPlatformMBeanServer()
+protected abstract java.awt.peer.MenuItemPeer createMenuItem(MenuItem target) throws HeadlessException
+public Insets getScreenInsets(GraphicsConfiguration gc) throws HeadlessException
+public static final int icSigNamedColor2Tag
+public float getAdvance()
+public static MethodHandle insertArguments(MethodHandle target, int pos, Object... values)
+public static double ceil(double a)
+boolean removeAll()
+public PageAttributes()
+public Rectangle2D getBounds()
+public static final int VK_S
+public Dimension()
+public DataBuffer createDataBuffer()
+public Annotation[] getAnnotations()
+public void list(PrintWriter out, int indent)
+static final int TAG_OPBD
+@Native public static final int TYPE_INT
+static final int TAG_MORT
+void dragExit(DragSourceEvent dse)
+public float[] getComponents(float[] compArray)
+public BigDecimal(BigInteger unscaledVal, int scale)
+public void setExceptionListener(ExceptionListener exceptionListener)
+public StringBuffer append(char[] str)
+public Dimension getMinimumSize(int columns)
+public boolean isEmpty()
+public final Rectangle2D getBounds2D(BufferedImage src)
+public Thread(Runnable target, String name)
+protected Writer out
+public static final RenderingHints.Key KEY_DITHERING
+public int readInt() throws IOException
+public PropertyEditorSupport(Object source)
+public boolean isAnonymousClass()
+public static final int icSigPs2CRD1Tag
+@Deprecated public boolean postEvent(Event evt)
+public int read() throws IOException
+public abstract RenderingHints getRenderingHints()
+public PrintStream(File file, String csn) throws FileNotFoundException, UnsupportedEncodingException
+public static final int icSigGamutTag
+public abstract void drawRenderedImage(RenderedImage img, AffineTransform xform)
+public String getHumanPresentableName()
+public static long max(long a, long b)
+public int getSelectionEnd()
+public void windowClosing(WindowEvent e)
+void setDimensions(int width, int height)
+protected boolean validatedContents
+protected void setOffset(int offset)
+public static ProcessBuilder.Redirect appendTo(File file)
+public static final Character.UnicodeScript GUJARATI
+public static final int OUT_BOTTOM
+@Native public static final int INACTIVE_CAPTION_TEXT
+public void mousePressed(MouseEvent e)
+public float getSampleFloat(int x, int y, int b, DataBuffer data)
+public PushbackInputStream(InputStream in, int size)
+public final void setFocusCycleRoot(boolean focusCycleRoot)
+public static final int PRIORITY_INTERCHAR
+public static final Character.UnicodeBlock IDEOGRAPHIC_DESCRIPTION_CHARACTERS
+@Deprecated public boolean postEvent(Event e)
+public static final int ALT_GRAPH_DOWN_MASK
+public static final Color darkGray
+public MonitorInfo(String className, int identityHashCode, int stackDepth, StackTraceElement stackFrame)
+public IllegalComponentStateException(String s)
+public String getMessage()
+public double y
+@Deprecated public Component locate(int x, int y)
+public void setBounds(int x, int y, int width, int height)
+@Native public static final int TYPE_HSV
+public BeanContext getBeanContext()
+List<HttpCookie> get(URI uri)
+int getUnitIncrement()
+public static final PageAttributes.MediaType ISO_B3
+public abstract void setPaint(Paint paint)
+public final int hashCode()
+public AccessibleRole getAccessibleRole()
+public static final Character.UnicodeBlock EMOTICONS
+public static final int icSigProfileDescriptionTag
+public BigDecimal(char[] in)
+public static final int PAGE_START
+public static final Character.UnicodeBlock MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS
+public BufferStrategy getBufferStrategy()
+public static final ProcessBuilder.Redirect.Type APPEND
+public void flush() throws IOException
+public void setElemFloat(int i, float val)
+public void write(char[] cbuf, int off, int len) throws IOException
+public static final Character.UnicodeBlock LIMBU
+public void setFrame(float x, float y, float w, float h)
+public static boolean isJavaIdentifierStart(char ch)
+public static final byte UPPERCASE_LETTER
+public void removeKeyListener(KeyListener l)
+static final byte TC_RESET
+protected abstract java.awt.peer.ButtonPeer createButton(Button target) throws HeadlessException
+public boolean isValidateRoot()
+protected Raster(SampleModel sampleModel, DataBuffer dataBuffer, Rectangle aRegion, Point sampleModelTranslate, Raster parent)
+public static short getShort(Object array, int index) throws IllegalArgumentException, ArrayIndexOutOfBoundsException
+public int read(byte[] b, int off, int len) throws IOException
+public MethodHandle unreflectConstructor(Constructor<?> c) throws IllegalAccessException
+public ExceptionInInitializerError()
+static final byte TC_BASE
+public int[] getPixels(int x, int y, int w, int h, int[] iArray, DataBuffer data)
+public Point2D getP2()
+public long readLong() throws IOException
+public static final Object VALUE_TEXT_ANTIALIAS_LCD_HRGB
+public static final int PRIVATE
+public int compareTo(File pathname)
+public static final int TYPE_RASTER_SCREEN
+public static final int icSigPs2CSATag
+public boolean isCyclic()
+public abstract void drawOval(int x, int y, int width, int height)
+public static final int VK_NUMPAD4
+public Component getFirstComponent(Container aContainer)
+public double getAngleStart()
+public StringBuilder insert(int offset, int i)
+public UnknownError()
+public PutField()
+public static final Character.UnicodeBlock CHAKMA
+public double distanceSq(double px, double py)
+public void requestFocus()
+public WritableRaster createCompatibleDestRaster(Raster src)
+public void hitToPoint(TextHitInfo hit, Point2D point)
+public BeanContextServicesSupport(BeanContextServices peer, Locale lcle)
+public String toString()
+public static final Authenticator.RequestorType SERVER
+public MethodType generic()
+public int getCaretPosition()
+protected int id
+public void setSize(int width, int height)
+public boolean isDataFlavorSupported(DataFlavor flavor)
+public void validate()
+public void setRect(Rectangle2D r)
+public static long rotateRight(long i, int distance)
+public int getType()
+int getMinTileX()
+public static final TransformAttribute IDENTITY
+public static final int BUTTON3
+public double ctrly
+public void removeItemListener(ItemListener l)
+public float getDescent()
+public int getArcType()
+public Point getScrollPosition()
+public abstract double getX2()
+public ExceptionListener getExceptionListener()
+public double y
+public abstract ProcessBuilder.Redirect.Type type()
+public void setCursor(Cursor cursor)
+public static long parseLong(String s) throws NumberFormatException
+public Object getDataElements(int rgb, Object pixel)
+public void doLayout()
+public static String copyValueOf(char[] data)
+public ClassCircularityError()
+public Double(Point2D p1, Point2D p2)
+public static final byte DIRECTIONALITY_COMMON_NUMBER_SEPARATOR
+public static double max(double a, double b)
+public static final int VK_UP
+public static final int VK_F2
+boolean contains(double x, double y, double w, double h)
+public AccessibleRole getAccessibleRole()
+public int hashCode()
+public final int getModifiers()
+public BigInteger toBigInteger()
+public static final Character.UnicodeBlock MYANMAR
+public static final int VK_U
+public static final TextLayout.CaretPolicy DEFAULT_CARET_POLICY
+public ClassCircularityError(String s)
+public CharSequence subSequence(int beginIndex, int endIndex)
+public Point2D getCtrlP1()
+public final Object getDesktopProperty(String propertyName)
+public MethodHandle asVarargsCollector(Class<?> arrayType)
+public static long parseUnsignedLong(String s) throws NumberFormatException
+@Native public static final int UNIT_INCREMENT
+public void setBroadcast(boolean on) throws SocketException
+public static ColorModel getRGBdefault()
+public boolean isDoubleBuffered()
+public AnnotatedType getAnnotatedReturnType()
+public final String getInstantiatedMethodType()
+public AccessibleRole getAccessibleRole()
+public static final AlphaComposite SrcIn
+public float getAdvance()
+void releaseService(BeanContextChild child, Object requestor, Object service)
+protected int count
+public AccessibleContext getAccessibleContext()
+public Color(int rgb)
+public void printComponents(Graphics g)
+public void checkRead(FileDescriptor fd)
+public void inverseTransform(double[] srcPts, int srcOff, double[] dstPts, int dstOff, int numPts) throws NoninvertibleTransformException
+protected void enqueueKeyEvents(long after, Component untilFocused)
+public void transform(Point2D[] ptSrc, int srcOff, Point2D[] ptDst, int dstOff, int numPts)
+public DataBufferShort(int size, int numBanks)
+void endComposition()
+public boolean isRepresentationClassCharBuffer()
+public AWTEvent peekEvent()
+public int getColumns()
+public boolean contains(double x, double y, double w, double h)
+public static final int TYPE_4BYTE_ABGR_PRE
+public static int numberOfTrailingZeros(int i)
+protected Container getGlobalCurrentFocusCycleRoot() throws SecurityException
+public void setCursor(Cursor cursor)
+public float height
+public MethodHandle asSpreader(Class<?> arrayType, int arrayLength)
+public static final Float JUSTIFICATION_NONE
+public boolean getState()
+public LinkageError(String s, Throwable cause)
+public String paramString()
+public abstract double getWidth()
+protected AccessibleAWTMenuItem()
+public void checkPackageAccess(String pkg)
+public int precision()
+public UncheckedIOException(String message, IOException cause)
+public static boolean linesIntersect(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4)
+public static double tan(double a)
+public GlyphMetrics(boolean horizontal, float advanceX, float advanceY, Rectangle2D bounds, byte glyphType)
+public boolean isCompatibleRaster(Raster raster)
+@Deprecated public String toString(int hibyte)
+public Point2D transform(Point2D ptSrc, Point2D ptDst)
+public void printAll(Graphics g)
+public Object[] toArray()
+public void setHumanPresentableName(String humanPresentableName)
+protected void arrangeGrid(Container parent)
+public static final int PAINT_LAST
+public abstract Rectangle getClipBounds()
+public static Cursor getSystemCustomCursor(String name) throws AWTException, HeadlessException
+public static final int HIERARCHY_CHANGED
+void mouseEntered(MouseEvent e)
+public BigInteger abs()
+public void addNotify()
+public ParameterDescriptor()
+public boolean isSelected()
+public static final Character.UnicodeBlock BAMUM
+public ComponentListener[] getComponentListeners()
+public TextHitInfo getOtherHit()
+public void write(int c)
+public int getDropAction()
+@Native public static final int DST_OUT
+public NotActiveException(String reason)
+public XMLDecoder(InputSource is)
+public int read(byte[] b, int off, int len) throws IOException
+public static final int VOLATILE
+public String getRequestMethod()
+public void setChunkedStreamingMode(int chunklen)
+public void removeAll()
+public void setSample(int x, int y, int b, int s, DataBuffer data)
+public LineNumberReader(Reader in, int sz)
+@Deprecated public Dimension size()
+public int offsetByCodePoints(int index, int codePointOffset)
+public short shortValue()
+public static final byte DIRECTIONALITY_RIGHT_TO_LEFT
+public static final Character.UnicodeScript BUHID
+public WritableRaster getWritableParent()
+public long getFilePointer() throws IOException
+public static final Color GRAY
+public static final float TOP_ALIGNMENT
+public void windowIconified(WindowEvent e)
+static final int TAG_BASE
+protected Writer(Object lock)
+public static final int NORTHWEST
+public TextHitInfo getNextLeftHit(int offset)
+public static final Character.UnicodeBlock BLOCK_ELEMENTS
+public static final ElementType PARAMETER
+public void setFocusCycleRoot(boolean focusCycleRoot)
+public Accessible getAccessibleChild(int i)
+public static final Character.UnicodeBlock GLAGOLITIC
+public static final int MIN_EXPONENT
+public <T extends Annotation> T getAnnotation(Class<T> annotationClass)
+public void addItemListener(ItemListener l)
+public static final Character.UnicodeBlock ARABIC
+public abstract void setBackground(Color color)
+public void transform(float[] srcPts, int srcOff, float[] dstPts, int dstOff, int numPts)
+public <T extends Annotation> T getDeclaredAnnotation(Class<T> annotationClass)
+public boolean prepareImage(Image image, int width, int height, ImageObserver observer)
+public static MethodType methodType(Class<?> rtype, Class<?>[] ptypes)
+protected abstract void setTimeToLive(int ttl) throws IOException
+public boolean isMaximumSizeSet()
+public static final PageAttributes.MediaType JIS_B7
+public static final int BELOW_BASELINE_TRAILING
+public PropertyChangeListener[] getPropertyChangeListeners()
+public final void writeChars(String s) throws IOException
+public WindowEvent(Window source, int id)
+static final CookiePolicy ACCEPT_NONE
+public abstract boolean drawImage(Image img, int dx1, int dy1, int dx2, int dy2, int sx1, int sy1, int sx2, int sy2, ImageObserver observer)
+public final void writeDouble(double v) throws IOException
+void close() throws IOException
+public String toString()
+public ProcessBuilder.Redirect redirectError()
+public MemoryUsage getUsage()
+public Object[] toArray()
+public static Thread.State[] values()
+public static final int LOADING
+public abstract Image getImage(URL url)
+public String getMessage()
+@Native public static final int TYPE_RGB
+public static final byte DIRECTIONALITY_ARABIC_NUMBER
+@Native static final int SEG_MOVETO
+public BeanContextChild beanContextChildPeer
+public static final Character.UnicodeScript GREEK
+public abstract int getModifiers()
+public static final int VK_NUMPAD2
+public BandedSampleModel(int dataType, int w, int h, int scanlineStride, int[] bankIndices, int[] bandOffsets)
+public int lastIndexOf(String str)
+public static final int VK_F13
+public int indexOf(String str)
+public final BufferedImage filter(BufferedImage src, BufferedImage dst)
+public void shear(double shx, double shy)
+@Native public static final int WINDOW
+public int getCharacterCount()
+public static final Character.UnicodeScript OGHAM
+public static Font createFont(int fontFormat, InputStream fontStream) throws FontFormatException, IOException
+void windowGainedFocus(WindowEvent e)
+public StringBuilder insert(int offset, char[] str)
+protected static final int OVER
+public int read(byte[] b) throws IOException
+public WritableRaster getAlphaRaster()
+public void createBufferStrategy(int numBuffers, BufferCapabilities caps) throws AWTException
+static final int REF_newInvokeSpecial
+protected void finalize() throws IOException
+public int read()
+public Object invoke(Object obj, Object... args) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException
+public static final int VK_PERIOD
+public boolean testBit(int n)
+static final int TAG_EBSC
+protected Component getGlobalPermanentFocusOwner() throws SecurityException
+public static AWTKeyStroke getAWTKeyStroke(char keyChar)
+protected int out
+public InputMethodEvent(Component source, int id, TextHitInfo caret, TextHitInfo visiblePosition)
+public Class<?> parameterType(int num)
+public SampleModel getSampleModel()
+public BigDecimal subtract(BigDecimal subtrahend)
+public static final float NaN
+public void dragOver(DragSourceDragEvent dsde)
+public boolean isHttpOnly()
+public final void writeBytes(String s) throws IOException
+public double getMaxY()
+@Native public static final int TYPE_HLS
+public PersistenceDelegate()
+public String toString()
+long getTotalCompilationTime()
+public boolean requestFocusInWindow()
+WritableRaster createCompatibleDestRaster(Raster src)
+public Process exec(String[] cmdarray, String[] envp, File dir) throws IOException
+public void fillPolygon(Polygon p)
+public abstract int getCopies()
+protected int getTargetActions()
+public final String name()
+public static String toString(long i)
+AudioClip getAudioClip(URL url)
+public static final DataFlavor stringFlavor
+public boolean isEnabled()
+public int hashCode()
+public String getAccessibleName()
+public boolean isAccessibleChildSelected(int i)
+public VerifyError(String s)
+public abstract void put(String name, char val)
+public void addKeyEventPostProcessor(KeyEventPostProcessor processor)
+public static final String CLASS_LOADING_MXBEAN_NAME
+public static boolean isIdentifierIgnorable(char ch)
+public boolean isMulticastAddress()
+public Object[] getErrorsAny()
+public static String toUnsignedString(int i, int radix)
+public PathIterator getPathIterator(AffineTransform at)
+public void setBackground(Color c)
+public StringBuilder(int capacity)
+void requestTopDownLeftRightResend(ImageConsumer ic)
+protected void validateTree()
+public static final Character.UnicodeBlock VAI
+public Dimension getTrayIconSize()
+public AdjustmentEvent(Adjustable source, int id, int type, int value)
+public static double expm1(double x)
+protected void processEvent(AWTEvent e)
+@Deprecated public int countStackFrames()
+public Number()
+public static final NumericShaper.Range MYANMAR_SHAN
+public long skip(long n) throws IOException
+public static final int ORIYA
+public static boolean isTransient(int mod)
+public static final int icSigColorantOrderTag
+public void revokeService(Class serviceClass, BeanContextServiceProvider bcsp, boolean revokeCurrentServicesNow)
+public void write(int b) throws IOException
+MemoryUsage getUsage()
+public static final Character.UnicodeBlock IPA_EXTENSIONS
+public void setSample(int x, int y, int b, double s, DataBuffer data)
+public static final byte DIRECTIONALITY_EUROPEAN_NUMBER
+public static float parseFloat(String s) throws NumberFormatException
+public void firePropertyChange(PropertyChangeEvent event)
+protected void acceptDrag(int dragOperation)
+public final long readLong() throws IOException
+public NoSuchMethodError()
+public abstract PageFormat validatePage(PageFormat page)
+public void update(Graphics g)
+protected ClassLoader(ClassLoader parent)
+public WindowFocusListener[] getWindowFocusListeners()
+public static final Object VALUE_TEXT_ANTIALIAS_LCD_VRGB
+public static int compare(double d1, double d2)
+public char charAt(int index)
+public static final int REDCOMPONENT
+public double getHeight()
+public boolean isAutoRequestFocus()
+public void setPrintQuality(PageAttributes.PrintQualityType printQuality)
+public void setPixel(int x, int y, int[] iArray)
+public String getClassName()
+public void setScrollPosition(Point p)
+public void mouseClicked(MouseEvent e)
+public static final PageAttributes.MediaType B2
+public boolean isTransformed()
+public void setPixels(int x, int y, int w, int h, ColorModel model, int[] pixels, int off, int scansize)
+void uncaughtException(Thread t, Throwable e)
+public static final Desktop.Action EDIT
+public static Object get(Object array, int index) throws IllegalArgumentException, ArrayIndexOutOfBoundsException
+public abstract void show()
+static final int REF_getField
+WritableRaster copyData(WritableRaster raster)
+public static final int VK_SEPARATOR
+protected void processMouseEvent(MouseEvent e)
+public Dimension maximumLayoutSize(Container target)
+protected final Class<?> findLoadedClass(String name)
+public void mark(int readlimit)
+public static final int MOVE_CURSOR
+public boolean isSynthetic()
+public static final Character.UnicodeBlock AEGEAN_NUMBERS
+public static int max(int a, int b)
+public Point2D getP1()
+public abstract void setPrintable(Printable painter)
+public long longValue()
+@Deprecated public Rectangle getClipRect()
+public static Character.UnicodeScript valueOf(String name)
+public static final SystemColor inactiveCaption
+public abstract float getUnderlineOffset()
+public void close()
+public void write(String str, int off, int len)
+public SinglePixelPackedSampleModel(int dataType, int w, int h, int[] bitMasks)
+public AWTException(String msg)
+public Double(double x, double y, double w, double h)
+public void remove(Component comp)
+public Integer(int value)
+protected abstract java.awt.peer.MenuPeer createMenu(Menu target) throws HeadlessException
+public TextHitInfo getNextRightHit(TextHitInfo hit)
+String getName()
+public static final byte SPACE_SEPARATOR
+public abstract double getAngleExtent()
+public PopupMenu(String label) throws HeadlessException
+public static final int PUBLIC
+public DragGestureEvent getTrigger()
+boolean accept(File dir, String name)
+public float x1
+public boolean isEmpty()
+public int capacity()
+public Component findComponentAt(int x, int y)
+public static final int BYTES
+public abstract void rotate(double theta, double x, double y)
+public long skip(long n) throws IOException
+public static final Thread.State WAITING
+public static final Character.UnicodeBlock ETHIOPIC_EXTENDED
+public abstract boolean drawImage(Image img, int x, int y, ImageObserver observer)
+public Float()
+public void addNotify()
+public void commentChar(int ch)
+@Deprecated public static boolean isSpace(char ch)
+public ParameterBlock add(short s)
+public Shape getLogicalHighlightShape(int firstEndpoint, int secondEndpoint)
+public static boolean isLowerCase(int codePoint)
+public void setLocation(double x, double y)
+public static final JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_UNCOLLATED_COPIES
+public void setSize(Dimension d)
+public static boolean isIdeographic(int codePoint)
+public static double IEEEremainder(double f1, double f2)
+public static final int VK_P
+public int charWidth(int codePoint)
+public boolean isVarArgs()
+public int getNumParameters()
+public abstract void sync()
+public int getMaxPage()
+public float[] toRGB(float[] colorvalue)
+public static final int ACTION_LAST
+@Deprecated public boolean mouseMove(Event evt, int x, int y)
+public CheckboxMenuItem(String label) throws HeadlessException
+Object getService(BeanContextServices bcs, Object requestor, Class serviceClass, Object serviceSelector)
+public void writeExpression(Expression oldExp)
+public PrintStream append(CharSequence csq)
+public static short parseShort(String s, int radix) throws NumberFormatException
+public void setDimensions(int w, int h)
+public DragSource getDragSource()
+protected abstract void enqueueKeyEvents(long after, Component untilFocused)
+public static final int MOUSE_PRESSED
+public void setSamples(int x, int y, int w, int h, int b, int[] iArray, DataBuffer data)
+public static final AlphaComposite SrcOver
+public final void moveTo(double x, double y)
+public abstract GraphicsDevice getDefaultScreenDevice() throws HeadlessException
+@Native public static final int CONTROL_LT_HIGHLIGHT
+public String getAccessibleName()
+protected WritableRaster(SampleModel sampleModel, DataBuffer dataBuffer, Rectangle aRegion, Point sampleModelTranslate, WritableRaster parent)
+public static final int KEY_PRESS
+int getMinimum()
+public void dragExit(DragSourceEvent dse)
+public static final int KEY_RELEASE
+public Object getTarget()
+public void setFlavorMap(FlavorMap fm)
+public static MemoryMXBean getMemoryMXBean()
+public void reconvert()
+public Point getCenterPoint() throws HeadlessException
+public static final int icXYZNumberX
+public boolean contains(double x, double y)
+public void setToTranslation(double tx, double ty)
+public static TextHitInfo beforeOffset(int offset)
+public static final int VK_T
+public Dimension minimumLayoutSize(Container parent)
+public int getOffset(int x, int y, int b)
+public Adjustable getVAdjustable()
+public void remove()

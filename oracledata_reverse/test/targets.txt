@@ -1,0 +1,1000 @@
+public final boolean isOpen()
+public final SelectorProvider provider()
+protected final Set<SelectionKey> cancelledKeys()
+protected abstract SelectionKey register(AbstractSelectableChannel ch, int ops, Object att)
+protected final void deregister(AbstractSelectionKey key)
+protected final void begin()
+protected final void end()
+protected AsynchronousChannelProvider()
+public static AsynchronousChannelProvider provider()
+public abstract AsynchronousChannelGroup openAsynchronousChannelGroup(int nThreads, ThreadFactory threadFactory) throws IOException
+public abstract AsynchronousChannelGroup openAsynchronousChannelGroup(ExecutorService executor, int initialSize) throws IOException
+public abstract AsynchronousServerSocketChannel openAsynchronousServerSocketChannel(AsynchronousChannelGroup group) throws IOException
+public abstract AsynchronousSocketChannel openAsynchronousSocketChannel(AsynchronousChannelGroup group) throws IOException
+protected SelectorProvider()
+public static SelectorProvider provider()
+public abstract DatagramChannel openDatagramChannel() throws IOException
+public abstract DatagramChannel openDatagramChannel(ProtocolFamily family) throws IOException
+public abstract Pipe openPipe() throws IOException
+public abstract AbstractSelector openSelector() throws IOException
+public abstract ServerSocketChannel openServerSocketChannel() throws IOException
+public abstract SocketChannel openSocketChannel() throws IOException
+public Channel inheritedChannel() throws IOException
+public CharacterCodingException()
+protected Charset(String canonicalName, String[] aliases)
+public static boolean isSupported(String charsetName)
+public static Charset forName(String charsetName)
+public static SortedMap<String,Charset> availableCharsets()
+public static Charset defaultCharset()
+public final String name()
+public final Set<String> aliases()
+public String displayName()
+public final boolean isRegistered()
+public String displayName(Locale locale)
+public abstract boolean contains(Charset cs)
+public abstract CharsetDecoder newDecoder()
+public abstract CharsetEncoder newEncoder()
+public boolean canEncode()
+public final CharBuffer decode(ByteBuffer bb)
+public final ByteBuffer encode(CharBuffer cb)
+public final ByteBuffer encode(String str)
+public final int compareTo(Charset that)
+public final int hashCode()
+public final boolean equals(Object ob)
+public final String toString()
+protected CharsetDecoder(Charset cs, float averageCharsPerByte, float maxCharsPerByte)
+public final Charset charset()
+public final String replacement()
+public final CharsetDecoder replaceWith(String newReplacement)
+protected void implReplaceWith(String newReplacement)
+public CodingErrorAction malformedInputAction()
+public final CharsetDecoder onMalformedInput(CodingErrorAction newAction)
+protected void implOnMalformedInput(CodingErrorAction newAction)
+public CodingErrorAction unmappableCharacterAction()
+public final CharsetDecoder onUnmappableCharacter(CodingErrorAction newAction)
+protected void implOnUnmappableCharacter(CodingErrorAction newAction)
+public final float averageCharsPerByte()
+public final float maxCharsPerByte()
+public final CoderResult decode(ByteBuffer in, CharBuffer out, boolean endOfInput)
+public final CoderResult flush(CharBuffer out)
+protected CoderResult implFlush(CharBuffer out)
+public final CharsetDecoder reset()
+protected void implReset()
+protected abstract CoderResult decodeLoop(ByteBuffer in, CharBuffer out)
+public final CharBuffer decode(ByteBuffer in) throws CharacterCodingException
+public boolean isAutoDetecting()
+public boolean isCharsetDetected()
+public Charset detectedCharset()
+protected CharsetEncoder(Charset cs, float averageBytesPerChar, float maxBytesPerChar, byte[] replacement)
+protected CharsetEncoder(Charset cs, float averageBytesPerChar, float maxBytesPerChar)
+public final Charset charset()
+public final byte[] replacement()
+public final CharsetEncoder replaceWith(byte[] newReplacement)
+protected void implReplaceWith(byte[] newReplacement)
+public boolean isLegalReplacement(byte[] repl)
+public CodingErrorAction malformedInputAction()
+public final CharsetEncoder onMalformedInput(CodingErrorAction newAction)
+protected void implOnMalformedInput(CodingErrorAction newAction)
+public CodingErrorAction unmappableCharacterAction()
+public final CharsetEncoder onUnmappableCharacter(CodingErrorAction newAction)
+protected void implOnUnmappableCharacter(CodingErrorAction newAction)
+public final float averageBytesPerChar()
+public final float maxBytesPerChar()
+public final CoderResult encode(CharBuffer in, ByteBuffer out, boolean endOfInput)
+public final CoderResult flush(ByteBuffer out)
+protected CoderResult implFlush(ByteBuffer out)
+public final CharsetEncoder reset()
+protected void implReset()
+protected abstract CoderResult encodeLoop(CharBuffer in, ByteBuffer out)
+public final ByteBuffer encode(CharBuffer in) throws CharacterCodingException
+public boolean canEncode(char c)
+public boolean canEncode(CharSequence cs)
+public CoderMalfunctionError(Exception cause)
+public static final CoderResult UNDERFLOW
+public static final CoderResult OVERFLOW
+public String toString()
+public boolean isUnderflow()
+public boolean isOverflow()
+public boolean isError()
+public boolean isMalformed()
+public boolean isUnmappable()
+public int length()
+public static CoderResult malformedForLength(int length)
+public static CoderResult unmappableForLength(int length)
+public void throwException() throws CharacterCodingException
+public static final CodingErrorAction IGNORE
+public static final CodingErrorAction REPLACE
+public static final CodingErrorAction REPORT
+public String toString()
+public IllegalCharsetNameException(String charsetName)
+public String getCharsetName()
+public MalformedInputException(int inputLength)
+public int getInputLength()
+public String getMessage()
+public static final Charset US_ASCII
+public static final Charset ISO_8859_1
+public static final Charset UTF_8
+public static final Charset UTF_16BE
+public static final Charset UTF_16LE
+public static final Charset UTF_16
+public UnmappableCharacterException(int inputLength)
+public int getInputLength()
+public String getMessage()
+public UnsupportedCharsetException(String charsetName)
+public String getCharsetName()
+protected CharsetProvider()
+public abstract Iterator<Charset> charsets()
+public abstract Charset charsetForName(String charsetName)
+public AccessDeniedException(String file)
+public AccessDeniedException(String file, String other, String reason)
+public static final AccessMode READ
+public static final AccessMode WRITE
+public static final AccessMode EXECUTE
+public static AccessMode[] values()
+public static AccessMode valueOf(String name)
+public AtomicMoveNotSupportedException(String source, String target, String reason)
+public ClosedDirectoryStreamException()
+public ClosedFileSystemException()
+public ClosedWatchServiceException()
+public DirectoryIteratorException(IOException cause)
+public IOException getCause()
+public DirectoryNotEmptyException(String dir)
+boolean accept(T entry) throws IOException
+Iterator<T> iterator()
+public FileAlreadyExistsException(String file)
+public FileAlreadyExistsException(String file, String other, String reason)
+public static InputStream newInputStream(Path path, OpenOption... options) throws IOException
+public static OutputStream newOutputStream(Path path, OpenOption... options) throws IOException
+public static SeekableByteChannel newByteChannel(Path path, Set<? extends OpenOption> options, FileAttribute<?>... attrs) throws IOException
+public static SeekableByteChannel newByteChannel(Path path, OpenOption... options) throws IOException
+public static DirectoryStream<Path> newDirectoryStream(Path dir) throws IOException
+public static DirectoryStream<Path> newDirectoryStream(Path dir, String glob) throws IOException
+public static DirectoryStream<Path> newDirectoryStream(Path dir, DirectoryStream.Filter<? super Path> filter) throws IOException
+public static Path createFile(Path path, FileAttribute<?>... attrs) throws IOException
+public static Path createDirectory(Path dir, FileAttribute<?>... attrs) throws IOException
+public static Path createDirectories(Path dir, FileAttribute<?>... attrs) throws IOException
+public static Path createTempFile(Path dir, String prefix, String suffix, FileAttribute<?>... attrs) throws IOException
+public static Path createTempFile(String prefix, String suffix, FileAttribute<?>... attrs) throws IOException
+public static Path createTempDirectory(Path dir, String prefix, FileAttribute<?>... attrs) throws IOException
+public static Path createTempDirectory(String prefix, FileAttribute<?>... attrs) throws IOException
+public static Path createSymbolicLink(Path link, Path target, FileAttribute<?>... attrs) throws IOException
+public static Path createLink(Path link, Path existing) throws IOException
+public static void delete(Path path) throws IOException
+public static boolean deleteIfExists(Path path) throws IOException
+public static Path copy(Path source, Path target, CopyOption... options) throws IOException
+public static Path move(Path source, Path target, CopyOption... options) throws IOException
+public static Path readSymbolicLink(Path link) throws IOException
+public static FileStore getFileStore(Path path) throws IOException
+public static boolean isSameFile(Path path, Path path2) throws IOException
+public static boolean isHidden(Path path) throws IOException
+public static String probeContentType(Path path) throws IOException
+public static <V extends FileAttributeView> V getFileAttributeView(Path path, Class<V> type, LinkOption... options)
+public static <A extends BasicFileAttributes> A readAttributes(Path path, Class<A> type, LinkOption... options) throws IOException
+public static Path setAttribute(Path path, String attribute, Object value, LinkOption... options) throws IOException
+public static Object getAttribute(Path path, String attribute, LinkOption... options) throws IOException
+public static Map<String,Object> readAttributes(Path path, String attributes, LinkOption... options) throws IOException
+public static Set<PosixFilePermission> getPosixFilePermissions(Path path, LinkOption... options) throws IOException
+public static Path setPosixFilePermissions(Path path, Set<PosixFilePermission> perms) throws IOException
+public static UserPrincipal getOwner(Path path, LinkOption... options) throws IOException
+public static Path setOwner(Path path, UserPrincipal owner) throws IOException
+public static boolean isSymbolicLink(Path path)
+public static boolean isDirectory(Path path, LinkOption... options)
+public static boolean isRegularFile(Path path, LinkOption... options)
+public static FileTime getLastModifiedTime(Path path, LinkOption... options) throws IOException
+public static Path setLastModifiedTime(Path path, FileTime time) throws IOException
+public static long size(Path path) throws IOException
+public static boolean exists(Path path, LinkOption... options)
+public static boolean notExists(Path path, LinkOption... options)
+public static boolean isReadable(Path path)
+public static boolean isWritable(Path path)
+public static boolean isExecutable(Path path)
+public static Path walkFileTree(Path start, Set<FileVisitOption> options, int maxDepth, FileVisitor<? super Path> visitor) throws IOException
+public static Path walkFileTree(Path start, FileVisitor<? super Path> visitor) throws IOException
+public static BufferedReader newBufferedReader(Path path, Charset cs) throws IOException
+public static BufferedReader newBufferedReader(Path path) throws IOException
+public static BufferedWriter newBufferedWriter(Path path, Charset cs, OpenOption... options) throws IOException
+public static BufferedWriter newBufferedWriter(Path path, OpenOption... options) throws IOException
+public static long copy(InputStream in, Path target, CopyOption... options) throws IOException
+public static long copy(Path source, OutputStream out) throws IOException
+public static byte[] readAllBytes(Path path) throws IOException
+public static List<String> readAllLines(Path path, Charset cs) throws IOException
+public static List<String> readAllLines(Path path) throws IOException
+public static Path write(Path path, byte[] bytes, OpenOption... options) throws IOException
+public static Path write(Path path, Iterable<? extends CharSequence> lines, Charset cs, OpenOption... options) throws IOException
+public static Path write(Path path, Iterable<? extends CharSequence> lines, OpenOption... options) throws IOException
+public static Stream<Path> list(Path dir) throws IOException
+public static Stream<Path> walk(Path start, int maxDepth, FileVisitOption... options) throws IOException
+public static Stream<Path> walk(Path start, FileVisitOption... options) throws IOException
+public static Stream<Path> find(Path start, int maxDepth, BiPredicate<Path,BasicFileAttributes> matcher, FileVisitOption... options) throws IOException
+public static Stream<String> lines(Path path, Charset cs) throws IOException
+public static Stream<String> lines(Path path) throws IOException
+protected FileStore()
+public abstract String name()
+public abstract String type()
+public abstract boolean isReadOnly()
+public abstract long getTotalSpace() throws IOException
+public abstract long getUsableSpace() throws IOException
+public abstract long getUnallocatedSpace() throws IOException
+public abstract boolean supportsFileAttributeView(Class<? extends FileAttributeView> type)
+public abstract boolean supportsFileAttributeView(String name)
+public abstract <V extends FileStoreAttributeView> V getFileStoreAttributeView(Class<V> type)
+public abstract Object getAttribute(String attribute) throws IOException
+protected FileSystem()
+public abstract FileSystemProvider provider()
+public abstract void close() throws IOException
+public abstract boolean isOpen()
+public abstract boolean isReadOnly()
+public abstract String getSeparator()
+public abstract Iterable<Path> getRootDirectories()
+public abstract Iterable<FileStore> getFileStores()
+public abstract Set<String> supportedFileAttributeViews()
+public abstract Path getPath(String first, String... more)
+public abstract PathMatcher getPathMatcher(String syntaxAndPattern)
+public abstract UserPrincipalLookupService getUserPrincipalLookupService()
+public abstract WatchService newWatchService() throws IOException
+public FileSystemAlreadyExistsException()
+public FileSystemAlreadyExistsException(String msg)
+public FileSystemException(String file)
+public FileSystemException(String file, String other, String reason)
+public String getFile()
+public String getOtherFile()
+public String getReason()
+public String getMessage()
+public FileSystemLoopException(String file)
+public FileSystemNotFoundException()
+public FileSystemNotFoundException(String msg)
+public static FileSystem getDefault()
+public static FileSystem getFileSystem(URI uri)
+public static FileSystem newFileSystem(URI uri, Map<String,?> env) throws IOException
+public static FileSystem newFileSystem(URI uri, Map<String,?> env, ClassLoader loader) throws IOException
+public static FileSystem newFileSystem(Path path, ClassLoader loader) throws IOException
+public static final FileVisitOption FOLLOW_LINKS
+public static FileVisitOption[] values()
+public static FileVisitOption valueOf(String name)
+FileVisitResult preVisitDirectory(T dir, BasicFileAttributes attrs) throws IOException
+FileVisitResult visitFile(T file, BasicFileAttributes attrs) throws IOException
+FileVisitResult visitFileFailed(T file, IOException exc) throws IOException
+FileVisitResult postVisitDirectory(T dir, IOException exc) throws IOException
+public static final FileVisitResult CONTINUE
+public static final FileVisitResult TERMINATE
+public static final FileVisitResult SKIP_SUBTREE
+public static final FileVisitResult SKIP_SIBLINGS
+public static FileVisitResult[] values()
+public static FileVisitResult valueOf(String name)
+public InvalidPathException(String input, String reason, int index)
+public InvalidPathException(String input, String reason)
+public String getInput()
+public String getReason()
+public int getIndex()
+public String getMessage()
+public static final LinkOption NOFOLLOW_LINKS
+public static LinkOption[] values()
+public static LinkOption valueOf(String name)
+public LinkPermission(String name)
+public LinkPermission(String name, String actions)
+public NoSuchFileException(String file)
+public NoSuchFileException(String file, String other, String reason)
+public NotDirectoryException(String file)
+public NotLinkException(String file)
+public NotLinkException(String file, String other, String reason)
+FileSystem getFileSystem()
+boolean isAbsolute()
+Path getRoot()
+Path getFileName()
+Path getParent()
+int getNameCount()
+Path getName(int index)
+Path subpath(int beginIndex, int endIndex)
+boolean startsWith(Path other)
+boolean startsWith(String other)
+boolean endsWith(Path other)
+boolean endsWith(String other)
+Path normalize()
+Path resolve(Path other)
+Path resolve(String other)
+Path resolveSibling(Path other)
+Path resolveSibling(String other)
+Path relativize(Path other)
+URI toUri()
+Path toAbsolutePath()
+Path toRealPath(LinkOption... options) throws IOException
+File toFile()
+WatchKey register(WatchService watcher, WatchEvent.Kind<?>[] events, WatchEvent.Modifier... modifiers) throws IOException
+WatchKey register(WatchService watcher, WatchEvent.Kind<?>... events) throws IOException
+Iterator<Path> iterator()
+int compareTo(Path other)
+boolean equals(Object other)
+int hashCode()
+String toString()
+boolean matches(Path path)
+public static Path get(String first, String... more)
+public static Path get(URI uri)
+public ProviderMismatchException()
+public ProviderMismatchException(String msg)
+public ProviderNotFoundException()
+public ProviderNotFoundException(String msg)
+public ReadOnlyFileSystemException()
+SecureDirectoryStream<T> newDirectoryStream(T path, LinkOption... options) throws IOException
+SeekableByteChannel newByteChannel(T path, Set<? extends OpenOption> options, FileAttribute<?>... attrs) throws IOException
+void deleteFile(T path) throws IOException
+void deleteDirectory(T path) throws IOException
+void move(T srcpath, SecureDirectoryStream<T> targetdir, T targetpath) throws IOException
+<V extends FileAttributeView> V getFileAttributeView(Class<V> type)
+<V extends FileAttributeView> V getFileAttributeView(T path, Class<V> type, LinkOption... options)
+protected SimpleFileVisitor()
+public FileVisitResult preVisitDirectory(T dir, BasicFileAttributes attrs) throws IOException
+public FileVisitResult visitFile(T file, BasicFileAttributes attrs) throws IOException
+public FileVisitResult visitFileFailed(T file, IOException exc) throws IOException
+public FileVisitResult postVisitDirectory(T dir, IOException exc) throws IOException
+public static final StandardCopyOption REPLACE_EXISTING
+public static final StandardCopyOption COPY_ATTRIBUTES
+public static final StandardCopyOption ATOMIC_MOVE
+public static StandardCopyOption[] values()
+public static StandardCopyOption valueOf(String name)
+public static final StandardOpenOption READ
+public static final StandardOpenOption WRITE
+public static final StandardOpenOption APPEND
+public static final StandardOpenOption TRUNCATE_EXISTING
+public static final StandardOpenOption CREATE
+public static final StandardOpenOption CREATE_NEW
+public static final StandardOpenOption DELETE_ON_CLOSE
+public static final StandardOpenOption SPARSE
+public static final StandardOpenOption SYNC
+public static final StandardOpenOption DSYNC
+public static StandardOpenOption[] values()
+public static StandardOpenOption valueOf(String name)
+public static final WatchEvent.Kind<Object> OVERFLOW
+public static final WatchEvent.Kind<Path> ENTRY_CREATE
+public static final WatchEvent.Kind<Path> ENTRY_DELETE
+public static final WatchEvent.Kind<Path> ENTRY_MODIFY
+WatchKey register(WatchService watcher, WatchEvent.Kind<?>[] events, WatchEvent.Modifier... modifiers) throws IOException
+WatchKey register(WatchService watcher, WatchEvent.Kind<?>... events) throws IOException
+WatchEvent.Kind<T> kind()
+int count()
+T context()
+String name()
+Class<T> type()
+String name()
+boolean isValid()
+List<WatchEvent<?>> pollEvents()
+boolean reset()
+void cancel()
+Watchable watchable()
+void close() throws IOException
+WatchKey poll()
+WatchKey poll(long timeout, TimeUnit unit) throws InterruptedException
+WatchKey take() throws InterruptedException
+public AclEntry build()
+public AclEntry.Builder setType(AclEntryType type)
+public AclEntry.Builder setPrincipal(UserPrincipal who)
+public AclEntry.Builder setPermissions(Set<AclEntryPermission> perms)
+public AclEntry.Builder setPermissions(AclEntryPermission... perms)
+public AclEntry.Builder setFlags(Set<AclEntryFlag> flags)
+public AclEntry.Builder setFlags(AclEntryFlag... flags)
+public static AclEntry.Builder newBuilder()
+public static AclEntry.Builder newBuilder(AclEntry entry)
+public AclEntryType type()
+public UserPrincipal principal()
+public Set<AclEntryPermission> permissions()
+public Set<AclEntryFlag> flags()
+public boolean equals(Object ob)
+public int hashCode()
+public String toString()
+public static final AclEntryFlag FILE_INHERIT
+public static final AclEntryFlag DIRECTORY_INHERIT
+public static final AclEntryFlag NO_PROPAGATE_INHERIT
+public static final AclEntryFlag INHERIT_ONLY
+public static AclEntryFlag[] values()
+public static AclEntryFlag valueOf(String name)
+public static final AclEntryPermission READ_DATA
+public static final AclEntryPermission WRITE_DATA
+public static final AclEntryPermission APPEND_DATA
+public static final AclEntryPermission READ_NAMED_ATTRS
+public static final AclEntryPermission WRITE_NAMED_ATTRS
+public static final AclEntryPermission EXECUTE
+public static final AclEntryPermission DELETE_CHILD
+public static final AclEntryPermission READ_ATTRIBUTES
+public static final AclEntryPermission WRITE_ATTRIBUTES
+public static final AclEntryPermission DELETE
+public static final AclEntryPermission READ_ACL
+public static final AclEntryPermission WRITE_ACL
+public static final AclEntryPermission WRITE_OWNER
+public static final AclEntryPermission SYNCHRONIZE
+public static final AclEntryPermission LIST_DIRECTORY
+public static final AclEntryPermission ADD_FILE
+public static final AclEntryPermission ADD_SUBDIRECTORY
+public static AclEntryPermission[] values()
+public static AclEntryPermission valueOf(String name)
+public static final AclEntryType ALLOW
+public static final AclEntryType DENY
+public static final AclEntryType AUDIT
+public static final AclEntryType ALARM
+public static AclEntryType[] values()
+public static AclEntryType valueOf(String name)
+String name()
+List<AclEntry> getAcl() throws IOException
+void setAcl(List<AclEntry> acl) throws IOException
+String name()
+FileTime lastModifiedTime()
+FileTime lastAccessTime()
+FileTime creationTime()
+boolean isRegularFile()
+boolean isDirectory()
+boolean isSymbolicLink()
+boolean isOther()
+long size()
+Object fileKey()
+String name()
+BasicFileAttributes readAttributes() throws IOException
+void setTimes(FileTime lastModifiedTime, FileTime lastAccessTime, FileTime createTime) throws IOException
+boolean isReadOnly()
+boolean isHidden()
+boolean isArchive()
+boolean isSystem()
+String name()
+DosFileAttributes readAttributes() throws IOException
+void setReadOnly(boolean value) throws IOException
+void setHidden(boolean value) throws IOException
+void setSystem(boolean value) throws IOException
+void setArchive(boolean value) throws IOException
+String name()
+T value()
+String name()
+UserPrincipal getOwner() throws IOException
+void setOwner(UserPrincipal owner) throws IOException
+public static FileTime from(long value, TimeUnit unit)
+public static FileTime fromMillis(long value)
+public static FileTime from(Instant instant)
+public long to(TimeUnit unit)
+public long toMillis()
+public Instant toInstant()
+public boolean equals(Object obj)
+public int hashCode()
+public int compareTo(FileTime other)
+public String toString()
+UserPrincipal owner()
+GroupPrincipal group()
+Set<PosixFilePermission> permissions()
+String name()
+PosixFileAttributes readAttributes() throws IOException
+void setPermissions(Set<PosixFilePermission> perms) throws IOException
+void setGroup(GroupPrincipal group) throws IOException
+public static final PosixFilePermission OWNER_READ
+public static final PosixFilePermission OWNER_WRITE
+public static final PosixFilePermission OWNER_EXECUTE
+public static final PosixFilePermission GROUP_READ
+public static final PosixFilePermission GROUP_WRITE
+public static final PosixFilePermission GROUP_EXECUTE
+public static final PosixFilePermission OTHERS_READ
+public static final PosixFilePermission OTHERS_WRITE
+public static final PosixFilePermission OTHERS_EXECUTE
+public static PosixFilePermission[] values()
+public static PosixFilePermission valueOf(String name)
+public static String toString(Set<PosixFilePermission> perms)
+public static Set<PosixFilePermission> fromString(String perms)
+public static FileAttribute<Set<PosixFilePermission>> asFileAttribute(Set<PosixFilePermission> perms)
+String name()
+List<String> list() throws IOException
+int size(String name) throws IOException
+int read(String name, ByteBuffer dst) throws IOException
+int write(String name, ByteBuffer src) throws IOException
+void delete(String name) throws IOException
+protected UserPrincipalLookupService()
+public abstract UserPrincipal lookupPrincipalByName(String name) throws IOException
+public abstract GroupPrincipal lookupPrincipalByGroupName(String group) throws IOException
+public UserPrincipalNotFoundException(String name)
+public String getName()
+protected FileSystemProvider()
+public static List<FileSystemProvider> installedProviders()
+public abstract String getScheme()
+public abstract FileSystem newFileSystem(URI uri, Map<String,?> env) throws IOException
+public abstract FileSystem getFileSystem(URI uri)
+public abstract Path getPath(URI uri)
+public FileSystem newFileSystem(Path path, Map<String,?> env) throws IOException
+public InputStream newInputStream(Path path, OpenOption... options) throws IOException
+public OutputStream newOutputStream(Path path, OpenOption... options) throws IOException
+public FileChannel newFileChannel(Path path, Set<? extends OpenOption> options, FileAttribute<?>... attrs) throws IOException
+public AsynchronousFileChannel newAsynchronousFileChannel(Path path, Set<? extends OpenOption> options, ExecutorService executor, FileAttribute<?>... attrs) throws IOException
+public abstract SeekableByteChannel newByteChannel(Path path, Set<? extends OpenOption> options, FileAttribute<?>... attrs) throws IOException
+public abstract DirectoryStream<Path> newDirectoryStream(Path dir, DirectoryStream.Filter<? super Path> filter) throws IOException
+public abstract void createDirectory(Path dir, FileAttribute<?>... attrs) throws IOException
+public void createSymbolicLink(Path link, Path target, FileAttribute<?>... attrs) throws IOException
+public void createLink(Path link, Path existing) throws IOException
+public abstract void delete(Path path) throws IOException
+public boolean deleteIfExists(Path path) throws IOException
+public Path readSymbolicLink(Path link) throws IOException
+public abstract void copy(Path source, Path target, CopyOption... options) throws IOException
+public abstract void move(Path source, Path target, CopyOption... options) throws IOException
+public abstract boolean isSameFile(Path path, Path path2) throws IOException
+public abstract boolean isHidden(Path path) throws IOException
+public abstract FileStore getFileStore(Path path) throws IOException
+public abstract void checkAccess(Path path, AccessMode... modes) throws IOException
+public abstract <V extends FileAttributeView> V getFileAttributeView(Path path, Class<V> type, LinkOption... options)
+public abstract <A extends BasicFileAttributes> A readAttributes(Path path, Class<A> type, LinkOption... options) throws IOException
+public abstract Map<String,Object> readAttributes(Path path, String attributes, LinkOption... options) throws IOException
+public abstract void setAttribute(Path path, String attribute, Object value, LinkOption... options) throws IOException
+protected FileTypeDetector()
+public abstract String probeContentType(Path path) throws IOException
+public AccessException(String s)
+public AccessException(String s, Exception ex)
+public AlreadyBoundException()
+public AlreadyBoundException(String s)
+public ConnectException(String s)
+public ConnectException(String s, Exception ex)
+public ConnectIOException(String s)
+public ConnectIOException(String s, Exception ex)
+public MarshalException(String s)
+public MarshalException(String s, Exception ex)
+public MarshalledObject(T obj) throws IOException
+public T get() throws IOException, ClassNotFoundException
+public int hashCode()
+public boolean equals(Object obj)
+public static Remote lookup(String name) throws NotBoundException, MalformedURLException, RemoteException
+public static void bind(String name, Remote obj) throws AlreadyBoundException, MalformedURLException, RemoteException
+public static void unbind(String name) throws RemoteException, NotBoundException, MalformedURLException
+public static void rebind(String name, Remote obj) throws RemoteException, MalformedURLException
+public static String[] list(String name) throws RemoteException, MalformedURLException
+public NoSuchObjectException(String s)
+public NotBoundException()
+public NotBoundException(String s)
+public Throwable detail
+public RemoteException()
+public RemoteException(String s)
+public RemoteException(String s, Throwable cause)
+public String getMessage()
+public Throwable getCause()
+@Deprecated public RMISecurityException(String name)
+@Deprecated public RMISecurityException(String name, String arg)
+public RMISecurityManager()
+public ServerError(String s, Error err)
+public ServerException(String s)
+public ServerException(String s, Exception ex)
+@Deprecated public ServerRuntimeException(String s, Exception ex)
+public StubNotFoundException(String s)
+public StubNotFoundException(String s, Exception ex)
+public UnexpectedException(String s)
+public UnexpectedException(String s, Exception ex)
+public UnknownHostException(String s)
+public UnknownHostException(String s, Exception ex)
+public UnmarshalException(String s)
+public UnmarshalException(String s, Exception ex)
+protected Activatable(String location, MarshalledObject<?> data, boolean restart, int port) throws ActivationException, RemoteException
+protected Activatable(String location, MarshalledObject<?> data, boolean restart, int port, RMIClientSocketFactory csf, RMIServerSocketFactory ssf) throws ActivationException, RemoteException
+protected Activatable(ActivationID id, int port) throws RemoteException
+protected Activatable(ActivationID id, int port, RMIClientSocketFactory csf, RMIServerSocketFactory ssf) throws RemoteException
+protected ActivationID getID()
+public static Remote register(ActivationDesc desc) throws UnknownGroupException, ActivationException, RemoteException
+public static boolean inactive(ActivationID id) throws UnknownObjectException, ActivationException, RemoteException
+public static void unregister(ActivationID id) throws UnknownObjectException, ActivationException, RemoteException
+public static ActivationID exportObject(Remote obj, String location, MarshalledObject<?> data, boolean restart, int port) throws ActivationException, RemoteException
+public static ActivationID exportObject(Remote obj, String location, MarshalledObject<?> data, boolean restart, int port, RMIClientSocketFactory csf, RMIServerSocketFactory ssf) throws ActivationException, RemoteException
+public static Remote exportObject(Remote obj, ActivationID id, int port) throws RemoteException
+public static Remote exportObject(Remote obj, ActivationID id, int port, RMIClientSocketFactory csf, RMIServerSocketFactory ssf) throws RemoteException
+public static boolean unexportObject(Remote obj, boolean force) throws NoSuchObjectException
+public ActivateFailedException(String s)
+public ActivateFailedException(String s, Exception ex)
+public ActivationDesc(String className, String location, MarshalledObject<?> data) throws ActivationException
+public ActivationDesc(String className, String location, MarshalledObject<?> data, boolean restart) throws ActivationException
+public ActivationDesc(ActivationGroupID groupID, String className, String location, MarshalledObject<?> data)
+public ActivationDesc(ActivationGroupID groupID, String className, String location, MarshalledObject<?> data, boolean restart)
+public ActivationGroupID getGroupID()
+public String getClassName()
+public String getLocation()
+public MarshalledObject<?> getData()
+public boolean getRestartMode()
+public boolean equals(Object obj)
+public int hashCode()
+public Throwable detail
+public ActivationException()
+public ActivationException(String s)
+public ActivationException(String s, Throwable cause)
+public String getMessage()
+public Throwable getCause()
+protected ActivationGroup(ActivationGroupID groupID) throws RemoteException
+public boolean inactiveObject(ActivationID id) throws ActivationException, UnknownObjectException, RemoteException
+public abstract void activeObject(ActivationID id, Remote obj) throws ActivationException, UnknownObjectException, RemoteException
+public static ActivationGroup createGroup(ActivationGroupID id, ActivationGroupDesc desc, long incarnation) throws ActivationException
+public static ActivationGroupID currentGroupID()
+public static void setSystem(ActivationSystem system) throws ActivationException
+public static ActivationSystem getSystem() throws ActivationException
+protected void activeObject(ActivationID id, MarshalledObject<? extends Remote> mobj) throws ActivationException, UnknownObjectException, RemoteException
+protected void inactiveGroup() throws UnknownGroupException, RemoteException
+public CommandEnvironment(String cmdpath, String[] argv)
+public String getCommandPath()
+public String[] getCommandOptions()
+public boolean equals(Object obj)
+public int hashCode()
+public ActivationGroupDesc(Properties overrides, ActivationGroupDesc.CommandEnvironment cmd)
+public ActivationGroupDesc(String className, String location, MarshalledObject<?> data, Properties overrides, ActivationGroupDesc.CommandEnvironment cmd)
+public String getClassName()
+public String getLocation()
+public MarshalledObject<?> getData()
+public Properties getPropertyOverrides()
+public ActivationGroupDesc.CommandEnvironment getCommandEnvironment()
+public boolean equals(Object obj)
+public int hashCode()
+public ActivationGroupID(ActivationSystem system)
+public ActivationSystem getSystem()
+public int hashCode()
+public boolean equals(Object obj)
+public ActivationGroup_Stub(RemoteRef ref)
+public MarshalledObject newInstance(ActivationID id, ActivationDesc desc) throws RemoteException, ActivationException
+public ActivationID(Activator activator)
+public Remote activate(boolean force) throws ActivationException, UnknownObjectException, RemoteException
+public int hashCode()
+public boolean equals(Object obj)
+MarshalledObject<? extends Remote> newInstance(ActivationID id, ActivationDesc desc) throws ActivationException, RemoteException
+void inactiveObject(ActivationID id) throws UnknownObjectException, RemoteException
+void activeObject(ActivationID id, MarshalledObject<? extends Remote> obj) throws UnknownObjectException, RemoteException
+void inactiveGroup(ActivationGroupID id, long incarnation) throws UnknownGroupException, RemoteException
+static final int SYSTEM_PORT
+ActivationID registerObject(ActivationDesc desc) throws ActivationException, UnknownGroupException, RemoteException
+void unregisterObject(ActivationID id) throws ActivationException, UnknownObjectException, RemoteException
+ActivationGroupID registerGroup(ActivationGroupDesc desc) throws ActivationException, RemoteException
+ActivationMonitor activeGroup(ActivationGroupID id, ActivationInstantiator group, long incarnation) throws UnknownGroupException, ActivationException, RemoteException
+void unregisterGroup(ActivationGroupID id) throws ActivationException, UnknownGroupException, RemoteException
+void shutdown() throws RemoteException
+ActivationDesc setActivationDesc(ActivationID id, ActivationDesc desc) throws ActivationException, UnknownObjectException, UnknownGroupException, RemoteException
+ActivationGroupDesc setActivationGroupDesc(ActivationGroupID id, ActivationGroupDesc desc) throws ActivationException, UnknownGroupException, RemoteException
+ActivationDesc getActivationDesc(ActivationID id) throws ActivationException, UnknownObjectException, RemoteException
+ActivationGroupDesc getActivationGroupDesc(ActivationGroupID id) throws ActivationException, UnknownGroupException, RemoteException
+MarshalledObject<? extends Remote> activate(ActivationID id, boolean force) throws ActivationException, UnknownObjectException, RemoteException
+public UnknownGroupException(String s)
+public UnknownObjectException(String s)
+Lease dirty(ObjID[] ids, long sequenceNum, Lease lease) throws RemoteException
+void clean(ObjID[] ids, long sequenceNum, VMID vmid, boolean strong) throws RemoteException
+public Lease(VMID id, long duration)
+public VMID getVMID()
+public long getValue()
+public VMID()
+@Deprecated public static boolean isUnique()
+public int hashCode()
+public boolean equals(Object obj)
+public String toString()
+public static Registry getRegistry() throws RemoteException
+public static Registry getRegistry(int port) throws RemoteException
+public static Registry getRegistry(String host) throws RemoteException
+public static Registry getRegistry(String host, int port) throws RemoteException
+public static Registry getRegistry(String host, int port, RMIClientSocketFactory csf) throws RemoteException
+public static Registry createRegistry(int port) throws RemoteException
+public static Registry createRegistry(int port, RMIClientSocketFactory csf, RMIServerSocketFactory ssf) throws RemoteException
+static final int REGISTRY_PORT
+Remote lookup(String name) throws RemoteException, NotBoundException, AccessException
+void bind(String name, Remote obj) throws RemoteException, AlreadyBoundException, AccessException
+void unbind(String name) throws RemoteException, NotBoundException, AccessException
+void rebind(String name, Remote obj) throws RemoteException, AccessException
+String[] list() throws RemoteException, AccessException
+@Deprecated Registry registryStub(String host, int port) throws RemoteException, UnknownHostException
+@Deprecated Registry registryImpl(int port) throws RemoteException
+public ExportException(String s)
+public ExportException(String s, Exception ex)
+static final String packagePrefix
+@Deprecated Class<?> loadClass(String name) throws MalformedURLException, ClassNotFoundException
+@Deprecated Class<?> loadClass(URL codebase, String name) throws MalformedURLException, ClassNotFoundException
+@Deprecated Object getSecurityContext(ClassLoader loader)
+public static final int SILENT
+public static final int BRIEF
+public static final int VERBOSE
+@Deprecated public static LogStream log(String name)
+@Deprecated public static PrintStream getDefaultStream()
+@Deprecated public static void setDefaultStream(PrintStream newDefault)
+@Deprecated public OutputStream getOutputStream()
+@Deprecated public void setOutputStream(OutputStream out)
+@Deprecated public void write(int b)
+@Deprecated public void write(byte[] b, int off, int len)
+@Deprecated public String toString()
+@Deprecated public static int parseLevel(String s)
+public static final int REGISTRY_ID
+public static final int ACTIVATOR_ID
+public static final int DGC_ID
+public ObjID()
+public ObjID(int objNum)
+public void write(ObjectOutput out) throws IOException
+public static ObjID read(ObjectInput in) throws IOException
+public int hashCode()
+public boolean equals(Object obj)
+public String toString()
+@Deprecated public Operation(String op)
+@Deprecated public String getOperation()
+@Deprecated public String toString()
+@Deprecated ObjectOutput getOutputStream() throws IOException
+@Deprecated void releaseOutputStream() throws IOException
+@Deprecated ObjectInput getInputStream() throws IOException
+@Deprecated void releaseInputStream() throws IOException
+@Deprecated ObjectOutput getResultStream(boolean success) throws IOException, StreamCorruptedException
+@Deprecated void executeCall() throws Exception
+@Deprecated void done() throws IOException
+protected transient RemoteRef ref
+protected RemoteObject()
+protected RemoteObject(RemoteRef newref)
+public RemoteRef getRef()
+public static Remote toStub(Remote obj) throws NoSuchObjectException
+public int hashCode()
+public boolean equals(Object obj)
+public String toString()
+public RemoteObjectInvocationHandler(RemoteRef ref)
+public Object invoke(Object proxy, Method method, Object[] args) throws Throwable
+static final long serialVersionUID
+static final String packagePrefix
+Object invoke(Remote obj, Method method, Object[] params, long opnum) throws Exception
+@Deprecated RemoteCall newCall(RemoteObject obj, Operation[] op, int opnum, long hash) throws RemoteException
+@Deprecated void invoke(RemoteCall call) throws Exception
+@Deprecated void done(RemoteCall call) throws RemoteException
+String getRefClass(ObjectOutput out)
+int remoteHashCode()
+boolean remoteEquals(RemoteRef obj)
+String remoteToString()
+protected RemoteServer()
+protected RemoteServer(RemoteRef ref)
+public static String getClientHost() throws ServerNotActiveException
+public static void setLog(OutputStream out)
+public static PrintStream getLog()
+protected RemoteStub()
+protected RemoteStub(RemoteRef ref)
+@Deprecated protected static void setRef(RemoteStub stub, RemoteRef ref)
+@Deprecated public static Class<?> loadClass(String name) throws MalformedURLException, ClassNotFoundException
+public static Class<?> loadClass(URL codebase, String name) throws MalformedURLException, ClassNotFoundException
+public static Class<?> loadClass(String codebase, String name) throws MalformedURLException, ClassNotFoundException
+public static Class<?> loadClass(String codebase, String name, ClassLoader defaultLoader) throws MalformedURLException, ClassNotFoundException
+public static Class<?> loadProxyClass(String codebase, String[] interfaces, ClassLoader defaultLoader) throws ClassNotFoundException, MalformedURLException
+public static ClassLoader getClassLoader(String codebase) throws MalformedURLException, SecurityException
+public static String getClassAnnotation(Class<?> cl)
+public static RMIClassLoaderSpi getDefaultProviderInstance()
+@Deprecated public static Object getSecurityContext(ClassLoader loader)
+public RMIClassLoaderSpi()
+public abstract Class<?> loadClass(String codebase, String name, ClassLoader defaultLoader) throws MalformedURLException, ClassNotFoundException
+public abstract Class<?> loadProxyClass(String codebase, String[] interfaces, ClassLoader defaultLoader) throws MalformedURLException, ClassNotFoundException
+public abstract ClassLoader getClassLoader(String codebase) throws MalformedURLException
+Socket createSocket(String host, int port) throws IOException
+boolean failure(Exception ex)
+ServerSocket createServerSocket(int port) throws IOException
+public RMISocketFactory()
+public abstract Socket createSocket(String host, int port) throws IOException
+public abstract ServerSocket createServerSocket(int port) throws IOException
+public static void setSocketFactory(RMISocketFactory fac) throws IOException
+public static RMISocketFactory getSocketFactory()
+public static RMISocketFactory getDefaultSocketFactory()
+public static void setFailureHandler(RMIFailureHandler fh)
+public static RMIFailureHandler getFailureHandler()
+public Exception detail
+public ServerCloneException(String s)
+public ServerCloneException(String s, Exception cause)
+public String getMessage()
+public Throwable getCause()
+public ServerNotActiveException()
+public ServerNotActiveException(String s)
+static final long serialVersionUID
+RemoteStub exportObject(Remote obj, Object data) throws RemoteException
+String getClientHost() throws ServerNotActiveException
+@Deprecated void dispatch(Remote obj, RemoteCall theCall, int opnum, long hash) throws Exception
+@Deprecated Operation[] getOperations()
+@Deprecated public SkeletonMismatchException(String s)
+public SkeletonNotFoundException(String s)
+public SkeletonNotFoundException(String s, Exception ex)
+public SocketSecurityException(String s)
+public SocketSecurityException(String s, Exception ex)
+public UID()
+public UID(short num)
+public int hashCode()
+public boolean equals(Object obj)
+public String toString()
+public void write(DataOutput out) throws IOException
+public static UID read(DataInput in) throws IOException
+protected UnicastRemoteObject() throws RemoteException
+protected UnicastRemoteObject(int port) throws RemoteException
+protected UnicastRemoteObject(int port, RMIClientSocketFactory csf, RMIServerSocketFactory ssf) throws RemoteException
+public Object clone() throws CloneNotSupportedException
+@Deprecated public static RemoteStub exportObject(Remote obj) throws RemoteException
+public static Remote exportObject(Remote obj, int port) throws RemoteException
+public static Remote exportObject(Remote obj, int port, RMIClientSocketFactory csf, RMIServerSocketFactory ssf) throws RemoteException
+public static boolean unexportObject(Remote obj, boolean force) throws NoSuchObjectException
+void unreferenced()
+public AccessControlContext(ProtectionDomain[] context)
+public AccessControlContext(AccessControlContext acc, DomainCombiner combiner)
+public DomainCombiner getDomainCombiner()
+public void checkPermission(Permission perm) throws AccessControlException
+public boolean equals(Object obj)
+public int hashCode()
+public AccessControlException(String s)
+public AccessControlException(String s, Permission p)
+public Permission getPermission()
+public static <T> T doPrivileged(PrivilegedAction<T> action)
+public static <T> T doPrivilegedWithCombiner(PrivilegedAction<T> action)
+public static <T> T doPrivileged(PrivilegedAction<T> action, AccessControlContext context)
+public static <T> T doPrivileged(PrivilegedAction<T> action, AccessControlContext context, Permission... perms)
+public static <T> T doPrivilegedWithCombiner(PrivilegedAction<T> action, AccessControlContext context, Permission... perms)
+public static <T> T doPrivileged(PrivilegedExceptionAction<T> action) throws PrivilegedActionException
+public static <T> T doPrivilegedWithCombiner(PrivilegedExceptionAction<T> action) throws PrivilegedActionException
+public static <T> T doPrivileged(PrivilegedExceptionAction<T> action, AccessControlContext context) throws PrivilegedActionException
+public static <T> T doPrivileged(PrivilegedExceptionAction<T> action, AccessControlContext context, Permission... perms) throws PrivilegedActionException
+public static <T> T doPrivilegedWithCombiner(PrivilegedExceptionAction<T> action, AccessControlContext context, Permission... perms) throws PrivilegedActionException
+public static AccessControlContext getContext()
+public static void checkPermission(Permission perm) throws AccessControlException
+boolean permits(Set<CryptoPrimitive> primitives, String algorithm, AlgorithmParameters parameters)
+boolean permits(Set<CryptoPrimitive> primitives, Key key)
+boolean permits(Set<CryptoPrimitive> primitives, String algorithm, Key key, AlgorithmParameters parameters)
+protected AlgorithmParameterGenerator(AlgorithmParameterGeneratorSpi paramGenSpi, Provider provider, String algorithm)
+public final String getAlgorithm()
+public static AlgorithmParameterGenerator getInstance(String algorithm) throws NoSuchAlgorithmException
+public static AlgorithmParameterGenerator getInstance(String algorithm, String provider) throws NoSuchAlgorithmException, NoSuchProviderException
+public static AlgorithmParameterGenerator getInstance(String algorithm, Provider provider) throws NoSuchAlgorithmException
+public final Provider getProvider()
+public final void init(int size)
+public final void init(int size, SecureRandom random)
+public final void init(AlgorithmParameterSpec genParamSpec) throws InvalidAlgorithmParameterException
+public final void init(AlgorithmParameterSpec genParamSpec, SecureRandom random) throws InvalidAlgorithmParameterException
+public final AlgorithmParameters generateParameters()
+public AlgorithmParameterGeneratorSpi()
+protected abstract void engineInit(int size, SecureRandom random)
+protected abstract void engineInit(AlgorithmParameterSpec genParamSpec, SecureRandom random) throws InvalidAlgorithmParameterException
+protected AlgorithmParameters(AlgorithmParametersSpi paramSpi, Provider provider, String algorithm)
+public final String getAlgorithm()
+public static AlgorithmParameters getInstance(String algorithm) throws NoSuchAlgorithmException
+public static AlgorithmParameters getInstance(String algorithm, String provider) throws NoSuchAlgorithmException, NoSuchProviderException
+public static AlgorithmParameters getInstance(String algorithm, Provider provider) throws NoSuchAlgorithmException
+public final Provider getProvider()
+public final void init(AlgorithmParameterSpec paramSpec) throws InvalidParameterSpecException
+public final void init(byte[] params) throws IOException
+public final void init(byte[] params, String format) throws IOException
+public final <T extends AlgorithmParameterSpec> T getParameterSpec(Class<T> paramSpec) throws InvalidParameterSpecException
+public final byte[] getEncoded() throws IOException
+public final byte[] getEncoded(String format) throws IOException
+public final String toString()
+public AlgorithmParametersSpi()
+protected abstract void engineInit(AlgorithmParameterSpec paramSpec) throws InvalidParameterSpecException
+protected abstract void engineInit(byte[] params) throws IOException
+protected abstract void engineInit(byte[] params, String format) throws IOException
+protected abstract <T extends AlgorithmParameterSpec> T engineGetParameterSpec(Class<T> paramSpec) throws InvalidParameterSpecException
+protected abstract byte[] engineGetEncoded() throws IOException
+protected abstract byte[] engineGetEncoded(String format) throws IOException
+public AllPermission()
+public AllPermission(String name, String actions)
+public boolean implies(Permission p)
+public boolean equals(Object obj)
+public int hashCode()
+public String getActions()
+public PermissionCollection newPermissionCollection()
+protected AuthProvider(String name, double version, String info)
+public abstract void login(Subject subject, CallbackHandler handler) throws LoginException
+public abstract void logout() throws LoginException
+public abstract void setCallbackHandler(CallbackHandler handler)
+public BasicPermission(String name)
+public BasicPermission(String name, String actions)
+public boolean implies(Permission p)
+public boolean equals(Object obj)
+public int hashCode()
+public String getActions()
+public PermissionCollection newPermissionCollection()
+Principal getGuarantor()
+Principal getPrincipal()
+PublicKey getPublicKey()
+void encode(OutputStream stream) throws KeyException, IOException
+void decode(InputStream stream) throws KeyException, IOException
+String getFormat()
+String toString(boolean detailed)
+public CodeSigner(CertPath signerCertPath, Timestamp timestamp)
+public CertPath getSignerCertPath()
+public Timestamp getTimestamp()
+public int hashCode()
+public boolean equals(Object obj)
+public String toString()
+public CodeSource(URL url, Certificate[] certs)
+public CodeSource(URL url, CodeSigner[] signers)
+public int hashCode()
+public boolean equals(Object obj)
+public final URL getLocation()
+public final Certificate[] getCertificates()
+public final CodeSigner[] getCodeSigners()
+public boolean implies(CodeSource codesource)
+public String toString()
+public static final CryptoPrimitive MESSAGE_DIGEST
+public static final CryptoPrimitive SECURE_RANDOM
+public static final CryptoPrimitive BLOCK_CIPHER
+public static final CryptoPrimitive STREAM_CIPHER
+public static final CryptoPrimitive MAC
+public static final CryptoPrimitive KEY_WRAP
+public static final CryptoPrimitive PUBLIC_KEY_ENCRYPTION
+public static final CryptoPrimitive SIGNATURE
+public static final CryptoPrimitive KEY_ENCAPSULATION
+public static final CryptoPrimitive KEY_AGREEMENT
+public static CryptoPrimitive[] values()
+public static CryptoPrimitive valueOf(String name)
+public DigestException()
+public DigestException(String msg)
+public DigestException(String message, Throwable cause)
+public DigestException(Throwable cause)
+protected MessageDigest digest
+public DigestInputStream(InputStream stream, MessageDigest digest)
+public MessageDigest getMessageDigest()
+public void setMessageDigest(MessageDigest digest)
+public int read() throws IOException
+public int read(byte[] b, int off, int len) throws IOException
+public void on(boolean on)
+public String toString()
+protected MessageDigest digest
+public DigestOutputStream(OutputStream stream, MessageDigest digest)
+public MessageDigest getMessageDigest()
+public void setMessageDigest(MessageDigest digest)
+public void write(int b) throws IOException
+public void write(byte[] b, int off, int len) throws IOException
+public void on(boolean on)
+public String toString()
+ProtectionDomain[] combine(ProtectionDomain[] currentDomains, ProtectionDomain[] assignedDomains)
+public DomainLoadStoreParameter(URI configuration, Map<String,KeyStore.ProtectionParameter> protectionParams)
+public URI getConfiguration()
+public Map<String,KeyStore.ProtectionParameter> getProtectionParams()
+public KeyStore.ProtectionParameter getProtectionParameter()
+public GeneralSecurityException()
+public GeneralSecurityException(String msg)
+public GeneralSecurityException(String message, Throwable cause)
+public GeneralSecurityException(Throwable cause)
+void checkGuard(Object object) throws SecurityException
+public GuardedObject(Object object, Guard guard)
+public Object getObject() throws SecurityException
+protected Identity()
+public Identity(String name, IdentityScope scope) throws KeyManagementException
+public Identity(String name)
+public final String getName()
+public final IdentityScope getScope()
+public PublicKey getPublicKey()
+public void setPublicKey(PublicKey key) throws KeyManagementException
+public void setInfo(String info)
+public String getInfo()
+public void addCertificate(Certificate certificate) throws KeyManagementException
+public void removeCertificate(Certificate certificate) throws KeyManagementException
+public Certificate[] certificates()
+public final boolean equals(Object identity)
+protected boolean identityEquals(Identity identity)
+public String toString()
+public String toString(boolean detailed)
+public int hashCode()
+protected IdentityScope()
+public IdentityScope(String name)
+public IdentityScope(String name, IdentityScope scope) throws KeyManagementException
+public static IdentityScope getSystemScope()
+protected static void setSystemScope(IdentityScope scope)
+public abstract int size()
+public abstract Identity getIdentity(String name)
+public Identity getIdentity(Principal principal)
+public abstract Identity getIdentity(PublicKey key)
+public abstract void addIdentity(Identity identity) throws KeyManagementException
+public abstract void removeIdentity(Identity identity) throws KeyManagementException
+public abstract Enumeration<Identity> identities()
+public String toString()
+public InvalidAlgorithmParameterException()
+public InvalidAlgorithmParameterException(String msg)
+public InvalidAlgorithmParameterException(String message, Throwable cause)
+public InvalidAlgorithmParameterException(Throwable cause)
+public InvalidKeyException()
+public InvalidKeyException(String msg)
+public InvalidKeyException(String message, Throwable cause)
+public InvalidKeyException(Throwable cause)
+public InvalidParameterException()
+public InvalidParameterException(String msg)
+static final long serialVersionUID
+String getAlgorithm()
+String getFormat()
+byte[] getEncoded()
+public KeyException()
+public KeyException(String msg)
+public KeyException(String message, Throwable cause)
+public KeyException(Throwable cause)
+protected KeyFactory(KeyFactorySpi keyFacSpi, Provider provider, String algorithm)
+public static KeyFactory getInstance(String algorithm) throws NoSuchAlgorithmException
+public static KeyFactory getInstance(String algorithm, String provider) throws NoSuchAlgorithmException, NoSuchProviderException
+public static KeyFactory getInstance(String algorithm, Provider provider) throws NoSuchAlgorithmException
+public final Provider getProvider()
+public final String getAlgorithm()
+public final PublicKey generatePublic(KeySpec keySpec) throws InvalidKeySpecException
+public final PrivateKey generatePrivate(KeySpec keySpec) throws InvalidKeySpecException
+public final <T extends KeySpec> T getKeySpec(Key key, Class<T> keySpec) throws InvalidKeySpecException
+public final Key translateKey(Key key) throws InvalidKeyException
+public KeyFactorySpi()
+protected abstract PublicKey engineGeneratePublic(KeySpec keySpec) throws InvalidKeySpecException
+protected abstract PrivateKey engineGeneratePrivate(KeySpec keySpec) throws InvalidKeySpecException
+protected abstract <T extends KeySpec> T engineGetKeySpec(Key key, Class<T> keySpec) throws InvalidKeySpecException
+public KeyManagementException()
+public KeyManagementException(String msg)
+public KeyManagementException(String message, Throwable cause)
+public KeyManagementException(Throwable cause)
+public KeyPair(PublicKey publicKey, PrivateKey privateKey)

@@ -1,0 +1,1000 @@
+public int hashCode()
+public boolean equals(Object obj)
+public static Inet6Address getByAddress(String host, byte[] addr, NetworkInterface nif) throws UnknownHostException
+public static Inet6Address getByAddress(String host, byte[] addr, int scope_id) throws UnknownHostException
+public boolean isMulticastAddress()
+public boolean isAnyLocalAddress()
+public boolean isLoopbackAddress()
+public boolean isLinkLocalAddress()
+public boolean isSiteLocalAddress()
+public boolean isMCGlobal()
+public boolean isMCNodeLocal()
+public boolean isMCLinkLocal()
+public boolean isMCSiteLocal()
+public boolean isMCOrgLocal()
+public byte[] getAddress()
+public int getScopeId()
+public NetworkInterface getScopedInterface()
+public String getHostAddress()
+public int hashCode()
+public boolean equals(Object obj)
+public boolean isIPv4CompatibleAddress()
+public boolean isMulticastAddress()
+public boolean isAnyLocalAddress()
+public boolean isLoopbackAddress()
+public boolean isLinkLocalAddress()
+public boolean isSiteLocalAddress()
+public boolean isMCGlobal()
+public boolean isMCNodeLocal()
+public boolean isMCLinkLocal()
+public boolean isMCSiteLocal()
+public boolean isMCOrgLocal()
+public boolean isReachable(int timeout) throws IOException
+public boolean isReachable(NetworkInterface netif, int ttl, int timeout) throws IOException
+public String getHostName()
+public String getCanonicalHostName()
+public byte[] getAddress()
+public String getHostAddress()
+public int hashCode()
+public boolean equals(Object obj)
+public String toString()
+public static InetAddress getByAddress(String host, byte[] addr) throws UnknownHostException
+public static InetAddress getByName(String host) throws UnknownHostException
+public static InetAddress[] getAllByName(String host) throws UnknownHostException
+public static InetAddress getLoopbackAddress()
+public static InetAddress getByAddress(byte[] addr) throws UnknownHostException
+public static InetAddress getLocalHost() throws UnknownHostException
+public InetSocketAddress(int port)
+public InetSocketAddress(InetAddress addr, int port)
+public InetSocketAddress(String hostname, int port)
+public static InetSocketAddress createUnresolved(String host, int port)
+public final int getPort()
+public final InetAddress getAddress()
+public final String getHostName()
+public final String getHostString()
+public final boolean isUnresolved()
+public String toString()
+public final boolean equals(Object obj)
+public final int hashCode()
+public InetAddress getAddress()
+public InetAddress getBroadcast()
+public short getNetworkPrefixLength()
+public boolean equals(Object obj)
+public int hashCode()
+public String toString()
+protected URLConnection jarFileURLConnection
+protected JarURLConnection(URL url) throws MalformedURLException
+public URL getJarFileURL()
+public String getEntryName()
+public abstract JarFile getJarFile() throws IOException
+public Manifest getManifest() throws IOException
+public JarEntry getJarEntry() throws IOException
+public Attributes getAttributes() throws IOException
+public Attributes getMainAttributes() throws IOException
+public Certificate[] getCertificates() throws IOException
+public MalformedURLException()
+public MalformedURLException(String msg)
+public MulticastSocket() throws IOException
+public MulticastSocket(int port) throws IOException
+public MulticastSocket(SocketAddress bindaddr) throws IOException
+@Deprecated public void setTTL(byte ttl) throws IOException
+public void setTimeToLive(int ttl) throws IOException
+@Deprecated public byte getTTL() throws IOException
+public int getTimeToLive() throws IOException
+public void joinGroup(InetAddress mcastaddr) throws IOException
+public void leaveGroup(InetAddress mcastaddr) throws IOException
+public void joinGroup(SocketAddress mcastaddr, NetworkInterface netIf) throws IOException
+public void leaveGroup(SocketAddress mcastaddr, NetworkInterface netIf) throws IOException
+public void setInterface(InetAddress inf) throws SocketException
+public InetAddress getInterface() throws SocketException
+public void setNetworkInterface(NetworkInterface netIf) throws SocketException
+public NetworkInterface getNetworkInterface() throws SocketException
+public void setLoopbackMode(boolean disable) throws SocketException
+public boolean getLoopbackMode() throws SocketException
+@Deprecated public void send(DatagramPacket p, byte ttl) throws IOException
+public NetPermission(String name)
+public NetPermission(String name, String actions)
+public String getName()
+public Enumeration<InetAddress> getInetAddresses()
+public List<InterfaceAddress> getInterfaceAddresses()
+public Enumeration<NetworkInterface> getSubInterfaces()
+public NetworkInterface getParent()
+public int getIndex()
+public String getDisplayName()
+public static NetworkInterface getByName(String name) throws SocketException
+public static NetworkInterface getByIndex(int index) throws SocketException
+public static NetworkInterface getByInetAddress(InetAddress addr) throws SocketException
+public static Enumeration<NetworkInterface> getNetworkInterfaces() throws SocketException
+public boolean isUp() throws SocketException
+public boolean isLoopback() throws SocketException
+public boolean isPointToPoint() throws SocketException
+public boolean supportsMulticast() throws SocketException
+public byte[] getHardwareAddress() throws SocketException
+public int getMTU() throws SocketException
+public boolean isVirtual()
+public boolean equals(Object obj)
+public int hashCode()
+public String toString()
+public NoRouteToHostException(String msg)
+public NoRouteToHostException()
+public PasswordAuthentication(String userName, char[] password)
+public String getUserName()
+public char[] getPassword()
+public PortUnreachableException(String msg)
+public PortUnreachableException()
+public ProtocolException(String host)
+public ProtocolException()
+String name()
+public static final Proxy NO_PROXY
+public Proxy(Proxy.Type type, SocketAddress sa)
+public Proxy.Type type()
+public SocketAddress address()
+public String toString()
+public final boolean equals(Object obj)
+public final int hashCode()
+public static final Proxy.Type DIRECT
+public static final Proxy.Type HTTP
+public static final Proxy.Type SOCKS
+public static Proxy.Type[] values()
+public static Proxy.Type valueOf(String name)
+public ProxySelector()
+public static ProxySelector getDefault()
+public static void setDefault(ProxySelector ps)
+public abstract List<Proxy> select(URI uri)
+public ResponseCache()
+public static ResponseCache getDefault()
+public static void setDefault(ResponseCache responseCache)
+public abstract CacheResponse get(URI uri, String rqstMethod, Map<String,List<String>> rqstHeaders) throws IOException
+public SecureCacheResponse()
+public abstract String getCipherSuite()
+public abstract List<Certificate> getLocalCertificateChain()
+public abstract List<Certificate> getServerCertificateChain() throws SSLPeerUnverifiedException
+public abstract Principal getPeerPrincipal() throws SSLPeerUnverifiedException
+public ServerSocket() throws IOException
+public ServerSocket(int port) throws IOException
+public ServerSocket(int port, int backlog) throws IOException
+public ServerSocket(int port, int backlog, InetAddress bindAddr) throws IOException
+public void bind(SocketAddress endpoint) throws IOException
+public void bind(SocketAddress endpoint, int backlog) throws IOException
+public InetAddress getInetAddress()
+public int getLocalPort()
+public SocketAddress getLocalSocketAddress()
+public Socket accept() throws IOException
+protected final void implAccept(Socket s) throws IOException
+public void close() throws IOException
+public ServerSocketChannel getChannel()
+public boolean isBound()
+public boolean isClosed()
+public void setSoTimeout(int timeout) throws SocketException
+public int getSoTimeout() throws IOException
+public void setReuseAddress(boolean on) throws SocketException
+public boolean getReuseAddress() throws SocketException
+public String toString()
+public static void setSocketFactory(SocketImplFactory fac) throws IOException
+public void setReceiveBufferSize(int size) throws SocketException
+public int getReceiveBufferSize() throws SocketException
+public void setPerformancePreferences(int connectionTime, int latency, int bandwidth)
+public Socket()
+public Socket(Proxy proxy)
+protected Socket(SocketImpl impl) throws SocketException
+public Socket(String host, int port) throws UnknownHostException, IOException
+public Socket(InetAddress address, int port) throws IOException
+public Socket(String host, int port, InetAddress localAddr, int localPort) throws IOException
+public Socket(InetAddress address, int port, InetAddress localAddr, int localPort) throws IOException
+@Deprecated public Socket(String host, int port, boolean stream) throws IOException
+@Deprecated public Socket(InetAddress host, int port, boolean stream) throws IOException
+public void connect(SocketAddress endpoint) throws IOException
+public void connect(SocketAddress endpoint, int timeout) throws IOException
+public void bind(SocketAddress bindpoint) throws IOException
+public InetAddress getInetAddress()
+public InetAddress getLocalAddress()
+public int getPort()
+public int getLocalPort()
+public SocketAddress getRemoteSocketAddress()
+public SocketAddress getLocalSocketAddress()
+public SocketChannel getChannel()
+public InputStream getInputStream() throws IOException
+public OutputStream getOutputStream() throws IOException
+public void setTcpNoDelay(boolean on) throws SocketException
+public boolean getTcpNoDelay() throws SocketException
+public void setSoLinger(boolean on, int linger) throws SocketException
+public int getSoLinger() throws SocketException
+public void sendUrgentData(int data) throws IOException
+public void setOOBInline(boolean on) throws SocketException
+public boolean getOOBInline() throws SocketException
+public void setSoTimeout(int timeout) throws SocketException
+public int getSoTimeout() throws SocketException
+public void setSendBufferSize(int size) throws SocketException
+public int getSendBufferSize() throws SocketException
+public void setReceiveBufferSize(int size) throws SocketException
+public int getReceiveBufferSize() throws SocketException
+public void setKeepAlive(boolean on) throws SocketException
+public boolean getKeepAlive() throws SocketException
+public void setTrafficClass(int tc) throws SocketException
+public int getTrafficClass() throws SocketException
+public void setReuseAddress(boolean on) throws SocketException
+public boolean getReuseAddress() throws SocketException
+public void close() throws IOException
+public void shutdownInput() throws IOException
+public void shutdownOutput() throws IOException
+public String toString()
+public boolean isConnected()
+public boolean isBound()
+public boolean isClosed()
+public boolean isInputShutdown()
+public boolean isOutputShutdown()
+public static void setSocketImplFactory(SocketImplFactory fac) throws IOException
+public void setPerformancePreferences(int connectionTime, int latency, int bandwidth)
+public SocketException(String msg)
+public SocketException()
+protected FileDescriptor fd
+protected InetAddress address
+protected int port
+protected int localport
+public SocketImpl()
+protected abstract void create(boolean stream) throws IOException
+protected abstract void connect(String host, int port) throws IOException
+protected abstract void connect(InetAddress address, int port) throws IOException
+protected abstract void connect(SocketAddress address, int timeout) throws IOException
+protected abstract void bind(InetAddress host, int port) throws IOException
+protected abstract void listen(int backlog) throws IOException
+protected abstract void accept(SocketImpl s) throws IOException
+protected abstract InputStream getInputStream() throws IOException
+protected abstract OutputStream getOutputStream() throws IOException
+protected abstract int available() throws IOException
+protected abstract void close() throws IOException
+protected void shutdownInput() throws IOException
+protected void shutdownOutput() throws IOException
+protected FileDescriptor getFileDescriptor()
+protected InetAddress getInetAddress()
+protected int getPort()
+protected boolean supportsUrgentData()
+protected abstract void sendUrgentData(int data) throws IOException
+protected int getLocalPort()
+public String toString()
+SocketImpl createSocketImpl()
+String name()
+Class<T> type()
+@Native static final int TCP_NODELAY
+@Native static final int SO_BINDADDR
+@Native static final int SO_REUSEADDR
+@Native static final int SO_BROADCAST
+@Native static final int IP_MULTICAST_IF
+@Native static final int IP_MULTICAST_IF2
+@Native static final int IP_MULTICAST_LOOP
+@Native static final int IP_TOS
+@Native static final int SO_LINGER
+@Native static final int SO_TIMEOUT
+@Native static final int SO_SNDBUF
+@Native static final int SO_RCVBUF
+@Native static final int SO_KEEPALIVE
+@Native static final int SO_OOBINLINE
+void setOption(int optID, Object value) throws SocketException
+Object getOption(int optID) throws SocketException
+public SocketPermission(String host, String action)
+public boolean implies(Permission p)
+public boolean equals(Object obj)
+public int hashCode()
+public String getActions()
+public PermissionCollection newPermissionCollection()
+public SocketTimeoutException(String msg)
+public SocketTimeoutException()
+public static final StandardProtocolFamily INET
+public static final StandardProtocolFamily INET6
+public static StandardProtocolFamily[] values()
+public static StandardProtocolFamily valueOf(String name)
+public static final SocketOption<Boolean> SO_BROADCAST
+public static final SocketOption<Boolean> SO_KEEPALIVE
+public static final SocketOption<Integer> SO_SNDBUF
+public static final SocketOption<Integer> SO_RCVBUF
+public static final SocketOption<Boolean> SO_REUSEADDR
+public static final SocketOption<Integer> SO_LINGER
+public static final SocketOption<Integer> IP_TOS
+public static final SocketOption<NetworkInterface> IP_MULTICAST_IF
+public static final SocketOption<Integer> IP_MULTICAST_TTL
+public static final SocketOption<Boolean> IP_MULTICAST_LOOP
+public static final SocketOption<Boolean> TCP_NODELAY
+public UnknownHostException(String host)
+public UnknownHostException()
+public UnknownServiceException()
+public UnknownServiceException(String msg)
+public URI(String str) throws URISyntaxException
+public URI(String scheme, String userInfo, String host, int port, String path, String query, String fragment) throws URISyntaxException
+public URI(String scheme, String authority, String path, String query, String fragment) throws URISyntaxException
+public URI(String scheme, String host, String path, String fragment) throws URISyntaxException
+public URI(String scheme, String ssp, String fragment) throws URISyntaxException
+public static URI create(String str)
+public URI parseServerAuthority() throws URISyntaxException
+public URI normalize()
+public URI resolve(URI uri)
+public URI resolve(String str)
+public URI relativize(URI uri)
+public URL toURL() throws MalformedURLException
+public String getScheme()
+public boolean isAbsolute()
+public boolean isOpaque()
+public String getRawSchemeSpecificPart()
+public String getSchemeSpecificPart()
+public String getRawAuthority()
+public String getAuthority()
+public String getRawUserInfo()
+public String getUserInfo()
+public String getHost()
+public int getPort()
+public String getRawPath()
+public String getPath()
+public String getRawQuery()
+public String getQuery()
+public String getRawFragment()
+public String getFragment()
+public boolean equals(Object ob)
+public int hashCode()
+public int compareTo(URI that)
+public String toString()
+public String toASCIIString()
+public URISyntaxException(String input, String reason, int index)
+public URISyntaxException(String input, String reason)
+public String getInput()
+public String getReason()
+public int getIndex()
+public String getMessage()
+public URL(String protocol, String host, int port, String file) throws MalformedURLException
+public URL(String protocol, String host, String file) throws MalformedURLException
+public URL(String protocol, String host, int port, String file, URLStreamHandler handler) throws MalformedURLException
+public URL(String spec) throws MalformedURLException
+public URL(URL context, String spec) throws MalformedURLException
+public URL(URL context, String spec, URLStreamHandler handler) throws MalformedURLException
+public String getQuery()
+public String getPath()
+public String getUserInfo()
+public String getAuthority()
+public int getPort()
+public int getDefaultPort()
+public String getProtocol()
+public String getHost()
+public String getFile()
+public String getRef()
+public boolean equals(Object obj)
+public int hashCode()
+public boolean sameFile(URL other)
+public String toString()
+public String toExternalForm()
+public URI toURI() throws URISyntaxException
+public URLConnection openConnection() throws IOException
+public URLConnection openConnection(Proxy proxy) throws IOException
+public final InputStream openStream() throws IOException
+public final Object getContent() throws IOException
+public final Object getContent(Class[] classes) throws IOException
+public static void setURLStreamHandlerFactory(URLStreamHandlerFactory fac)
+public URLClassLoader(URL[] urls, ClassLoader parent)
+public URLClassLoader(URL[] urls)
+public URLClassLoader(URL[] urls, ClassLoader parent, URLStreamHandlerFactory factory)
+public InputStream getResourceAsStream(String name)
+public void close() throws IOException
+protected void addURL(URL url)
+public URL[] getURLs()
+protected Class<?> findClass(String name) throws ClassNotFoundException
+protected Package definePackage(String name, Manifest man, URL url) throws IllegalArgumentException
+public URL findResource(String name)
+public Enumeration<URL> findResources(String name) throws IOException
+protected PermissionCollection getPermissions(CodeSource codesource)
+public static URLClassLoader newInstance(URL[] urls, ClassLoader parent)
+public static URLClassLoader newInstance(URL[] urls)
+protected URL url
+protected boolean doInput
+protected boolean doOutput
+protected boolean allowUserInteraction
+protected boolean useCaches
+protected long ifModifiedSince
+protected boolean connected
+protected URLConnection(URL url)
+public static FileNameMap getFileNameMap()
+public static void setFileNameMap(FileNameMap map)
+public abstract void connect() throws IOException
+public void setConnectTimeout(int timeout)
+public int getConnectTimeout()
+public void setReadTimeout(int timeout)
+public int getReadTimeout()
+public URL getURL()
+public int getContentLength()
+public long getContentLengthLong()
+public String getContentType()
+public String getContentEncoding()
+public long getExpiration()
+public long getDate()
+public long getLastModified()
+public String getHeaderField(String name)
+public Map<String,List<String>> getHeaderFields()
+public int getHeaderFieldInt(String name, int Default)
+public long getHeaderFieldLong(String name, long Default)
+public long getHeaderFieldDate(String name, long Default)
+public String getHeaderFieldKey(int n)
+public String getHeaderField(int n)
+public Object getContent() throws IOException
+public Object getContent(Class[] classes) throws IOException
+public Permission getPermission() throws IOException
+public InputStream getInputStream() throws IOException
+public OutputStream getOutputStream() throws IOException
+public String toString()
+public void setDoInput(boolean doinput)
+public boolean getDoInput()
+public void setDoOutput(boolean dooutput)
+public boolean getDoOutput()
+public void setAllowUserInteraction(boolean allowuserinteraction)
+public boolean getAllowUserInteraction()
+public static void setDefaultAllowUserInteraction(boolean defaultallowuserinteraction)
+public static boolean getDefaultAllowUserInteraction()
+public void setUseCaches(boolean usecaches)
+public boolean getUseCaches()
+public void setIfModifiedSince(long ifmodifiedsince)
+public long getIfModifiedSince()
+public boolean getDefaultUseCaches()
+public void setDefaultUseCaches(boolean defaultusecaches)
+public void setRequestProperty(String key, String value)
+public void addRequestProperty(String key, String value)
+public String getRequestProperty(String key)
+public Map<String,List<String>> getRequestProperties()
+@Deprecated public static void setDefaultRequestProperty(String key, String value)
+@Deprecated public static String getDefaultRequestProperty(String key)
+public static void setContentHandlerFactory(ContentHandlerFactory fac)
+public static String guessContentTypeFromName(String fname)
+public static String guessContentTypeFromStream(InputStream is) throws IOException
+public URLDecoder()
+@Deprecated public static String decode(String s)
+@Deprecated public static String encode(String s)
+public static String encode(String s, String enc) throws UnsupportedEncodingException
+public URLPermission(String url, String actions)
+public URLPermission(String url)
+public String getActions()
+public boolean implies(Permission p)
+public boolean equals(Object p)
+public int hashCode()
+public URLStreamHandler()
+protected abstract URLConnection openConnection(URL u) throws IOException
+protected URLConnection openConnection(URL u, Proxy p) throws IOException
+protected void parseURL(URL u, String spec, int start, int limit)
+protected int getDefaultPort()
+protected boolean equals(URL u1, URL u2)
+protected int hashCode(URL u)
+protected boolean sameFile(URL u1, URL u2)
+protected InetAddress getHostAddress(URL u)
+protected boolean hostsEqual(URL u1, URL u2)
+protected String toExternalForm(URL u)
+protected void setURL(URL u, String protocol, String host, int port, String authority, String userInfo, String path, String query, String ref)
+URLStreamHandler createURLStreamHandler(String protocol)
+public final int capacity()
+public final int position()
+public final Buffer position(int newPosition)
+public final int limit()
+public final Buffer limit(int newLimit)
+public final Buffer mark()
+public final Buffer reset()
+public final Buffer clear()
+public final Buffer flip()
+public final Buffer rewind()
+public final int remaining()
+public final boolean hasRemaining()
+public abstract boolean isReadOnly()
+public abstract boolean hasArray()
+public abstract Object array()
+public abstract int arrayOffset()
+public abstract boolean isDirect()
+public BufferOverflowException()
+public BufferUnderflowException()
+public static ByteBuffer allocateDirect(int capacity)
+public static ByteBuffer allocate(int capacity)
+public static ByteBuffer wrap(byte[] array, int offset, int length)
+public static ByteBuffer wrap(byte[] array)
+public abstract ByteBuffer slice()
+public abstract ByteBuffer duplicate()
+public abstract ByteBuffer asReadOnlyBuffer()
+public abstract byte get()
+public abstract ByteBuffer put(byte b)
+public abstract byte get(int index)
+public abstract ByteBuffer put(int index, byte b)
+public ByteBuffer get(byte[] dst, int offset, int length)
+public ByteBuffer get(byte[] dst)
+public ByteBuffer put(ByteBuffer src)
+public ByteBuffer put(byte[] src, int offset, int length)
+public final ByteBuffer put(byte[] src)
+public final boolean hasArray()
+public final byte[] array()
+public final int arrayOffset()
+public abstract ByteBuffer compact()
+public abstract boolean isDirect()
+public String toString()
+public int hashCode()
+public boolean equals(Object ob)
+public int compareTo(ByteBuffer that)
+public final ByteOrder order()
+public final ByteBuffer order(ByteOrder bo)
+public abstract char getChar()
+public abstract ByteBuffer putChar(char value)
+public abstract char getChar(int index)
+public abstract ByteBuffer putChar(int index, char value)
+public abstract CharBuffer asCharBuffer()
+public abstract short getShort()
+public abstract ByteBuffer putShort(short value)
+public abstract short getShort(int index)
+public abstract ByteBuffer putShort(int index, short value)
+public abstract ShortBuffer asShortBuffer()
+public abstract int getInt()
+public abstract ByteBuffer putInt(int value)
+public abstract int getInt(int index)
+public abstract ByteBuffer putInt(int index, int value)
+public abstract IntBuffer asIntBuffer()
+public abstract long getLong()
+public abstract ByteBuffer putLong(long value)
+public abstract long getLong(int index)
+public abstract ByteBuffer putLong(int index, long value)
+public abstract LongBuffer asLongBuffer()
+public abstract float getFloat()
+public abstract ByteBuffer putFloat(float value)
+public abstract float getFloat(int index)
+public abstract ByteBuffer putFloat(int index, float value)
+public abstract FloatBuffer asFloatBuffer()
+public abstract double getDouble()
+public abstract ByteBuffer putDouble(double value)
+public abstract double getDouble(int index)
+public abstract ByteBuffer putDouble(int index, double value)
+public abstract DoubleBuffer asDoubleBuffer()
+public static final ByteOrder BIG_ENDIAN
+public static final ByteOrder LITTLE_ENDIAN
+public static ByteOrder nativeOrder()
+public String toString()
+public static CharBuffer allocate(int capacity)
+public static CharBuffer wrap(char[] array, int offset, int length)
+public static CharBuffer wrap(char[] array)
+public int read(CharBuffer target) throws IOException
+public static CharBuffer wrap(CharSequence csq, int start, int end)
+public static CharBuffer wrap(CharSequence csq)
+public abstract CharBuffer slice()
+public abstract CharBuffer duplicate()
+public abstract CharBuffer asReadOnlyBuffer()
+public abstract char get()
+public abstract CharBuffer put(char c)
+public abstract char get(int index)
+public abstract CharBuffer put(int index, char c)
+public CharBuffer get(char[] dst, int offset, int length)
+public CharBuffer get(char[] dst)
+public CharBuffer put(CharBuffer src)
+public CharBuffer put(char[] src, int offset, int length)
+public final CharBuffer put(char[] src)
+public CharBuffer put(String src, int start, int end)
+public final CharBuffer put(String src)
+public final boolean hasArray()
+public final char[] array()
+public final int arrayOffset()
+public abstract CharBuffer compact()
+public abstract boolean isDirect()
+public int hashCode()
+public boolean equals(Object ob)
+public int compareTo(CharBuffer that)
+public String toString()
+public final int length()
+public final char charAt(int index)
+public abstract CharBuffer subSequence(int start, int end)
+public CharBuffer append(CharSequence csq)
+public CharBuffer append(CharSequence csq, int start, int end)
+public CharBuffer append(char c)
+public abstract ByteOrder order()
+public IntStream chars()
+public static DoubleBuffer allocate(int capacity)
+public static DoubleBuffer wrap(double[] array, int offset, int length)
+public static DoubleBuffer wrap(double[] array)
+public abstract DoubleBuffer slice()
+public abstract DoubleBuffer duplicate()
+public abstract DoubleBuffer asReadOnlyBuffer()
+public abstract double get()
+public abstract DoubleBuffer put(double d)
+public abstract double get(int index)
+public abstract DoubleBuffer put(int index, double d)
+public DoubleBuffer get(double[] dst, int offset, int length)
+public DoubleBuffer get(double[] dst)
+public DoubleBuffer put(DoubleBuffer src)
+public DoubleBuffer put(double[] src, int offset, int length)
+public final DoubleBuffer put(double[] src)
+public final boolean hasArray()
+public final double[] array()
+public final int arrayOffset()
+public abstract DoubleBuffer compact()
+public abstract boolean isDirect()
+public String toString()
+public int hashCode()
+public boolean equals(Object ob)
+public int compareTo(DoubleBuffer that)
+public abstract ByteOrder order()
+public static FloatBuffer allocate(int capacity)
+public static FloatBuffer wrap(float[] array, int offset, int length)
+public static FloatBuffer wrap(float[] array)
+public abstract FloatBuffer slice()
+public abstract FloatBuffer duplicate()
+public abstract FloatBuffer asReadOnlyBuffer()
+public abstract float get()
+public abstract FloatBuffer put(float f)
+public abstract float get(int index)
+public abstract FloatBuffer put(int index, float f)
+public FloatBuffer get(float[] dst, int offset, int length)
+public FloatBuffer get(float[] dst)
+public FloatBuffer put(FloatBuffer src)
+public FloatBuffer put(float[] src, int offset, int length)
+public final FloatBuffer put(float[] src)
+public final boolean hasArray()
+public final float[] array()
+public final int arrayOffset()
+public abstract FloatBuffer compact()
+public abstract boolean isDirect()
+public String toString()
+public int hashCode()
+public boolean equals(Object ob)
+public int compareTo(FloatBuffer that)
+public abstract ByteOrder order()
+public static IntBuffer allocate(int capacity)
+public static IntBuffer wrap(int[] array, int offset, int length)
+public static IntBuffer wrap(int[] array)
+public abstract IntBuffer slice()
+public abstract IntBuffer duplicate()
+public abstract IntBuffer asReadOnlyBuffer()
+public abstract int get()
+public abstract IntBuffer put(int i)
+public abstract int get(int index)
+public abstract IntBuffer put(int index, int i)
+public IntBuffer get(int[] dst, int offset, int length)
+public IntBuffer get(int[] dst)
+public IntBuffer put(IntBuffer src)
+public IntBuffer put(int[] src, int offset, int length)
+public final IntBuffer put(int[] src)
+public final boolean hasArray()
+public final int[] array()
+public final int arrayOffset()
+public abstract IntBuffer compact()
+public abstract boolean isDirect()
+public String toString()
+public int hashCode()
+public boolean equals(Object ob)
+public int compareTo(IntBuffer that)
+public abstract ByteOrder order()
+public InvalidMarkException()
+public static LongBuffer allocate(int capacity)
+public static LongBuffer wrap(long[] array, int offset, int length)
+public static LongBuffer wrap(long[] array)
+public abstract LongBuffer slice()
+public abstract LongBuffer duplicate()
+public abstract LongBuffer asReadOnlyBuffer()
+public abstract long get()
+public abstract LongBuffer put(long l)
+public abstract long get(int index)
+public abstract LongBuffer put(int index, long l)
+public LongBuffer get(long[] dst, int offset, int length)
+public LongBuffer get(long[] dst)
+public LongBuffer put(LongBuffer src)
+public LongBuffer put(long[] src, int offset, int length)
+public final LongBuffer put(long[] src)
+public final boolean hasArray()
+public final long[] array()
+public final int arrayOffset()
+public abstract LongBuffer compact()
+public abstract boolean isDirect()
+public String toString()
+public int hashCode()
+public boolean equals(Object ob)
+public int compareTo(LongBuffer that)
+public abstract ByteOrder order()
+public final boolean isLoaded()
+public final MappedByteBuffer load()
+public final MappedByteBuffer force()
+public ReadOnlyBufferException()
+public static ShortBuffer allocate(int capacity)
+public static ShortBuffer wrap(short[] array, int offset, int length)
+public static ShortBuffer wrap(short[] array)
+public abstract ShortBuffer slice()
+public abstract ShortBuffer duplicate()
+public abstract ShortBuffer asReadOnlyBuffer()
+public abstract short get()
+public abstract ShortBuffer put(short s)
+public abstract short get(int index)
+public abstract ShortBuffer put(int index, short s)
+public ShortBuffer get(short[] dst, int offset, int length)
+public ShortBuffer get(short[] dst)
+public ShortBuffer put(ShortBuffer src)
+public ShortBuffer put(short[] src, int offset, int length)
+public final ShortBuffer put(short[] src)
+public final boolean hasArray()
+public final short[] array()
+public final int arrayOffset()
+public abstract ShortBuffer compact()
+public abstract boolean isDirect()
+public String toString()
+public int hashCode()
+public boolean equals(Object ob)
+public int compareTo(ShortBuffer that)
+public abstract ByteOrder order()
+public AcceptPendingException()
+public AlreadyBoundException()
+public AlreadyConnectedException()
+<A> void read(ByteBuffer dst, A attachment, CompletionHandler<Integer,? super A> handler)
+Future<Integer> read(ByteBuffer dst)
+<A> void write(ByteBuffer src, A attachment, CompletionHandler<Integer,? super A> handler)
+Future<Integer> write(ByteBuffer src)
+void close() throws IOException
+protected AsynchronousChannelGroup(AsynchronousChannelProvider provider)
+public final AsynchronousChannelProvider provider()
+public static AsynchronousChannelGroup withFixedThreadPool(int nThreads, ThreadFactory threadFactory) throws IOException
+public static AsynchronousChannelGroup withCachedThreadPool(ExecutorService executor, int initialSize) throws IOException
+public static AsynchronousChannelGroup withThreadPool(ExecutorService executor) throws IOException
+public abstract boolean isShutdown()
+public abstract boolean isTerminated()
+public abstract void shutdown()
+public abstract void shutdownNow() throws IOException
+public abstract boolean awaitTermination(long timeout, TimeUnit unit) throws InterruptedException
+public AsynchronousCloseException()
+protected AsynchronousFileChannel()
+public static AsynchronousFileChannel open(Path file, Set<? extends OpenOption> options, ExecutorService executor, FileAttribute<?>... attrs) throws IOException
+public static AsynchronousFileChannel open(Path file, OpenOption... options) throws IOException
+public abstract long size() throws IOException
+public abstract AsynchronousFileChannel truncate(long size) throws IOException
+public abstract void force(boolean metaData) throws IOException
+public abstract <A> void lock(long position, long size, boolean shared, A attachment, CompletionHandler<FileLock,? super A> handler)
+public final <A> void lock(A attachment, CompletionHandler<FileLock,? super A> handler)
+public abstract Future<FileLock> lock(long position, long size, boolean shared)
+public final Future<FileLock> lock()
+public abstract FileLock tryLock(long position, long size, boolean shared) throws IOException
+public final FileLock tryLock() throws IOException
+public abstract <A> void read(ByteBuffer dst, long position, A attachment, CompletionHandler<Integer,? super A> handler)
+public abstract Future<Integer> read(ByteBuffer dst, long position)
+public abstract <A> void write(ByteBuffer src, long position, A attachment, CompletionHandler<Integer,? super A> handler)
+public abstract Future<Integer> write(ByteBuffer src, long position)
+protected AsynchronousServerSocketChannel(AsynchronousChannelProvider provider)
+public final AsynchronousChannelProvider provider()
+public static AsynchronousServerSocketChannel open(AsynchronousChannelGroup group) throws IOException
+public static AsynchronousServerSocketChannel open() throws IOException
+public final AsynchronousServerSocketChannel bind(SocketAddress local) throws IOException
+public abstract AsynchronousServerSocketChannel bind(SocketAddress local, int backlog) throws IOException
+public abstract <T> AsynchronousServerSocketChannel setOption(SocketOption<T> name, T value) throws IOException
+public abstract <A> void accept(A attachment, CompletionHandler<AsynchronousSocketChannel,? super A> handler)
+public abstract Future<AsynchronousSocketChannel> accept()
+public abstract SocketAddress getLocalAddress() throws IOException
+protected AsynchronousSocketChannel(AsynchronousChannelProvider provider)
+public final AsynchronousChannelProvider provider()
+public static AsynchronousSocketChannel open(AsynchronousChannelGroup group) throws IOException
+public static AsynchronousSocketChannel open() throws IOException
+public abstract AsynchronousSocketChannel bind(SocketAddress local) throws IOException
+public abstract <T> AsynchronousSocketChannel setOption(SocketOption<T> name, T value) throws IOException
+public abstract AsynchronousSocketChannel shutdownInput() throws IOException
+public abstract AsynchronousSocketChannel shutdownOutput() throws IOException
+public abstract SocketAddress getRemoteAddress() throws IOException
+public abstract <A> void connect(SocketAddress remote, A attachment, CompletionHandler<Void,? super A> handler)
+public abstract Future<Void> connect(SocketAddress remote)
+public abstract <A> void read(ByteBuffer dst, long timeout, TimeUnit unit, A attachment, CompletionHandler<Integer,? super A> handler)
+public final <A> void read(ByteBuffer dst, A attachment, CompletionHandler<Integer,? super A> handler)
+public abstract Future<Integer> read(ByteBuffer dst)
+public abstract <A> void read(ByteBuffer[] dsts, int offset, int length, long timeout, TimeUnit unit, A attachment, CompletionHandler<Long,? super A> handler)
+public abstract <A> void write(ByteBuffer src, long timeout, TimeUnit unit, A attachment, CompletionHandler<Integer,? super A> handler)
+public final <A> void write(ByteBuffer src, A attachment, CompletionHandler<Integer,? super A> handler)
+public abstract Future<Integer> write(ByteBuffer src)
+public abstract <A> void write(ByteBuffer[] srcs, int offset, int length, long timeout, TimeUnit unit, A attachment, CompletionHandler<Long,? super A> handler)
+public abstract SocketAddress getLocalAddress() throws IOException
+public CancelledKeyException()
+boolean isOpen()
+void close() throws IOException
+public static InputStream newInputStream(ReadableByteChannel ch)
+public static OutputStream newOutputStream(WritableByteChannel ch)
+public static InputStream newInputStream(AsynchronousByteChannel ch)
+public static OutputStream newOutputStream(AsynchronousByteChannel ch)
+public static ReadableByteChannel newChannel(InputStream in)
+public static WritableByteChannel newChannel(OutputStream out)
+public static Reader newReader(ReadableByteChannel ch, CharsetDecoder dec, int minBufferCap)
+public static Reader newReader(ReadableByteChannel ch, String csName)
+public static Writer newWriter(WritableByteChannel ch, CharsetEncoder enc, int minBufferCap)
+public static Writer newWriter(WritableByteChannel ch, String csName)
+public ClosedByInterruptException()
+public ClosedChannelException()
+public ClosedSelectorException()
+void completed(V result, A attachment)
+void failed(Throwable exc, A attachment)
+public ConnectionPendingException()
+protected DatagramChannel(SelectorProvider provider)
+public static DatagramChannel open() throws IOException
+public static DatagramChannel open(ProtocolFamily family) throws IOException
+public final int validOps()
+public abstract DatagramChannel bind(SocketAddress local) throws IOException
+public abstract <T> DatagramChannel setOption(SocketOption<T> name, T value) throws IOException
+public abstract DatagramSocket socket()
+public abstract boolean isConnected()
+public abstract DatagramChannel connect(SocketAddress remote) throws IOException
+public abstract DatagramChannel disconnect() throws IOException
+public abstract SocketAddress getRemoteAddress() throws IOException
+public abstract SocketAddress receive(ByteBuffer dst) throws IOException
+public abstract int send(ByteBuffer src, SocketAddress target) throws IOException
+public abstract int read(ByteBuffer dst) throws IOException
+public abstract long read(ByteBuffer[] dsts, int offset, int length) throws IOException
+public final long read(ByteBuffer[] dsts) throws IOException
+public abstract int write(ByteBuffer src) throws IOException
+public abstract long write(ByteBuffer[] srcs, int offset, int length) throws IOException
+public final long write(ByteBuffer[] srcs) throws IOException
+public abstract SocketAddress getLocalAddress() throws IOException
+protected FileChannel()
+public static FileChannel open(Path path, Set<? extends OpenOption> options, FileAttribute<?>... attrs) throws IOException
+public static FileChannel open(Path path, OpenOption... options) throws IOException
+public abstract int read(ByteBuffer dst) throws IOException
+public abstract long read(ByteBuffer[] dsts, int offset, int length) throws IOException
+public final long read(ByteBuffer[] dsts) throws IOException
+public abstract int write(ByteBuffer src) throws IOException
+public abstract long write(ByteBuffer[] srcs, int offset, int length) throws IOException
+public final long write(ByteBuffer[] srcs) throws IOException
+public abstract long position() throws IOException
+public abstract FileChannel position(long newPosition) throws IOException
+public abstract long size() throws IOException
+public abstract FileChannel truncate(long size) throws IOException
+public abstract void force(boolean metaData) throws IOException
+public abstract long transferTo(long position, long count, WritableByteChannel target) throws IOException
+public abstract long transferFrom(ReadableByteChannel src, long position, long count) throws IOException
+public abstract int read(ByteBuffer dst, long position) throws IOException
+public abstract int write(ByteBuffer src, long position) throws IOException
+public abstract MappedByteBuffer map(FileChannel.MapMode mode, long position, long size) throws IOException
+public abstract FileLock lock(long position, long size, boolean shared) throws IOException
+public final FileLock lock() throws IOException
+public abstract FileLock tryLock(long position, long size, boolean shared) throws IOException
+public final FileLock tryLock() throws IOException
+public static final FileChannel.MapMode READ_ONLY
+public static final FileChannel.MapMode READ_WRITE
+public static final FileChannel.MapMode PRIVATE
+public String toString()
+protected FileLock(FileChannel channel, long position, long size, boolean shared)
+protected FileLock(AsynchronousFileChannel channel, long position, long size, boolean shared)
+public final FileChannel channel()
+public Channel acquiredBy()
+public final long position()
+public final long size()
+public final boolean isShared()
+public final boolean overlaps(long position, long size)
+public abstract boolean isValid()
+public abstract void release() throws IOException
+public final void close() throws IOException
+public final String toString()
+public FileLockInterruptionException()
+long write(ByteBuffer[] srcs, int offset, int length) throws IOException
+long write(ByteBuffer[] srcs) throws IOException
+public IllegalBlockingModeException()
+public IllegalChannelGroupException()
+public IllegalSelectorException()
+public InterruptedByTimeoutException()
+void close() throws IOException
+protected MembershipKey()
+public abstract boolean isValid()
+public abstract void drop()
+public abstract MembershipKey block(InetAddress source) throws IOException
+public abstract MembershipKey unblock(InetAddress source)
+public abstract MulticastChannel channel()
+public abstract InetAddress group()
+public abstract NetworkInterface networkInterface()
+public abstract InetAddress sourceAddress()
+void close() throws IOException
+MembershipKey join(InetAddress group, NetworkInterface interf) throws IOException
+MembershipKey join(InetAddress group, NetworkInterface interf, InetAddress source) throws IOException
+NetworkChannel bind(SocketAddress local) throws IOException
+SocketAddress getLocalAddress() throws IOException
+<T> NetworkChannel setOption(SocketOption<T> name, T value) throws IOException
+<T> T getOption(SocketOption<T> name) throws IOException
+Set<SocketOption<?>> supportedOptions()
+public NoConnectionPendingException()
+public NonReadableChannelException()
+public NonWritableChannelException()
+public NotYetBoundException()
+public NotYetConnectedException()
+public OverlappingFileLockException()
+protected Pipe()
+public abstract Pipe.SourceChannel source()
+public abstract Pipe.SinkChannel sink()
+public static Pipe open() throws IOException
+protected SinkChannel(SelectorProvider provider)
+public final int validOps()
+protected SourceChannel(SelectorProvider provider)
+public final int validOps()
+int read(ByteBuffer dst) throws IOException
+public ReadPendingException()
+long read(ByteBuffer[] dsts, int offset, int length) throws IOException
+long read(ByteBuffer[] dsts) throws IOException
+int read(ByteBuffer dst) throws IOException
+int write(ByteBuffer src) throws IOException
+long position() throws IOException
+SeekableByteChannel position(long newPosition) throws IOException
+long size() throws IOException
+SeekableByteChannel truncate(long size) throws IOException
+protected SelectableChannel()
+public abstract SelectorProvider provider()
+public abstract int validOps()
+public abstract boolean isRegistered()
+public abstract SelectionKey keyFor(Selector sel)
+public abstract SelectionKey register(Selector sel, int ops, Object att) throws ClosedChannelException
+public final SelectionKey register(Selector sel, int ops) throws ClosedChannelException
+public abstract SelectableChannel configureBlocking(boolean block) throws IOException
+public abstract boolean isBlocking()
+public abstract Object blockingLock()
+public static final int OP_READ
+public static final int OP_WRITE
+public static final int OP_CONNECT
+public static final int OP_ACCEPT
+protected SelectionKey()
+public abstract SelectableChannel channel()
+public abstract Selector selector()
+public abstract boolean isValid()
+public abstract void cancel()
+public abstract int interestOps()
+public abstract SelectionKey interestOps(int ops)
+public abstract int readyOps()
+public final boolean isReadable()
+public final boolean isWritable()
+public final boolean isConnectable()
+public final boolean isAcceptable()
+public final Object attach(Object ob)
+public final Object attachment()
+protected Selector()
+public static Selector open() throws IOException
+public abstract boolean isOpen()
+public abstract SelectorProvider provider()
+public abstract Set<SelectionKey> keys()
+public abstract Set<SelectionKey> selectedKeys()
+public abstract int selectNow() throws IOException
+public abstract int select(long timeout) throws IOException
+public abstract int select() throws IOException
+public abstract Selector wakeup()
+public abstract void close() throws IOException
+protected ServerSocketChannel(SelectorProvider provider)
+public static ServerSocketChannel open() throws IOException
+public final int validOps()
+public final ServerSocketChannel bind(SocketAddress local) throws IOException
+public abstract ServerSocketChannel bind(SocketAddress local, int backlog) throws IOException
+public abstract <T> ServerSocketChannel setOption(SocketOption<T> name, T value) throws IOException
+public abstract ServerSocket socket()
+public abstract SocketChannel accept() throws IOException
+public abstract SocketAddress getLocalAddress() throws IOException
+public ShutdownChannelGroupException()
+protected SocketChannel(SelectorProvider provider)
+public static SocketChannel open() throws IOException
+public static SocketChannel open(SocketAddress remote) throws IOException
+public final int validOps()
+public abstract SocketChannel bind(SocketAddress local) throws IOException
+public abstract <T> SocketChannel setOption(SocketOption<T> name, T value) throws IOException
+public abstract SocketChannel shutdownInput() throws IOException
+public abstract SocketChannel shutdownOutput() throws IOException
+public abstract Socket socket()
+public abstract boolean isConnected()
+public abstract boolean isConnectionPending()
+public abstract boolean connect(SocketAddress remote) throws IOException
+public abstract boolean finishConnect() throws IOException
+public abstract SocketAddress getRemoteAddress() throws IOException
+public abstract int read(ByteBuffer dst) throws IOException
+public abstract long read(ByteBuffer[] dsts, int offset, int length) throws IOException
+public final long read(ByteBuffer[] dsts) throws IOException
+public abstract int write(ByteBuffer src) throws IOException
+public abstract long write(ByteBuffer[] srcs, int offset, int length) throws IOException
+public final long write(ByteBuffer[] srcs) throws IOException
+public abstract SocketAddress getLocalAddress() throws IOException
+public UnresolvedAddressException()
+public UnsupportedAddressTypeException()
+int write(ByteBuffer src) throws IOException
+public WritePendingException()
+protected AbstractInterruptibleChannel()
+public final void close() throws IOException
+protected abstract void implCloseChannel() throws IOException
+public final boolean isOpen()
+protected final void begin()
+protected final void end(boolean completed) throws AsynchronousCloseException
+protected AbstractSelectableChannel(SelectorProvider provider)
+public final SelectorProvider provider()
+public final boolean isRegistered()
+public final SelectionKey keyFor(Selector sel)
+public final SelectionKey register(Selector sel, int ops, Object att) throws ClosedChannelException
+protected final void implCloseChannel() throws IOException
+protected abstract void implCloseSelectableChannel() throws IOException
+public final boolean isBlocking()
+public final Object blockingLock()
+public final SelectableChannel configureBlocking(boolean block) throws IOException
+protected abstract void implConfigureBlocking(boolean block) throws IOException
+protected AbstractSelectionKey()
+public final boolean isValid()
+public final void cancel()
+protected AbstractSelector(SelectorProvider provider)
+public final void close() throws IOException
+protected abstract void implCloseSelector() throws IOException

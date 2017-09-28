@@ -1,0 +1,21 @@
+Saving dict for global step 100000: bleu = 67.73, global_step = 100000, log_perplexity = 0.405516, loss = 0.406758, rouge_1/f_score = 0.888921, rouge_1/p_score = 0.96, rouge_1/r_score = 0.84546, rouge_2/f_score = 0.841269, rouge_2/p_score = 0.923911, rouge_2/r_score = 0.795952, rouge_l/f_score = 0.856112
+
+
+loss = 9.10097, step = 1
+
+ bleu = 0.0, global_step = 1000, log_perplexity = 5.35757, loss = 5.35892, rouge_1/f_score = 0.301583, rouge_1/p_score = 0.786452, rouge_1/r_score = 0.191125, rouge_2/f_score = 0.0, rouge_2/p_score = 0.0, rouge_2/r_score = 0.0, rouge_l/f_score = 0.161035
+
+
+INFO:tensorflow:Creating vocabulary lookup table of size 39648
+INFO:tensorflow:Creating vocabulary lookup table of size 8965
+
+BLEU = 32.97, 40.2/35.2/30.9/26.9 (BP=1.000, ratio=2.156, hyp_len=101438, ref_len=47051)
+
+beam size 10
+BLEU = 34.20, 41.6/36.5/32.1/28.0 (BP=1.000, ratio=2.083, hyp_len=97993, ref_len=47051)
+
+beam size 2
+BLEU = 31.25, 38.3/33.4/29.3/25.4 (BP=1.000, ratio=2.266, hyp_len=106619, ref_len=47051)
+
+no beam search
+BLEU = 29.95, 36.8/32.1/28.0/24.3 (BP=1.000, ratio=2.355, hyp_len=110822, ref_len=47051)

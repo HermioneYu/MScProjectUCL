@@ -1,0 +1,40 @@
+Returns a Shape whose interior defines the stroked outline of a specified Shape.
+Creates a new object for specifying buffering capabilities
+Creates an AlphaComposite object with the specified rule.
+Sets the length of the proportional indicator of the adjustable object.
+Returns the type of KeyEvent which corresponds to this AWTKeyStroke.
+Returns an array of all the objects chained as FooListeners by the specified java.util.EventListener. FooListeners are chained by the AWTEventMulticaster using the addFooListener method. If a null listener is specified, this method returns an empty array. If the specified listener is not an instance of AWTEventMulticaster, this method returns an array which contains only the specified listener. If no such listeners are chained, this method returns an empty array.
+"Sets this check box menu item to the specified state. The boolean value true indicates ""on"" while false indicates ""off."" Note that this method should be primarily used to initialize the state of the check box menu item. Programmatically setting the state of the check box menu item will not trigger an ItemEvent. The only way to trigger an ItemEvent is by user interaction."
+Ends unclosed subpaths and dash segments with a round decoration that has a radius equal to half of the width of the pen.
+Plays the audio clip given the URL and a specifier that is relative to it. Nothing happens if the audio clip cannot be found.
+AlphaComposite object that implements the opaque CLEAR rule with an alpha of 1.0f.
+AlphaComposite object that implements the opaque DST_ATOP rule with an alpha of 1.0f.
+Creates a context for the compositing operation. The context contains state that is used in performing the compositing operation.
+Get the AccessibleValue associated with this object. In the implementation of the Java Accessibility API for this class, return this object, which is responsible for implementing the AccessibleValue interface on behalf of itself.
+Creates a new AWTPermission object with the specified name. The name is the symbolic name of the AWTPermission, and the actions string is currently unused and should be null.
+"Returns a shared instance of an AWTKeyStroke, given a numeric key code and a set of modifiers, specifying whether the key is activated when it is pressed or released. The ""virtual key"" constants defined in java.awt.event.KeyEvent can be used to specify the key code. For example: java.awt.event.KeyEvent.VK_ENTER java.awt.event.KeyEvent.VK_TAB java.awt.event.KeyEvent.VK_SPACE Alternatively, the key code may be obtained by calling java.awt.event.KeyEvent.getExtendedKeyCodeForChar. The modifiers consist of any combination of: java.awt.event.InputEvent.SHIFT_DOWN_MASK java.awt.event.InputEvent.CTRL_DOWN_MASK java.awt.event.InputEvent.META_DOWN_MASK java.awt.event.InputEvent.ALT_DOWN_MASK java.awt.event.InputEvent.ALT_GRAPH_DOWN_MASK The old modifiers java.awt.event.InputEvent.SHIFT_MASK java.awt.event.InputEvent.CTRL_MASK java.awt.event.InputEvent.META_MASK java.awt.event.InputEvent.ALT_MASK java.awt.event.InputEvent.ALT_GRAPH_MASK also can be used, but they are mapped to _DOWN_ modifiers. Since these numbers are all different powers of two, any combination of them is an integer in which each bit represents a different modifier key. Use 0 to specify no modifiers."
+Sets the horizontal gap between components.
+Sets the minimum value of the adjustable object.
+Adds container-listener-a with container-listener-b and returns the resulting multicast listener.
+Returns the hashcode for this stroke.
+Returns a string representation of the state of this border layout.
+The event mask for selecting window events.
+Constructs a new border layout with no gaps between components.
+Indicates that the Adjustable has no orientation.
+Removes a listener from this multicaster. The returned multicaster contains all the listeners in this multicaster with the exception of all occurrences of oldl. If the resulting multicaster contains only one regular listener the regular listener may be returned. If the resulting multicaster is empty, then null may be returned instead. No exception is thrown if oldl is null.
+Returns the modifier keys for this AWTKeyStroke.
+The destination is left untouched (Porter-Duff Destination rule). Fs = 0 and Fd = 1, thus: Ar = Ad Cr = Cd
+The event mask for selecting window focus events.
+Returns the alignment along the y axis. This specifies how the component would like to be aligned relative to other components. The value should be a number between 0 and 1 where 0 represents alignment along the origin, 1 is aligned the furthest away from the origin, 0.5 is centered, etc.
+Sets the vertical gap between components.
+Returns the limit of miter joins.
+Get the maximum value of this object as a Number.
+Returns a string representation of the state of this card layout.
+"Creates a check box with the specified label. The state of this check box is set to ""off,"" and it is not part of any check box group."
+Constructs a Checkbox with the specified label, set to the specified state, and in the specified check box group.
+Called when the applet wants to be resized.
+Creates the peer of the checkbox item. This peer allows us to change the look of the checkbox item without changing its functionality. Most applications do not call this method directly.
+Constructs a new Canvas given a GraphicsConfiguration object.
+Creates a new card layout with the specified horizontal and vertical gaps. The horizontal gaps are placed at the left and right edges. The vertical gaps are placed at the top and bottom edges.
+Handles the windowClosed event by invoking the windowClosed methods on listener-a and listener-b.
+Returns the vertical gap between components.
